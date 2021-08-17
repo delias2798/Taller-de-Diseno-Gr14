@@ -1,0 +1,26 @@
+-----------------------------------------------
+--- Testbench del Sumador completo de 1 bit ---
+-----------------------------------------------
+-----------------------------------------------
+---------- Saymon Astua Madrigal --------------
+-----------------------------------------------
+
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity sumador_4_tb is
+end sumador_4_tb;
+
+architecture arch of sumador_4_tb is
+	signal a, b, s: std_logic_vector(3 downto 0);
+	signal c_in, c_out, s: std_logic;
+begin
+	sum: entity work.sumador_4(archSum_4) port map (a, b, c_in, c_out, s);
+	
+	a <= '0', '1' after 20 ns, '0' after 40 ns, '1' after 60 ns;
+	b <= '0', '1' after 40 ns;	
+	
+	c_in <= '0';
+
+end arch;

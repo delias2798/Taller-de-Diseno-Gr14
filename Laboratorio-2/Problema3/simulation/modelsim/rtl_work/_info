@@ -1,0 +1,102 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/samas/Documents/quartusProjects/Lab2/Problema3/simulation/modelsim
+Econtador_6_tb
+Z1 w1628960659
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 1
+R0
+Z6 8C:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_6_tb.vhd
+Z7 FC:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_6_tb.vhd
+l0
+L12 1
+VU>nL6HCf5RjzU:aEgT]lO0
+!s100 b5zi0aAY>03Le>lE35=zj2
+Z8 OV;C;2020.1;71
+31
+Z9 !s110 1629218121
+!i10b 1
+Z10 !s108 1629218121.000000
+Z11 !s90 -reportprogress|300|-93|-work|work|C:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_6_tb.vhd|
+!s107 C:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_6_tb.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Aarch
+Z14 DEx4 work 10 contador_n 0 22 e7ehM:mOkBJKDNHP2fiJ32
+R2
+R3
+R4
+R5
+DEx4 work 13 contador_6_tb 0 22 U>nL6HCf5RjzU:aEgT]lO0
+!i122 1
+l21
+L15 16
+Vojl?Ic7e01S22Y8e47>P@2
+!s100 X[Nb0WXHEiVUzYHL8WBF[0
+R8
+31
+R9
+!i10b 1
+R10
+R11
+Z15 !s107 C:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_6_tb.vhd|
+!i113 1
+R12
+R13
+Econtador_n
+Z16 w1628959612
+R2
+R3
+R4
+R5
+!i122 0
+R0
+Z17 8C:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_n.vhd
+Z18 FC:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_n.vhd
+l0
+L14 1
+Ve7ehM:mOkBJKDNHP2fiJ32
+!s100 TTfQVmac6;AE?DbQ_8k[f1
+R8
+31
+R9
+!i10b 1
+Z19 !s108 1629218120.000000
+Z20 !s90 -reportprogress|300|-93|-work|work|C:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_n.vhd|
+Z21 !s107 C:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_n.vhd|
+!i113 1
+R12
+R13
+Aarchcontador
+R2
+R3
+R4
+R5
+R14
+!i122 0
+l28
+L24 24
+V0hE0]AV@mEOcm>lO7>6gn1
+!s100 ]L^[mYV]V59_iNE6B45mD3
+R8
+31
+R9
+!i10b 1
+R19
+R20
+R21
+!i113 1
+R12
+R13

@@ -1,0 +1,15 @@
+-----------------------------------------
+--- Contador parametrizable de n bits ---
+-----------------------------------------
+------- Saymon Astúa madrigal -----------
+-----------------------------------------
+
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+
+entity contador_n is
+
+end contador_n;
