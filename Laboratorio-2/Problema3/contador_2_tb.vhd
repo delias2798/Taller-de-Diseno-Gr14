@@ -21,7 +21,7 @@ architecture arch of contador_2_tb is
 begin
 	
 	clk <= not(clk) after 10 ns;
-	rst <= '1', '0' after 10 ns;
+	rst <= '1', '0' after 10 ns, '1' after 30 ns, '0' after 40 ns;
 	
 	-- se crea una instancia contador de 2 bits
 	-- las entradas del contador son clk, rst y la salida es cuenta
