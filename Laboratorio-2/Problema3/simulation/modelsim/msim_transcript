@@ -12,7 +12,7 @@
 # 
 # vcom -93 -work work {C:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_n.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:35:20 on Aug 17,2021
+# Start time: 14:44:52 on Aug 19,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_n.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -21,11 +21,11 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity contador_n
 # -- Compiling architecture archContador of contador_n
-# End time: 10:35:21 on Aug 17,2021, Elapsed time: 0:00:01
+# End time: 14:44:52 on Aug 19,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_6_tb.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:35:21 on Aug 17,2021
+# Start time: 14:44:52 on Aug 19,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_6_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -35,12 +35,12 @@
 # -- Compiling entity contador_6_tb
 # -- Compiling architecture arch of contador_6_tb
 # -- Loading entity contador_n
-# End time: 10:35:21 on Aug 17,2021, Elapsed time: 0:00:00
+# End time: 14:44:52 on Aug 19,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 vsim work.contador_6_tb
 # vsim work.contador_6_tb 
-# Start time: 10:36:27 on Aug 17,2021
+# Start time: 14:44:56 on Aug 19,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -52,8 +52,16 @@ add wave sim:/contador_6_tb/*
 run
 run
 run
+run
+run
+run
+run
+run
+run
+run
+run
 run -all
 # Break key hit
-# Break in Process line__29 at C:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_n.vhd line 29
-# End time: 10:38:55 on Aug 17,2021, Elapsed time: 0:02:28
+# Simulation stop requested.
+# End time: 14:50:20 on Aug 19,2021, Elapsed time: 0:05:24
 # Errors: 0, Warnings: 0

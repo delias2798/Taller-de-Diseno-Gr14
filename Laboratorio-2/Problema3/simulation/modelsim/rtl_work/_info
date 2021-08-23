@@ -10,7 +10,7 @@ z2
 cModel Technology
 Z0 dC:/Users/samas/Documents/quartusProjects/Lab2/Problema3/simulation/modelsim
 Econtador_6_tb
-Z1 w1628960659
+Z1 w1629405847
 Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
@@ -25,9 +25,9 @@ VU>nL6HCf5RjzU:aEgT]lO0
 !s100 b5zi0aAY>03Le>lE35=zj2
 Z8 OV;C;2020.1;71
 31
-Z9 !s110 1629218121
+Z9 !s110 1629405892
 !i10b 1
-Z10 !s108 1629218121.000000
+Z10 !s108 1629405892.000000
 Z11 !s90 -reportprogress|300|-93|-work|work|C:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_6_tb.vhd|
 !s107 C:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_6_tb.vhd|
 !i113 1
@@ -43,8 +43,8 @@ DEx4 work 13 contador_6_tb 0 22 U>nL6HCf5RjzU:aEgT]lO0
 !i122 1
 l21
 L15 16
-Vojl?Ic7e01S22Y8e47>P@2
-!s100 X[Nb0WXHEiVUzYHL8WBF[0
+VaRaT?V[[z0^E8hVFjBSJ:1
+!s100 fQ2FfXX8j?FRRa>h0JcQ>2
 R8
 31
 R9
@@ -73,9 +73,9 @@ R8
 31
 R9
 !i10b 1
-Z19 !s108 1629218120.000000
-Z20 !s90 -reportprogress|300|-93|-work|work|C:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_n.vhd|
-Z21 !s107 C:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_n.vhd|
+R10
+Z19 !s90 -reportprogress|300|-93|-work|work|C:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_n.vhd|
+Z20 !s107 C:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_n.vhd|
 !i113 1
 R12
 R13
@@ -94,9 +94,9 @@ R8
 31
 R9
 !i10b 1
+R10
 R19
 R20
-R21
 !i113 1
 R12
 R13
