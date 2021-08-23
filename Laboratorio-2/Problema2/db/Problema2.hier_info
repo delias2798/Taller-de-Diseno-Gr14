@@ -1,4 +1,4 @@
-|sumador_4
+|sumador_4_fpga
 a[0] => sumador_1:sum0.a
 a[1] => sumador_1:sum1.a
 a[2] => sumador_1:sum2.a
@@ -8,14 +8,17 @@ b[1] => sumador_1:sum1.b
 b[2] => sumador_1:sum2.b
 b[3] => sumador_1:sum3.b
 c_in => sumador_1:sum0.c_in
-c_out << sumador_1:sum3.c_out
-s[0] << sumador_1:sum0.s
-s[1] << sumador_1:sum1.s
-s[2] << sumador_1:sum2.s
-s[3] << sumador_1:sum3.s
+c_out <= sumador_1:sum3.c_out
+s[0] <= to_7seg:seg1.seg7[0]
+s[1] <= to_7seg:seg1.seg7[1]
+s[2] <= to_7seg:seg1.seg7[2]
+s[3] <= to_7seg:seg1.seg7[3]
+s[4] <= to_7seg:seg1.seg7[4]
+s[5] <= to_7seg:seg1.seg7[5]
+s[6] <= to_7seg:seg1.seg7[6]
 
 
-|sumador_4|sumador_1:sum0
+|sumador_4_fpga|sumador_1:sum0
 a => s.IN0
 a => c_out.IN0
 a => c_out.IN0
@@ -36,7 +39,7 @@ c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|sumador_4|sumador_1:sum1
+|sumador_4_fpga|sumador_1:sum1
 a => s.IN0
 a => c_out.IN0
 a => c_out.IN0
@@ -57,7 +60,7 @@ c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|sumador_4|sumador_1:sum2
+|sumador_4_fpga|sumador_1:sum2
 a => s.IN0
 a => c_out.IN0
 a => c_out.IN0
@@ -78,7 +81,7 @@ c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|sumador_4|sumador_1:sum3
+|sumador_4_fpga|sumador_1:sum3
 a => s.IN0
 a => c_out.IN0
 a => c_out.IN0
@@ -97,5 +100,43 @@ c_in => s.IN1
 c_in => s.IN1
 c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sumador_4_fpga|to_7seg:seg1
+A[0] => Mux0.IN19
+A[0] => Mux1.IN19
+A[0] => Mux2.IN19
+A[0] => Mux3.IN19
+A[0] => Mux4.IN19
+A[0] => Mux5.IN19
+A[0] => Mux6.IN19
+A[1] => Mux0.IN18
+A[1] => Mux1.IN18
+A[1] => Mux2.IN18
+A[1] => Mux3.IN18
+A[1] => Mux4.IN18
+A[1] => Mux5.IN18
+A[1] => Mux6.IN18
+A[2] => Mux0.IN17
+A[2] => Mux1.IN17
+A[2] => Mux2.IN17
+A[2] => Mux3.IN17
+A[2] => Mux4.IN17
+A[2] => Mux5.IN17
+A[2] => Mux6.IN17
+A[3] => Mux0.IN16
+A[3] => Mux1.IN16
+A[3] => Mux2.IN16
+A[3] => Mux3.IN16
+A[3] => Mux4.IN16
+A[3] => Mux5.IN16
+A[3] => Mux6.IN16
+seg7[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+seg7[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+seg7[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+seg7[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+seg7[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+seg7[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+seg7[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 

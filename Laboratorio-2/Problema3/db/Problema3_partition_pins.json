@@ -28,6 +28,34 @@
 					"strict" : false
 				},
 				{
+					"name" : "cuenta[6]",
+					"strict" : false
+				},
+				{
+					"name" : "cuenta[7]",
+					"strict" : false
+				},
+				{
+					"name" : "cuenta[8]",
+					"strict" : false
+				},
+				{
+					"name" : "cuenta[9]",
+					"strict" : false
+				},
+				{
+					"name" : "cuenta[10]",
+					"strict" : false
+				},
+				{
+					"name" : "cuenta[11]",
+					"strict" : false
+				},
+				{
+					"name" : "cuenta[13]",
+					"strict" : false
+				},
+				{
 					"name" : "clk",
 					"strict" : false
 				},

@@ -13,7 +13,7 @@ use ieee.std_logic_arith.all;
 
 entity contador_6_fpga is
 	port (clk, rst: in std_logic;
-			cuenta: out std_logic_vector(5 downto 0));
+			cuenta: out std_logic_vector(13 downto 0));
 
 end contador_6_fpga;
 
@@ -41,6 +41,9 @@ begin
 			
 	end process;
 	
-	cuenta <= cuenta_reg;
+	-- se instancia dos decodificadores para el display de 7 segmentos
+	seg1 : entity work.to_7seg port map(cuenta_reg(3 downto 0), cuenta(6 downto 0));
+	seg2 : entity work.to_7seg port map("00" & cuenta_reg(5 downto 4), cuenta(13 downto 7));
+	
 
 end archContador_6;

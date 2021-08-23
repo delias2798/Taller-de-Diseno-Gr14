@@ -45,13 +45,8 @@ set_global_assignment -name PROJECT_CREATION_TIME_DATE "09:37:59  AUGUST 14, 202
 set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Lite Edition"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name BOARD "DE1-SoC Board"
-set_global_assignment -name VHDL_FILE contador_n.vhd
-set_global_assignment -name VHDL_FILE contador_2_tb.vhd
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
-set_global_assignment -name VHDL_FILE contador_4_tb.vhd
-set_global_assignment -name VHDL_FILE contador_6_tb.vhd
-set_global_assignment -name VHDL_FILE contador_6_fpga.vhd
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
@@ -60,7 +55,25 @@ set_location_assignment PIN_AE26 -to cuenta[0]
 set_location_assignment PIN_AE27 -to cuenta[1]
 set_location_assignment PIN_AE28 -to cuenta[2]
 set_location_assignment PIN_AG27 -to cuenta[3]
-set_location_assignment PIN_AJ29 -to cuenta[4]
-set_location_assignment PIN_AH29 -to cuenta[5]
+set_location_assignment PIN_AF28 -to cuenta[4]
+set_location_assignment PIN_AG28 -to cuenta[5]
 set_location_assignment PIN_AB12 -to rst
+set_global_assignment -name VHDL_FILE to_7seg.vhd
+set_global_assignment -name VHDL_FILE contador_n.vhd
+set_global_assignment -name VHDL_FILE contador_2_tb.vhd
+set_global_assignment -name VHDL_FILE contador_4_tb.vhd
+set_global_assignment -name VHDL_FILE contador_6_tb.vhd
+set_global_assignment -name VHDL_FILE contador_6_fpga.vhd
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_location_assignment PIN_AH28 -to cuenta[6]
+set_location_assignment PIN_AJ29 -to cuenta[7]
+set_location_assignment PIN_AH29 -to cuenta[8]
+set_location_assignment PIN_AH30 -to cuenta[9]
+set_location_assignment PIN_AG30 -to cuenta[10]
+set_location_assignment PIN_AF29 -to cuenta[11]
+set_location_assignment PIN_AF30 -to cuenta[12]
+set_location_assignment PIN_AD27 -to cuenta[13]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
