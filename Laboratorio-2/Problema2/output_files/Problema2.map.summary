@@ -1,7 +1,7 @@
-Analysis & Elaboration Status : Successful - Mon Aug 23 22:06:22 2021
+Analysis & Elaboration Status : Successful - Tue Aug 24 14:43:05 2021
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : Problema2
-Top-level Entity Name : sumador_4_tb2
+Top-level Entity Name : sumador_4_tb
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A until Partition Merge
 Total registers : N/A until Partition Merge

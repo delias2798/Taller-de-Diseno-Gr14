@@ -28,10 +28,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "hex1[5]",
-					"strict" : false
-				},
-				{
 					"name" : "hex1[6]",
 					"strict" : false
 				},
@@ -53,6 +49,10 @@
 				},
 				{
 					"name" : "hex2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "hex2[5]",
 					"strict" : false
 				},
 				{

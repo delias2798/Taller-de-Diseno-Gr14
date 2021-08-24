@@ -1,5 +1,5 @@
 Analysis & Elaboration report for Problema2
-Mon Aug 23 22:06:22 2021
+Tue Aug 24 14:43:05 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -10,9 +10,8 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
   4. Analysis & Elaboration Settings
-  5. Port Connectivity Checks: "sumador_4_fpga:sum|bin_6_to_bcd:deco"
-  6. Port Connectivity Checks: "sumador_4_fpga:sum"
-  7. Analysis & Elaboration Messages
+  5. Port Connectivity Checks: "sumador_4:sum"
+  6. Analysis & Elaboration Messages
 
 
 
@@ -39,10 +38,10 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Mon Aug 23 22:06:22 2021       ;
+; Analysis & Elaboration Status ; Successful - Tue Aug 24 14:43:05 2021       ;
 ; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                 ; Problema2                                   ;
-; Top-level Entity Name         ; sumador_4_tb2                               ;
+; Top-level Entity Name         ; sumador_4_tb                                ;
 ; Family                        ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
 ; Total registers               ; N/A until Partition Merge                   ;
@@ -76,7 +75,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; sumador_4_tb2      ; Problema2          ;
+; Top-level entity name                                                           ; sumador_4_tb       ; Problema2          ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -157,17 +156,8 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------------------------------+
-; Port Connectivity Checks: "sumador_4_fpga:sum|bin_6_to_bcd:deco" ;
-+------------+-------+----------+----------------------------------+
-; Port       ; Type  ; Severity ; Details                          ;
-+------------+-------+----------+----------------------------------+
-; entrada[5] ; Input ; Info     ; Stuck at GND                     ;
-+------------+-------+----------+----------------------------------+
-
-
 +-------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "sumador_4_fpga:sum"                                                                    ;
+; Port Connectivity Checks: "sumador_4:sum"                                                                         ;
 +---------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port    ; Type   ; Severity ; Details                                                                             ;
 +---------+--------+----------+-------------------------------------------------------------------------------------+
@@ -180,8 +170,7 @@ https://fpgasoftware.intel.com/eula.
 ; b[0]    ; Input  ; Info     ; Stuck at GND                                                                        ;
 ; c_in    ; Input  ; Info     ; Stuck at GND                                                                        ;
 ; c_out   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; hex1    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; hex2    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; s       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +---------+--------+----------+-------------------------------------------------------------------------------------+
 
 
@@ -191,7 +180,7 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Aug 23 22:06:14 2021
+    Info: Processing started: Tue Aug 24 14:42:57 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Problema2 -c Problema2 --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -219,20 +208,17 @@ Info (12021): Found 2 design units, including 1 entities, in source file to_7seg
 Info (12021): Found 2 design units, including 1 entities, in source file sumador_4_tb2.vhd
     Info (12022): Found design unit 1: sumador_4_tb2-arch2 File: C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_tb2.vhd Line: 18
     Info (12023): Found entity 1: sumador_4_tb2 File: C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_tb2.vhd Line: 15
-Info (12127): Elaborating entity "sumador_4_tb2" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at sumador_4_tb2.vhd(20): object "hex1" assigned a value but never read File: C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_tb2.vhd Line: 20
-Warning (10036): Verilog HDL or VHDL warning at sumador_4_tb2.vhd(20): object "hex2" assigned a value but never read File: C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_tb2.vhd Line: 20
-Warning (10036): Verilog HDL or VHDL warning at sumador_4_tb2.vhd(21): object "c_out" assigned a value but never read File: C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_tb2.vhd Line: 21
-Warning (10785): VHDL warning at sumador_4_tb2.vhd(26): synthesis ignores all but the first waveform File: C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_tb2.vhd Line: 26
-Warning (10785): VHDL warning at sumador_4_tb2.vhd(28): synthesis ignores all but the first waveform File: C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_tb2.vhd Line: 28
-Warning (10785): VHDL warning at sumador_4_tb2.vhd(33): synthesis ignores all but the first waveform File: C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_tb2.vhd Line: 33
-Info (12129): Elaborating entity "sumador_4_fpga" using architecture "A:archsum_4_fpga" for hierarchy "sumador_4_fpga:sum" File: C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_tb2.vhd Line: 24
-Info (12129): Elaborating entity "sumador_1" using architecture "A:archsum_1" for hierarchy "sumador_4_fpga:sum|sumador_1:sum0" File: C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_fpga.vhd Line: 42
-Info (12128): Elaborating entity "bin_6_to_bcd" for hierarchy "sumador_4_fpga:sum|bin_6_to_bcd:deco" File: C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_fpga.vhd Line: 55
-Info (12128): Elaborating entity "to_7seg" for hierarchy "sumador_4_fpga:sum|to_7seg:seg1" File: C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_fpga.vhd Line: 59
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 7 warnings
+Info (12127): Elaborating entity "sumador_4_tb" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at sumador_4_tb.vhd(18): object "s" assigned a value but never read File: C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_tb.vhd Line: 18
+Warning (10036): Verilog HDL or VHDL warning at sumador_4_tb.vhd(19): object "c_out" assigned a value but never read File: C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_tb.vhd Line: 19
+Warning (10785): VHDL warning at sumador_4_tb.vhd(23): synthesis ignores all but the first waveform File: C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_tb.vhd Line: 23
+Warning (10785): VHDL warning at sumador_4_tb.vhd(25): synthesis ignores all but the first waveform File: C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_tb.vhd Line: 25
+Warning (10785): VHDL warning at sumador_4_tb.vhd(30): synthesis ignores all but the first waveform File: C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_tb.vhd Line: 30
+Info (12129): Elaborating entity "sumador_4" using architecture "A:archsum_4" for hierarchy "sumador_4:sum" File: C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_tb.vhd Line: 21
+Info (12129): Elaborating entity "sumador_1" using architecture "A:archsum_1" for hierarchy "sumador_4:sum|sumador_1:sum0" File: C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4.vhd Line: 30
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 6 warnings
     Info: Peak virtual memory: 4836 megabytes
-    Info: Processing ended: Mon Aug 23 22:06:22 2021
+    Info: Processing ended: Tue Aug 24 14:43:05 2021
     Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:17
 

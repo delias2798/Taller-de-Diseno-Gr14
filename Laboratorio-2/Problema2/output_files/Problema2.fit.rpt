@@ -1,5 +1,5 @@
 Fitter report for Problema2
-Mon Aug 23 22:02:18 2021
+Mon Aug 23 22:48:15 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -58,7 +58,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Mon Aug 23 22:02:18 2021       ;
+; Fitter Status                   ; Successful - Mon Aug 23 22:48:15 2021       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; Problema2                                   ;
 ; Top-level Entity Name           ; sumador_4_fpga                              ;
@@ -295,7 +295,7 @@ The pin-out file can be found in C:/Users/samas/Documents/quartusProjects/Lab2/P
 ; Impedance control blocks                                    ; 0 / 4              ; 0 %   ;
 ; Hard Memory Controllers                                     ; 0 / 2              ; 0 %   ;
 ; Average interconnect usage (total/H/V)                      ; 0.0% / 0.0% / 0.0% ;       ;
-; Peak interconnect usage (total/H/V)                         ; 0.3% / 0.3% / 0.4% ;       ;
+; Peak interconnect usage (total/H/V)                         ; 0.2% / 0.2% / 0.3% ;       ;
 ; Maximum fan-out                                             ; 7                  ;       ;
 ; Highest non-global fan-out                                  ; 7                  ;       ;
 ; Total fan-out                                               ; 119                ;       ;
@@ -1429,11 +1429,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; b[3]    ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; a[2]    ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; b[2]    ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; a[1]    ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; a[1]    ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; b[1]    ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; a[0]    ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; a[0]    ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; c_in    ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; b[0]    ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; b[0]    ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 +---------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
 
 
@@ -1444,40 +1444,40 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------+-------------------+---------+
 ; a[3]                            ;                   ;         ;
 ;      - sumador_1:sum3|c_out~0   ; 0                 ; 0       ;
+;      - bin_6_to_bcd:deco|Ram0~0 ; 0                 ; 0       ;
 ;      - sumador_1:sum3|s~0       ; 0                 ; 0       ;
-;      - bin_6_to_bcd:deco|Ram0~3 ; 0                 ; 0       ;
 ; b[3]                            ;                   ;         ;
 ;      - sumador_1:sum3|c_out~0   ; 0                 ; 0       ;
+;      - bin_6_to_bcd:deco|Ram0~0 ; 0                 ; 0       ;
 ;      - sumador_1:sum3|s~0       ; 0                 ; 0       ;
-;      - bin_6_to_bcd:deco|Ram0~3 ; 0                 ; 0       ;
 ; a[2]                            ;                   ;         ;
 ;      - sumador_1:sum3|c_out~0   ; 0                 ; 0       ;
+;      - bin_6_to_bcd:deco|Ram0~0 ; 0                 ; 0       ;
 ;      - sumador_1:sum2|s~0       ; 0                 ; 0       ;
 ;      - sumador_1:sum3|s~0       ; 0                 ; 0       ;
-;      - bin_6_to_bcd:deco|Ram0~3 ; 0                 ; 0       ;
 ; b[2]                            ;                   ;         ;
 ;      - sumador_1:sum3|c_out~0   ; 0                 ; 0       ;
+;      - bin_6_to_bcd:deco|Ram0~0 ; 0                 ; 0       ;
 ;      - sumador_1:sum2|s~0       ; 0                 ; 0       ;
 ;      - sumador_1:sum3|s~0       ; 0                 ; 0       ;
-;      - bin_6_to_bcd:deco|Ram0~3 ; 0                 ; 0       ;
 ; a[1]                            ;                   ;         ;
-;      - sumador_1:sum1|c_out~0   ; 0                 ; 0       ;
-;      - sumador_1:sum1|s~0       ; 0                 ; 0       ;
+;      - sumador_1:sum1|c_out~0   ; 1                 ; 0       ;
+;      - sumador_1:sum1|s~0       ; 1                 ; 0       ;
 ; b[1]                            ;                   ;         ;
 ;      - sumador_1:sum1|c_out~0   ; 1                 ; 0       ;
 ;      - sumador_1:sum1|s~0       ; 1                 ; 0       ;
 ; a[0]                            ;                   ;         ;
-;      - sumador_1:sum1|c_out~0   ; 0                 ; 0       ;
-;      - sumador_1:sum0|s~0       ; 0                 ; 0       ;
-;      - sumador_1:sum1|s~0       ; 0                 ; 0       ;
+;      - sumador_1:sum1|c_out~0   ; 1                 ; 0       ;
+;      - sumador_1:sum1|s~0       ; 1                 ; 0       ;
+;      - sumador_1:sum0|s~0       ; 1                 ; 0       ;
 ; c_in                            ;                   ;         ;
 ;      - sumador_1:sum1|c_out~0   ; 0                 ; 0       ;
-;      - sumador_1:sum0|s~0       ; 0                 ; 0       ;
 ;      - sumador_1:sum1|s~0       ; 0                 ; 0       ;
+;      - sumador_1:sum0|s~0       ; 0                 ; 0       ;
 ; b[0]                            ;                   ;         ;
-;      - sumador_1:sum1|c_out~0   ; 0                 ; 0       ;
-;      - sumador_1:sum0|s~0       ; 0                 ; 0       ;
-;      - sumador_1:sum1|s~0       ; 0                 ; 0       ;
+;      - sumador_1:sum1|c_out~0   ; 1                 ; 0       ;
+;      - sumador_1:sum1|s~0       ; 1                 ; 0       ;
+;      - sumador_1:sum0|s~0       ; 1                 ; 0       ;
 +---------------------------------+-------------------+---------+
 
 
@@ -1486,10 +1486,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------+------------------------+
 ; Routing Resource Type                       ; Usage                  ;
 +---------------------------------------------+------------------------+
-; Block interconnects                         ; 29 / 289,320 ( < 1 % ) ;
-; C12 interconnects                           ; 0 / 13,420 ( 0 % )     ;
-; C2 interconnects                            ; 30 / 119,108 ( < 1 % ) ;
-; C4 interconnects                            ; 16 / 56,300 ( < 1 % )  ;
+; Block interconnects                         ; 30 / 289,320 ( < 1 % ) ;
+; C12 interconnects                           ; 3 / 13,420 ( < 1 % )   ;
+; C2 interconnects                            ; 14 / 119,108 ( < 1 % ) ;
+; C4 interconnects                            ; 21 / 56,300 ( < 1 % )  ;
 ; DQS bus muxes                               ; 0 / 25 ( 0 % )         ;
 ; DQS-18 I/O buses                            ; 0 / 25 ( 0 % )         ;
 ; DQS-9 I/O buses                             ; 0 / 25 ( 0 % )         ;
@@ -1551,10 +1551,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Horizontal periphery clocks                 ; 0 / 72 ( 0 % )         ;
 ; Local interconnects                         ; 5 / 84,580 ( < 1 % )   ;
 ; Quadrant clocks                             ; 0 / 66 ( 0 % )         ;
-; R14 interconnects                           ; 25 / 12,676 ( < 1 % )  ;
-; R14/C12 interconnect drivers                ; 25 / 20,720 ( < 1 % )  ;
-; R3 interconnects                            ; 18 / 130,992 ( < 1 % ) ;
-; R6 interconnects                            ; 39 / 266,960 ( < 1 % ) ;
+; R14 interconnects                           ; 22 / 12,676 ( < 1 % )  ;
+; R14/C12 interconnect drivers                ; 24 / 20,720 ( < 1 % )  ;
+; R3 interconnects                            ; 13 / 130,992 ( < 1 % ) ;
+; R6 interconnects                            ; 48 / 266,960 ( < 1 % ) ;
 ; Spine clocks                                ; 0 / 360 ( 0 % )        ;
 ; Wire stub REs                               ; 0 / 15,858 ( 0 % )     ;
 +---------------------------------------------+------------------------+
@@ -1721,12 +1721,12 @@ Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:00
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X11_Y0 to location X21_Y10
+    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X78_Y0 to location X89_Y10
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.10 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.09 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -1734,10 +1734,10 @@ Info (334004): Delay annotation completed successfully
 Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:02
 Info (144001): Generated suppressed messages file C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/output_files/Problema2.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 6737 megabytes
-    Info: Processing ended: Mon Aug 23 22:02:18 2021
+    Info: Peak virtual memory: 6699 megabytes
+    Info: Processing ended: Mon Aug 23 22:48:16 2021
     Info: Elapsed time: 00:00:24
-    Info: Total CPU time (on all processors): 00:00:52
+    Info: Total CPU time (on all processors): 00:00:51
 
 
 +----------------------------+

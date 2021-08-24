@@ -56,7 +56,7 @@ begin
 	
 	
 	--- se implementan decodificadores para la salida
-	seg1 : entity work.to_7seg port map(s3(3 downto 0), hex2);
-	seg2 : entity work.to_7seg port map(s3(7 downto 4), hex1);
+	seg1 : entity work.to_7seg port map(s3(3 downto 0), hex1);
+	seg2 : entity work.to_7seg port map(s3(7 downto 4), hex2);
 	
 end archSum_4_fpga;

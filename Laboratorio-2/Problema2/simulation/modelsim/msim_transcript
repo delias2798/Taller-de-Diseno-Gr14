@@ -10,43 +10,20 @@
 # Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vcom -93 -work work {C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/bin_6_to_bcd.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:19:15 on Aug 23,2021
-# vcom -reportprogress 300 -93 -work work C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/bin_6_to_bcd.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity bin_6_to_bcd
-# -- Compiling architecture funcional of bin_6_to_bcd
-# End time: 22:19:15 on Aug 23,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_1.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:19:16 on Aug 23,2021
+# Start time: 11:31:15 on Aug 24,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_1.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity sumador_1
 # -- Compiling architecture archSum_1 of sumador_1
-# End time: 22:19:16 on Aug 23,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_1_tb.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:19:16 on Aug 23,2021
-# vcom -reportprogress 300 -93 -work work C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_1_tb.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity sumador_1_tb
-# -- Compiling architecture arch of sumador_1_tb
-# -- Loading entity sumador_1
-# End time: 22:19:16 on Aug 23,2021, Elapsed time: 0:00:00
+# End time: 11:31:15 on Aug 24,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:19:16 on Aug 23,2021
+# Start time: 11:31:15 on Aug 24,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -54,11 +31,11 @@
 # -- Compiling entity sumador_4
 # -- Compiling architecture archSum_4 of sumador_4
 # -- Loading entity sumador_1
-# End time: 22:19:16 on Aug 23,2021, Elapsed time: 0:00:00
+# End time: 11:31:15 on Aug 24,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_tb.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:19:16 on Aug 23,2021
+# Start time: 11:31:15 on Aug 24,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -68,69 +45,29 @@
 # -- Compiling entity sumador_4_tb
 # -- Compiling architecture arch of sumador_4_tb
 # -- Loading entity sumador_4
-# End time: 22:19:16 on Aug 23,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/to_7seg.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:19:16 on Aug 23,2021
-# vcom -reportprogress 300 -93 -work work C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/to_7seg.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity to_7seg
-# -- Compiling architecture Behavioral of to_7seg
-# End time: 22:19:16 on Aug 23,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_fpga.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:19:16 on Aug 23,2021
-# vcom -reportprogress 300 -93 -work work C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_fpga.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity sumador_4_fpga
-# -- Compiling architecture archSum_4_fpga of sumador_4_fpga
-# -- Loading entity sumador_1
-# -- Loading entity bin_6_to_bcd
-# -- Loading entity to_7seg
-# End time: 22:19:16 on Aug 23,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_tb2.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:19:16 on Aug 23,2021
-# vcom -reportprogress 300 -93 -work work C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_tb2.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity sumador_4_tb2
-# -- Compiling architecture arch2 of sumador_4_tb2
-# -- Loading entity sumador_4_fpga
-# End time: 22:19:17 on Aug 23,2021, Elapsed time: 0:00:01
+# End time: 11:31:15 on Aug 24,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vsim work.sumador_4_tb2
-# vsim work.sumador_4_tb2 
-# Start time: 22:19:21 on Aug 23,2021
+vsim work.sumador_4_tb
+# vsim work.sumador_4_tb 
+# Start time: 11:31:27 on Aug 24,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.std_logic_arith(body)
 # Loading ieee.std_logic_unsigned(body)
-# Loading work.sumador_4_tb2(arch2)
-# Loading work.sumador_4_fpga(archsum_4_fpga)
+# Loading work.sumador_4_tb(arch)
+# Loading work.sumador_4(archsum_4)
 # Loading work.sumador_1(archsum_1)
-# Loading work.bin_6_to_bcd(funcional)
-# Loading work.to_7seg(behavioral)
-add wave sim:/sumador_4_tb2/*
+add wave sim:/sumador_4_tb/*
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: samas  Hostname: DESKTOP-5O6VH3K  ProcessID: 13500
-#           Attempting to use alternate WLF file "./wlftja0kkx".
+#           Attempting to use alternate WLF file "./wlftg1b76j".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftja0kkx
+#           Using alternate file: ./wlftg1b76j
 run
 run
 run
-# End time: 22:24:43 on Aug 23,2021, Elapsed time: 0:05:22
+run
+# End time: 12:17:21 on Aug 24,2021, Elapsed time: 0:45:54
 # Errors: 0, Warnings: 2
