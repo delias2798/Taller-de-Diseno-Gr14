@@ -9,132 +9,346 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Users/samas/Documents/quartusProjects/Lab2/Problema2/simulation/modelsim
-Esumador_1
-Z1 w1628911189
+Ebin_6_to_bcd
+Z1 w1629762453
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 !i122 0
 R0
-Z4 8C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_1.vhd
-Z5 FC:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_1.vhd
+Z4 8C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/bin_6_to_bcd.vhd
+Z5 FC:/Users/samas/Documents/quartusProjects/Lab2/Problema2/bin_6_to_bcd.vhd
 l0
-L13 1
+Z6 L12 1
+VDJ9EANk;M`UXGofPX@O>Q1
+!s100 mNhOnUAXOF4R<P2MC_mNL0
+Z7 OV;C;2020.1;71
+31
+Z8 !s110 1629778755
+!i10b 1
+Z9 !s108 1629778755.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/bin_6_to_bcd.vhd|
+Z11 !s107 C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/bin_6_to_bcd.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Afuncional
+R2
+R3
+Z14 DEx4 work 12 bin_6_to_bcd 0 22 DJ9EANk;M`UXGofPX@O>Q1
+!i122 0
+l18
+L17 77
+V]mnVoV7iXe1gk2HYcHA4i2
+!s100 [O0T_W7R]8cMK?9mJfE5P0
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Esumador_1
+Z15 w1628911189
+R2
+R3
+!i122 1
+R0
+Z16 8C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_1.vhd
+Z17 FC:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_1.vhd
+l0
+Z18 L13 1
 VSl0SEULX3V1QoHVX]nE__3
 !s100 <eW?NEA_Z7fGCIhzaETF_1
-Z6 OV;C;2020.1;71
+R7
 31
-Z7 !s110 1629402213
+Z19 !s110 1629778756
 !i10b 1
-Z8 !s108 1629402213.000000
-Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_1.vhd|
-Z10 !s107 C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_1.vhd|
+Z20 !s108 1629778756.000000
+Z21 !s90 -reportprogress|300|-93|-work|work|C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_1.vhd|
+Z22 !s107 C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_1.vhd|
 !i113 1
-Z11 o-93 -work work
-Z12 tExplicit 1 CvgOpt 0
+R12
+R13
 Aarchsum_1
 R2
 R3
-Z13 DEx4 work 9 sumador_1 0 22 Sl0SEULX3V1QoHVX]nE__3
-!i122 0
+Z23 DEx4 work 9 sumador_1 0 22 Sl0SEULX3V1QoHVX]nE__3
+!i122 1
 l19
 L18 14
 VY:64K`o2hC7XBh[VebJ4b3
 !s100 5C@?P?Nk1Z:W>T6WLL`fg3
-R6
-31
 R7
+31
+R19
 !i10b 1
-R8
-R9
-R10
+R20
+R21
+R22
 !i113 1
-R11
 R12
-Esumador_4
-Z14 w1628913578
+R13
+Esumador_1_tb
+Z24 w1628912422
 R2
 R3
-!i122 1
+!i122 2
 R0
-Z15 8C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4.vhd
-Z16 FC:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4.vhd
+Z25 8C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_1_tb.vhd
+Z26 FC:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_1_tb.vhd
 l0
-L12 1
+R18
+VE<Q`DI5ma=K;T2oPbjAPA0
+!s100 OBPHD?e>P78=L8``OMN=N2
+R7
+31
+R19
+!i10b 1
+R20
+Z27 !s90 -reportprogress|300|-93|-work|work|C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_1_tb.vhd|
+Z28 !s107 C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_1_tb.vhd|
+!i113 1
+R12
+R13
+Aarch
+R23
+R2
+R3
+DEx4 work 12 sumador_1_tb 0 22 E<Q`DI5ma=K;T2oPbjAPA0
+!i122 2
+l19
+L16 12
+VFYniSSPO@FU3?R;MXlQmo0
+!s100 bgKXnGR09EL@FfeVF?3z<1
+R7
+31
+R19
+!i10b 1
+R20
+R27
+R28
+!i113 1
+R12
+R13
+Esumador_4
+Z29 w1628913578
+R2
+R3
+!i122 3
+R0
+Z30 8C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4.vhd
+Z31 FC:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4.vhd
+l0
+R6
 VA@KDZe]6N1zFP@CmZ?gU:1
 !s100 FR4j^:@Ce?QIcc4zK:dn]0
-R6
-31
 R7
+31
+R19
 !i10b 1
-R8
-Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4.vhd|
-Z18 !s107 C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4.vhd|
+R20
+Z32 !s90 -reportprogress|300|-93|-work|work|C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4.vhd|
+Z33 !s107 C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4.vhd|
 !i113 1
-R11
 R12
-Aarchsum_4
 R13
+Aarchsum_4
+R23
 R2
 R3
-Z19 DEx4 work 9 sumador_4 0 22 A@KDZe]6N1zFP@CmZ?gU:1
-!i122 1
+Z34 DEx4 work 9 sumador_4 0 22 A@KDZe]6N1zFP@CmZ?gU:1
+!i122 3
 l21
 L17 22
 V3]oH`DiI9Q4HQ7Gz<c28b1
 !s100 FN3Vld:O_5ZFWjP1ZC1TC2
-R6
-31
 R7
+31
+R19
 !i10b 1
-R8
-R17
-R18
+R20
+R32
+R33
 !i113 1
-R11
 R12
-Esumador_4_tb
-Z20 w1628914401
-Z21 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
-Z22 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+R13
+Esumador_4_fpga
+Z35 w1629778597
 R2
 R3
-!i122 2
+!i122 6
 R0
-Z23 8C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_tb.vhd
-Z24 FC:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_tb.vhd
+Z36 8C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_fpga.vhd
+Z37 FC:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_fpga.vhd
+l0
+R6
+VZWk6S04MS9Y2HkSK2;XQD3
+!s100 IR]KS3klPWkdn=kbb]A[90
+R7
+31
+R19
+!i10b 1
+R20
+Z38 !s90 -reportprogress|300|-93|-work|work|C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_fpga.vhd|
+Z39 !s107 C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_fpga.vhd|
+!i113 1
+R12
+R13
+Aarchsum_4_fpga
+Z40 DEx4 work 7 to_7seg 0 22 5J5KlVV_?DiM1]GF?8hMk3
+R14
+R23
+R2
+R3
+Z41 DEx4 work 14 sumador_4_fpga 0 22 ZWk6S04MS9Y2HkSK2;XQD3
+!i122 6
+l33
+L17 46
+VnW7SV?`S19h1]]`<lVdfI1
+!s100 J0>=SI=D2XUHN[JMR9BCJ1
+R7
+31
+R19
+!i10b 1
+R20
+R38
+R39
+!i113 1
+R12
+R13
+Esumador_4_tb
+Z42 w1629775308
+Z43 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z44 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+R2
+R3
+!i122 4
+R0
+Z45 8C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_tb.vhd
+Z46 FC:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_tb.vhd
 l0
 L14 1
 VD_gRP31fTI2[Lc[TYG4ii3
 !s100 l5Qe`eA6KJY0bY9na?g073
-R6
-31
 R7
-!i10b 1
-R8
-Z25 !s90 -reportprogress|300|-93|-work|work|C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_tb.vhd|
-!s107 C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_tb.vhd|
-!i113 1
-R11
-R12
-Aarch
+31
 R19
-R21
-R22
+!i10b 1
+R20
+Z47 !s90 -reportprogress|300|-93|-work|work|C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_tb.vhd|
+Z48 !s107 C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_tb.vhd|
+!i113 1
+R12
+R13
+Aarch
+R34
+R43
+R44
 R2
 R3
 DEx4 work 12 sumador_4_tb 0 22 D_gRP31fTI2[Lc[TYG4ii3
-!i122 2
+!i122 4
 l20
 L17 19
 V2@MZf5fTj1;SB]`CIzGOW3
 !s100 <;B7i^nSdY1H?@ZoLf?3P3
-R6
-31
 R7
+31
+R19
 !i10b 1
-R8
-R25
-Z26 !s107 C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_tb.vhd|
+R20
+R47
+R48
 !i113 1
-R11
 R12
+R13
+Esumador_4_tb2
+Z49 w1629778612
+R43
+R44
+R2
+R3
+!i122 7
+R0
+Z50 8C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_tb2.vhd
+Z51 FC:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_tb2.vhd
+l0
+L15 1
+VVD7@iDn]F@Rf9cj7O4WGH2
+!s100 @XHMW:fj9ijdl=2I7bQ?c0
+R7
+31
+Z52 !s110 1629778757
+!i10b 1
+R20
+Z53 !s90 -reportprogress|300|-93|-work|work|C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_tb2.vhd|
+!s107 C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_tb2.vhd|
+!i113 1
+R12
+R13
+Aarch2
+R41
+R43
+R44
+R2
+R3
+DEx4 work 13 sumador_4_tb2 0 22 VD7@iDn]F@Rf9cj7O4WGH2
+!i122 7
+l23
+L18 21
+VVk`@8jI2^fEP>0<dQ3Q8G0
+!s100 I8VJ[:O[;>ioH?VYD8:zK1
+R7
+31
+R52
+!i10b 1
+R20
+R53
+Z54 !s107 C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_tb2.vhd|
+!i113 1
+R12
+R13
+Eto_7seg
+Z55 w1629756267
+R2
+R3
+!i122 5
+R0
+Z56 8C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/to_7seg.vhd
+Z57 FC:/Users/samas/Documents/quartusProjects/Lab2/Problema2/to_7seg.vhd
+l0
+L11 1
+V5J5KlVV_?DiM1]GF?8hMk3
+!s100 i>=oI_bzQ3gPmNQe3CG`F2
+R7
+31
+R19
+!i10b 1
+R20
+Z58 !s90 -reportprogress|300|-93|-work|work|C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/to_7seg.vhd|
+Z59 !s107 C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/to_7seg.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R2
+R3
+R40
+!i122 5
+l19
+L17 29
+VElR>:L7>6e12mTO3ofJc`2
+!s100 =d=IQDnQMgFGN>^2>=ec`1
+R7
+31
+R19
+!i10b 1
+R20
+R58
+R59
+!i113 1
+R12
+R13

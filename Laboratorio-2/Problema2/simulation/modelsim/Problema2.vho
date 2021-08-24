@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
 
--- DATE "08/23/2021 18:03:56"
+-- DATE "08/23/2021 22:02:34"
 
 -- 
 -- Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -39,9 +39,9 @@ ENTITY 	sumador_4_fpga IS
 	a : IN std_logic_vector(3 DOWNTO 0);
 	b : IN std_logic_vector(3 DOWNTO 0);
 	c_in : IN std_logic;
-	c_out : BUFFER std_logic;
-	hex1 : BUFFER std_logic_vector(6 DOWNTO 0);
-	hex2 : BUFFER std_logic_vector(6 DOWNTO 0)
+	c_out : OUT std_logic;
+	hex1 : OUT std_logic_vector(6 DOWNTO 0);
+	hex2 : OUT std_logic_vector(6 DOWNTO 0)
 	);
 END sumador_4_fpga;
 

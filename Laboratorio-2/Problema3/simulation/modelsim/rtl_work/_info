@@ -9,94 +9,361 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Users/samas/Documents/quartusProjects/Lab2/Problema3/simulation/modelsim
-Econtador_6_tb
-Z1 w1629405847
-Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
-Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 1
+Ebin_6_to_bcd
+Z1 w1629762453
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
 R0
-Z6 8C:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_6_tb.vhd
-Z7 FC:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_6_tb.vhd
+Z4 8C:/Users/samas/Documents/quartusProjects/Lab2/Problema3/bin_6_to_bcd.vhd
+Z5 FC:/Users/samas/Documents/quartusProjects/Lab2/Problema3/bin_6_to_bcd.vhd
 l0
-L12 1
-VU>nL6HCf5RjzU:aEgT]lO0
-!s100 b5zi0aAY>03Le>lE35=zj2
-Z8 OV;C;2020.1;71
+Z6 L12 1
+VDJ9EANk;M`UXGofPX@O>Q1
+!s100 mNhOnUAXOF4R<P2MC_mNL0
+Z7 OV;C;2020.1;71
 31
-Z9 !s110 1629405892
+Z8 !s110 1629779916
 !i10b 1
-Z10 !s108 1629405892.000000
-Z11 !s90 -reportprogress|300|-93|-work|work|C:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_6_tb.vhd|
-!s107 C:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_6_tb.vhd|
+Z9 !s108 1629779916.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/samas/Documents/quartusProjects/Lab2/Problema3/bin_6_to_bcd.vhd|
+Z11 !s107 C:/Users/samas/Documents/quartusProjects/Lab2/Problema3/bin_6_to_bcd.vhd|
 !i113 1
 Z12 o-93 -work work
 Z13 tExplicit 1 CvgOpt 0
-Aarch
-Z14 DEx4 work 10 contador_n 0 22 e7ehM:mOkBJKDNHP2fiJ32
+Afuncional
 R2
 R3
-R4
-R5
-DEx4 work 13 contador_6_tb 0 22 U>nL6HCf5RjzU:aEgT]lO0
-!i122 1
-l21
-L15 16
-VaRaT?V[[z0^E8hVFjBSJ:1
-!s100 fQ2FfXX8j?FRRa>h0JcQ>2
-R8
+Z14 DEx4 work 12 bin_6_to_bcd 0 22 DJ9EANk;M`UXGofPX@O>Q1
+!i122 0
+l18
+L17 77
+V]mnVoV7iXe1gk2HYcHA4i2
+!s100 [O0T_W7R]8cMK?9mJfE5P0
+R7
 31
-R9
+R8
 !i10b 1
+R9
 R10
 R11
-Z15 !s107 C:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_6_tb.vhd|
+!i113 1
+R12
+R13
+Econtador_2_tb
+Z15 w1629404863
+Z16 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z17 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R2
+R3
+!i122 3
+R0
+Z18 8C:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_2_tb.vhd
+Z19 FC:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_2_tb.vhd
+l0
+R6
+VlF]jOQl4hOgS<HoMW7Uz11
+!s100 OE;RS0YAQk_XHUaNl`:5J1
+R7
+31
+R8
+!i10b 1
+R9
+Z20 !s90 -reportprogress|300|-93|-work|work|C:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_2_tb.vhd|
+Z21 !s107 C:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_2_tb.vhd|
+!i113 1
+R12
+R13
+Aarch
+Z22 DEx4 work 10 contador_n 0 22 e7ehM:mOkBJKDNHP2fiJ32
+R16
+R17
+R2
+R3
+DEx4 work 13 contador_2_tb 0 22 lF]jOQl4hOgS<HoMW7Uz11
+!i122 3
+l21
+Z23 L15 16
+VAj?biNJiXRZ]YIoBFJ[Q[2
+!s100 7ElM367UEbfh56hTn_oe30
+R7
+31
+R8
+!i10b 1
+R9
+R20
+R21
+!i113 1
+R12
+R13
+Econtador_4_tb
+Z24 w1629405553
+R16
+R17
+R2
+R3
+!i122 4
+R0
+Z25 8C:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_4_tb.vhd
+Z26 FC:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_4_tb.vhd
+l0
+R6
+Vzk]l7FPFefgGzZl89bmnF3
+!s100 V5^]:5J]ddZf?ZznNkJnE3
+R7
+31
+R8
+!i10b 1
+R9
+Z27 !s90 -reportprogress|300|-93|-work|work|C:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_4_tb.vhd|
+Z28 !s107 C:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_4_tb.vhd|
+!i113 1
+R12
+R13
+Aarch
+R22
+R16
+R17
+R2
+R3
+DEx4 work 13 contador_4_tb 0 22 zk]l7FPFefgGzZl89bmnF3
+!i122 4
+l21
+R23
+VmOm<ZY@2]5FA:FDXoXDDY1
+!s100 kR2J[nnN<2?L:[>g[IFPW1
+R7
+31
+R8
+!i10b 1
+R9
+R27
+R28
+!i113 1
+R12
+R13
+Econtador_6_fpga
+Z29 w1629779657
+R16
+R17
+R2
+R3
+!i122 6
+R0
+Z30 8C:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_6_fpga.vhd
+Z31 FC:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_6_fpga.vhd
+l0
+Z32 L14 1
+VjJMR3PbLT`Um==RUE_X@T1
+!s100 Ai^cbEZXMz<5znF<0:R333
+R7
+31
+Z33 !s110 1629779917
+!i10b 1
+R9
+Z34 !s90 -reportprogress|300|-93|-work|work|C:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_6_fpga.vhd|
+Z35 !s107 C:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_6_fpga.vhd|
+!i113 1
+R12
+R13
+Aarchcontador_6
+Z36 DEx4 work 7 to_7seg 0 22 5J5KlVV_?DiM1]GF?8hMk3
+R14
+R16
+R17
+R2
+R3
+Z37 DEx4 work 15 contador_6_fpga 0 22 jJMR3PbLT`Um==RUE_X@T1
+!i122 6
+l33
+L23 38
+VE2?5UemhG<CZ7E5K@BZXM1
+!s100 Y44ghH`EZIAHgKhZ@PeWk0
+R7
+31
+R33
+!i10b 1
+R9
+R34
+R35
+!i113 1
+R12
+R13
+Econtador_6_tb
+Z38 w1629405847
+R16
+R17
+R2
+R3
+!i122 5
+R0
+Z39 8C:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_6_tb.vhd
+Z40 FC:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_6_tb.vhd
+l0
+R6
+VU>nL6HCf5RjzU:aEgT]lO0
+!s100 b5zi0aAY>03Le>lE35=zj2
+R7
+31
+R8
+!i10b 1
+R9
+Z41 !s90 -reportprogress|300|-93|-work|work|C:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_6_tb.vhd|
+Z42 !s107 C:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_6_tb.vhd|
+!i113 1
+R12
+R13
+Aarch
+R22
+R16
+R17
+R2
+R3
+DEx4 work 13 contador_6_tb 0 22 U>nL6HCf5RjzU:aEgT]lO0
+!i122 5
+l21
+R23
+VaRaT?V[[z0^E8hVFjBSJ:1
+!s100 fQ2FfXX8j?FRRa>h0JcQ>2
+R7
+31
+R8
+!i10b 1
+R9
+R41
+R42
+!i113 1
+R12
+R13
+Econtador_6_tb2
+Z43 w1629779895
+R16
+R17
+R2
+R3
+!i122 7
+R0
+Z44 8C:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_6_tb2.vhd
+Z45 FC:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_6_tb2.vhd
+l0
+L13 1
+V<bM[j7?6TMKg@OTG^7ENL1
+!s100 VEmV;g_M58WD0jPGF?0Jb3
+R7
+31
+R33
+!i10b 1
+Z46 !s108 1629779917.000000
+Z47 !s90 -reportprogress|300|-93|-work|work|C:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_6_tb2.vhd|
+!s107 C:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_6_tb2.vhd|
+!i113 1
+R12
+R13
+Aarch2
+R37
+R16
+R17
+R2
+R3
+DEx4 work 14 contador_6_tb2 0 22 <bM[j7?6TMKg@OTG^7ENL1
+!i122 7
+l21
+L16 15
+V=G6d3TQkIjklbd`L`FSOT3
+!s100 93R]kbm`I@>=]3`gF]XKD1
+R7
+31
+R33
+!i10b 1
+R46
+R47
+Z48 !s107 C:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_6_tb2.vhd|
 !i113 1
 R12
 R13
 Econtador_n
-Z16 w1628959612
+Z49 w1628959612
+R16
+R17
 R2
 R3
-R4
-R5
-!i122 0
+!i122 2
 R0
-Z17 8C:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_n.vhd
-Z18 FC:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_n.vhd
+Z50 8C:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_n.vhd
+Z51 FC:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_n.vhd
 l0
-L14 1
+R32
 Ve7ehM:mOkBJKDNHP2fiJ32
 !s100 TTfQVmac6;AE?DbQ_8k[f1
-R8
+R7
 31
-R9
+R8
 !i10b 1
-R10
-Z19 !s90 -reportprogress|300|-93|-work|work|C:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_n.vhd|
-Z20 !s107 C:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_n.vhd|
+R9
+Z52 !s90 -reportprogress|300|-93|-work|work|C:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_n.vhd|
+Z53 !s107 C:/Users/samas/Documents/quartusProjects/Lab2/Problema3/contador_n.vhd|
 !i113 1
 R12
 R13
 Aarchcontador
+R16
+R17
 R2
 R3
-R4
-R5
-R14
-!i122 0
+R22
+!i122 2
 l28
 L24 24
 V0hE0]AV@mEOcm>lO7>6gn1
 !s100 ]L^[mYV]V59_iNE6B45mD3
-R8
+R7
 31
-R9
+R8
 !i10b 1
-R10
-R19
-R20
+R9
+R52
+R53
+!i113 1
+R12
+R13
+Eto_7seg
+Z54 w1629756267
+R2
+R3
+!i122 1
+R0
+Z55 8C:/Users/samas/Documents/quartusProjects/Lab2/Problema3/to_7seg.vhd
+Z56 FC:/Users/samas/Documents/quartusProjects/Lab2/Problema3/to_7seg.vhd
+l0
+L11 1
+V5J5KlVV_?DiM1]GF?8hMk3
+!s100 i>=oI_bzQ3gPmNQe3CG`F2
+R7
+31
+R8
+!i10b 1
+R9
+Z57 !s90 -reportprogress|300|-93|-work|work|C:/Users/samas/Documents/quartusProjects/Lab2/Problema3/to_7seg.vhd|
+Z58 !s107 C:/Users/samas/Documents/quartusProjects/Lab2/Problema3/to_7seg.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R2
+R3
+R36
+!i122 1
+l19
+L17 29
+VElR>:L7>6e12mTO3ofJc`2
+!s100 =d=IQDnQMgFGN>^2>=ec`1
+R7
+31
+R8
+!i10b 1
+R9
+R57
+R58
 !i113 1
 R12
 R13

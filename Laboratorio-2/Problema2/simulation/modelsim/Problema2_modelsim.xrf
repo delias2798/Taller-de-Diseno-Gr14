@@ -6,6 +6,7 @@ source_file = 1, C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador
 source_file = 1, C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_tb.vhd
 source_file = 1, C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_fpga.vhd
 source_file = 1, C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/to_7seg.vhd
+source_file = 1, C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_tb2.vhd
 source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/timing_b.vhd

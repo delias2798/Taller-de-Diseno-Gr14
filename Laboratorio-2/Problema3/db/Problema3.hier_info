@@ -1,4 +1,7 @@
-|contador_6_fpga
+|contador_6_tb2
+
+
+|contador_6_tb2|contador_6_fpga:contador
 clk => cuenta_reg[0].CLK
 clk => cuenta_reg[1].CLK
 clk => cuenta_reg[2].CLK
@@ -11,23 +14,23 @@ rst => cuenta_reg[2].ACLR
 rst => cuenta_reg[3].ACLR
 rst => cuenta_reg[4].ACLR
 rst => cuenta_reg[5].ACLR
-hex1[0] << to_7seg:seg1.seg7[0]
-hex1[1] << to_7seg:seg1.seg7[1]
-hex1[2] << to_7seg:seg1.seg7[2]
-hex1[3] << to_7seg:seg1.seg7[3]
-hex1[4] << to_7seg:seg1.seg7[4]
-hex1[5] << to_7seg:seg1.seg7[5]
-hex1[6] << to_7seg:seg1.seg7[6]
-hex2[0] << to_7seg:seg2.seg7[0]
-hex2[1] << to_7seg:seg2.seg7[1]
-hex2[2] << to_7seg:seg2.seg7[2]
-hex2[3] << to_7seg:seg2.seg7[3]
-hex2[4] << to_7seg:seg2.seg7[4]
-hex2[5] << to_7seg:seg2.seg7[5]
-hex2[6] << to_7seg:seg2.seg7[6]
+hex1[0] <= to_7seg:seg1.seg7[0]
+hex1[1] <= to_7seg:seg1.seg7[1]
+hex1[2] <= to_7seg:seg1.seg7[2]
+hex1[3] <= to_7seg:seg1.seg7[3]
+hex1[4] <= to_7seg:seg1.seg7[4]
+hex1[5] <= to_7seg:seg1.seg7[5]
+hex1[6] <= to_7seg:seg1.seg7[6]
+hex2[0] <= to_7seg:seg2.seg7[0]
+hex2[1] <= to_7seg:seg2.seg7[1]
+hex2[2] <= to_7seg:seg2.seg7[2]
+hex2[3] <= to_7seg:seg2.seg7[3]
+hex2[4] <= to_7seg:seg2.seg7[4]
+hex2[5] <= to_7seg:seg2.seg7[5]
+hex2[6] <= to_7seg:seg2.seg7[6]
 
 
-|contador_6_fpga|bin_6_to_bcd:deco
+|contador_6_tb2|contador_6_fpga:contador|bin_6_to_bcd:deco
 entrada[0] => Ram0.RADDR
 entrada[1] => Ram0.RADDR1
 entrada[2] => Ram0.RADDR2
@@ -44,7 +47,7 @@ salida[6] <= Ram0.DATAOUT6
 salida[7] <= Ram0.DATAOUT7
 
 
-|contador_6_fpga|to_7seg:seg1
+|contador_6_tb2|contador_6_fpga:contador|to_7seg:seg1
 A[0] => Mux0.IN19
 A[0] => Mux1.IN19
 A[0] => Mux2.IN19
@@ -82,7 +85,7 @@ seg7[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 seg7[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|contador_6_fpga|to_7seg:seg2
+|contador_6_tb2|contador_6_fpga:contador|to_7seg:seg2
 A[0] => Mux0.IN19
 A[0] => Mux1.IN19
 A[0] => Mux2.IN19

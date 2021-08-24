@@ -1,5 +1,5 @@
-Analysis & Synthesis report for Problema2
-Mon Aug 23 18:03:13 2021
+Analysis & Elaboration report for Problema2
+Mon Aug 23 22:06:22 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -7,17 +7,12 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Synthesis Summary
-  3. Analysis & Synthesis Settings
-  4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Port Connectivity Checks: "bin_6_to_bcd:deco"
- 10. Post-Synthesis Netlist Statistics for Top Partition
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Analysis & Elaboration Settings
+  5. Port Connectivity Checks: "sumador_4_fpga:sum|bin_6_to_bcd:deco"
+  6. Port Connectivity Checks: "sumador_4_fpga:sum"
+  7. Analysis & Elaboration Messages
 
 
 
@@ -41,36 +36,47 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+-------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                  ;
-+---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Aug 23 18:03:13 2021       ;
-; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
-; Revision Name                   ; Problema2                                   ;
-; Top-level Entity Name           ; sumador_4_fpga                              ;
-; Family                          ; Cyclone V                                   ;
-; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 0                                           ;
-; Total pins                      ; 24                                          ;
-; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0                                           ;
-; Total DSP Blocks                ; 0                                           ;
-; Total HSSI RX PCSs              ; 0                                           ;
-; Total HSSI PMA RX Deserializers ; 0                                           ;
-; Total HSSI TX PCSs              ; 0                                           ;
-; Total HSSI PMA TX Serializers   ; 0                                           ;
-; Total PLLs                      ; 0                                           ;
-; Total DLLs                      ; 0                                           ;
-+---------------------------------+---------------------------------------------+
++-----------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                              ;
++-------------------------------+---------------------------------------------+
+; Analysis & Elaboration Status ; Successful - Mon Aug 23 22:06:22 2021       ;
+; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                 ; Problema2                                   ;
+; Top-level Entity Name         ; sumador_4_tb2                               ;
+; Family                        ; Cyclone V                                   ;
+; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
+; Total registers               ; N/A until Partition Merge                   ;
+; Total pins                    ; N/A until Partition Merge                   ;
+; Total virtual pins            ; N/A until Partition Merge                   ;
+; Total block memory bits       ; N/A until Partition Merge                   ;
+; Total PLLs                    ; N/A until Partition Merge                   ;
+; Total DLLs                    ; N/A until Partition Merge                   ;
++-------------------------------+---------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                             ;
+; Analysis & Elaboration Settings                                                                                           ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; sumador_4_fpga     ; Problema2          ;
+; Top-level entity name                                                           ; sumador_4_tb2      ; Problema2          ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -151,139 +157,42 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 6           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                      ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                               ; Library ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------+---------+
-; bin_6_to_bcd.vhd                 ; yes             ; User VHDL File  ; C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/bin_6_to_bcd.vhd   ;         ;
-; sumador_1.vhd                    ; yes             ; User VHDL File  ; C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_1.vhd      ;         ;
-; sumador_4_fpga.vhd               ; yes             ; User VHDL File  ; C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_fpga.vhd ;         ;
-; to_7seg.vhd                      ; yes             ; User VHDL File  ; C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/to_7seg.vhd        ;         ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------+---------+
-
-
 +------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                      ;
-+---------------------------------------------+--------------------+
-; Resource                                    ; Usage              ;
-+---------------------------------------------+--------------------+
-; Estimate of Logic utilization (ALMs needed) ; 11                 ;
-;                                             ;                    ;
-; Combinational ALUT usage for logic          ; 21                 ;
-;     -- 7 input functions                    ; 0                  ;
-;     -- 6 input functions                    ; 0                  ;
-;     -- 5 input functions                    ; 5                  ;
-;     -- 4 input functions                    ; 11                 ;
-;     -- <=3 input functions                  ; 5                  ;
-;                                             ;                    ;
-; Dedicated logic registers                   ; 0                  ;
-;                                             ;                    ;
-; I/O pins                                    ; 24                 ;
-;                                             ;                    ;
-; Total DSP Blocks                            ; 0                  ;
-;                                             ;                    ;
-; Maximum fan-out node                        ; sumador_1:sum0|s~0 ;
-; Maximum fan-out                             ; 7                  ;
-; Total fan-out                               ; 119                ;
-; Average fan-out                             ; 1.72               ;
-+---------------------------------------------+--------------------+
+; Port Connectivity Checks: "sumador_4_fpga:sum|bin_6_to_bcd:deco" ;
++------------+-------+----------+----------------------------------+
+; Port       ; Type  ; Severity ; Details                          ;
++------------+-------+----------+----------------------------------+
+; entrada[5] ; Input ; Info     ; Stuck at GND                     ;
++------------+-------+----------+----------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                     ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------+----------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name               ; Entity Name    ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------+----------------+--------------+
-; |sumador_4_fpga            ; 21 (0)              ; 0 (0)                     ; 0                 ; 0          ; 24   ; 0            ; |sumador_4_fpga                   ; sumador_4_fpga ; work         ;
-;    |bin_6_to_bcd:deco|     ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |sumador_4_fpga|bin_6_to_bcd:deco ; bin_6_to_bcd   ; work         ;
-;    |sumador_1:sum0|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |sumador_4_fpga|sumador_1:sum0    ; sumador_1      ; work         ;
-;    |sumador_1:sum1|        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |sumador_4_fpga|sumador_1:sum1    ; sumador_1      ; work         ;
-;    |sumador_1:sum2|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |sumador_4_fpga|sumador_1:sum2    ; sumador_1      ; work         ;
-;    |sumador_1:sum3|        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |sumador_4_fpga|sumador_1:sum3    ; sumador_1      ; work         ;
-;    |to_7seg:seg1|          ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |sumador_4_fpga|to_7seg:seg1      ; to_7seg        ; work         ;
-;    |to_7seg:seg2|          ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |sumador_4_fpga|to_7seg:seg2      ; to_7seg        ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------+----------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sumador_4_fpga:sum"                                                                    ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; a[3]    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; a[2]    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; a[1]    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; a[0]    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; b[3..2] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; b[1]    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; b[0]    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; c_in    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; c_out   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; hex1    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; hex2    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+-----------------------------------------------+
-; Port Connectivity Checks: "bin_6_to_bcd:deco" ;
-+------------+-------+----------+---------------+
-; Port       ; Type  ; Severity ; Details       ;
-+------------+-------+----------+---------------+
-; entrada[5] ; Input ; Info     ; Stuck at GND  ;
-+------------+-------+----------+---------------+
-
-
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 24                          ;
-;     normal            ; 24                          ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 2                           ;
-;         2 data inputs ; 3                           ;
-;         3 data inputs ; 2                           ;
-;         4 data inputs ; 11                          ;
-;         5 data inputs ; 5                           ;
-; boundary_port         ; 24                          ;
-;                       ;                             ;
-; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 4.36                        ;
-+-----------------------+-----------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
-
-
-+-------------------------------+
-; Analysis & Synthesis Messages ;
-+-------------------------------+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Synthesis
+Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Aug 23 18:03:05 2021
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Problema2 -c Problema2
+    Info: Processing started: Mon Aug 23 22:06:14 2021
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Problema2 -c Problema2 --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file bin_6_to_bcd.vhd
@@ -302,29 +211,28 @@ Info (12021): Found 2 design units, including 1 entities, in source file sumador
     Info (12022): Found design unit 1: sumador_4_tb-arch File: C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_tb.vhd Line: 17
     Info (12023): Found entity 1: sumador_4_tb File: C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_tb.vhd Line: 14
 Info (12021): Found 2 design units, including 1 entities, in source file sumador_4_fpga.vhd
-    Info (12022): Found design unit 1: sumador_4_fpga-archSum_4 File: C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_fpga.vhd Line: 17
+    Info (12022): Found design unit 1: sumador_4_fpga-archSum_4_fpga File: C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_fpga.vhd Line: 17
     Info (12023): Found entity 1: sumador_4_fpga File: C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_fpga.vhd Line: 12
 Info (12021): Found 2 design units, including 1 entities, in source file to_7seg.vhd
     Info (12022): Found design unit 1: to_7seg-Behavioral File: C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/to_7seg.vhd Line: 17
     Info (12023): Found entity 1: to_7seg File: C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/to_7seg.vhd Line: 11
-Info (12127): Elaborating entity "sumador_4_fpga" for the top level hierarchy
-Info (12129): Elaborating entity "sumador_1" using architecture "A:archsum_1" for hierarchy "sumador_1:sum0" File: C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_fpga.vhd Line: 38
-Info (12128): Elaborating entity "bin_6_to_bcd" for hierarchy "bin_6_to_bcd:deco" File: C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_fpga.vhd Line: 48
-Info (12128): Elaborating entity "to_7seg" for hierarchy "to_7seg:seg1" File: C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_fpga.vhd Line: 52
-Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276004): RAM logic "bin_6_to_bcd:deco|Ram0" is uninferred due to inappropriate RAM size File: C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/bin_6_to_bcd.vhd Line: 22
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "hex2[5]" is stuck at GND File: C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_fpga.vhd Line: 14
-Info (286030): Timing-Driven Synthesis is running
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 45 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 9 input pins
-    Info (21059): Implemented 15 output pins
-    Info (21061): Implemented 21 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4848 megabytes
-    Info: Processing ended: Mon Aug 23 18:03:13 2021
+Info (12021): Found 2 design units, including 1 entities, in source file sumador_4_tb2.vhd
+    Info (12022): Found design unit 1: sumador_4_tb2-arch2 File: C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_tb2.vhd Line: 18
+    Info (12023): Found entity 1: sumador_4_tb2 File: C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_tb2.vhd Line: 15
+Info (12127): Elaborating entity "sumador_4_tb2" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at sumador_4_tb2.vhd(20): object "hex1" assigned a value but never read File: C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_tb2.vhd Line: 20
+Warning (10036): Verilog HDL or VHDL warning at sumador_4_tb2.vhd(20): object "hex2" assigned a value but never read File: C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_tb2.vhd Line: 20
+Warning (10036): Verilog HDL or VHDL warning at sumador_4_tb2.vhd(21): object "c_out" assigned a value but never read File: C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_tb2.vhd Line: 21
+Warning (10785): VHDL warning at sumador_4_tb2.vhd(26): synthesis ignores all but the first waveform File: C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_tb2.vhd Line: 26
+Warning (10785): VHDL warning at sumador_4_tb2.vhd(28): synthesis ignores all but the first waveform File: C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_tb2.vhd Line: 28
+Warning (10785): VHDL warning at sumador_4_tb2.vhd(33): synthesis ignores all but the first waveform File: C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_tb2.vhd Line: 33
+Info (12129): Elaborating entity "sumador_4_fpga" using architecture "A:archsum_4_fpga" for hierarchy "sumador_4_fpga:sum" File: C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_tb2.vhd Line: 24
+Info (12129): Elaborating entity "sumador_1" using architecture "A:archsum_1" for hierarchy "sumador_4_fpga:sum|sumador_1:sum0" File: C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_fpga.vhd Line: 42
+Info (12128): Elaborating entity "bin_6_to_bcd" for hierarchy "sumador_4_fpga:sum|bin_6_to_bcd:deco" File: C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_fpga.vhd Line: 55
+Info (12128): Elaborating entity "to_7seg" for hierarchy "sumador_4_fpga:sum|to_7seg:seg1" File: C:/Users/samas/Documents/quartusProjects/Lab2/Problema2/sumador_4_fpga.vhd Line: 59
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 4836 megabytes
+    Info: Processing ended: Mon Aug 23 22:06:22 2021
     Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:17
 

@@ -1,4 +1,7 @@
-|sumador_4_fpga
+|sumador_4_tb2
+
+
+|sumador_4_tb2|sumador_4_fpga:sum
 a[0] => sumador_1:sum0.a
 a[1] => sumador_1:sum1.a
 a[2] => sumador_1:sum2.a
@@ -8,24 +11,24 @@ b[1] => sumador_1:sum1.b
 b[2] => sumador_1:sum2.b
 b[3] => sumador_1:sum3.b
 c_in => sumador_1:sum0.c_in
-c_out << sumador_1:sum3.c_out
-hex1[0] << to_7seg:seg1.seg7[0]
-hex1[1] << to_7seg:seg1.seg7[1]
-hex1[2] << to_7seg:seg1.seg7[2]
-hex1[3] << to_7seg:seg1.seg7[3]
-hex1[4] << to_7seg:seg1.seg7[4]
-hex1[5] << to_7seg:seg1.seg7[5]
-hex1[6] << to_7seg:seg1.seg7[6]
-hex2[0] << to_7seg:seg2.seg7[0]
-hex2[1] << to_7seg:seg2.seg7[1]
-hex2[2] << to_7seg:seg2.seg7[2]
-hex2[3] << to_7seg:seg2.seg7[3]
-hex2[4] << to_7seg:seg2.seg7[4]
-hex2[5] << to_7seg:seg2.seg7[5]
-hex2[6] << to_7seg:seg2.seg7[6]
+c_out <= sumador_1:sum3.c_out
+hex1[0] <= to_7seg:seg1.seg7[0]
+hex1[1] <= to_7seg:seg1.seg7[1]
+hex1[2] <= to_7seg:seg1.seg7[2]
+hex1[3] <= to_7seg:seg1.seg7[3]
+hex1[4] <= to_7seg:seg1.seg7[4]
+hex1[5] <= to_7seg:seg1.seg7[5]
+hex1[6] <= to_7seg:seg1.seg7[6]
+hex2[0] <= to_7seg:seg2.seg7[0]
+hex2[1] <= to_7seg:seg2.seg7[1]
+hex2[2] <= to_7seg:seg2.seg7[2]
+hex2[3] <= to_7seg:seg2.seg7[3]
+hex2[4] <= to_7seg:seg2.seg7[4]
+hex2[5] <= to_7seg:seg2.seg7[5]
+hex2[6] <= to_7seg:seg2.seg7[6]
 
 
-|sumador_4_fpga|sumador_1:sum0
+|sumador_4_tb2|sumador_4_fpga:sum|sumador_1:sum0
 a => s.IN0
 a => c_out.IN0
 a => c_out.IN0
@@ -46,7 +49,7 @@ c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|sumador_4_fpga|sumador_1:sum1
+|sumador_4_tb2|sumador_4_fpga:sum|sumador_1:sum1
 a => s.IN0
 a => c_out.IN0
 a => c_out.IN0
@@ -67,7 +70,7 @@ c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|sumador_4_fpga|sumador_1:sum2
+|sumador_4_tb2|sumador_4_fpga:sum|sumador_1:sum2
 a => s.IN0
 a => c_out.IN0
 a => c_out.IN0
@@ -88,7 +91,7 @@ c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|sumador_4_fpga|sumador_1:sum3
+|sumador_4_tb2|sumador_4_fpga:sum|sumador_1:sum3
 a => s.IN0
 a => c_out.IN0
 a => c_out.IN0
@@ -109,7 +112,7 @@ c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|sumador_4_fpga|bin_6_to_bcd:deco
+|sumador_4_tb2|sumador_4_fpga:sum|bin_6_to_bcd:deco
 entrada[0] => Ram0.RADDR
 entrada[1] => Ram0.RADDR1
 entrada[2] => Ram0.RADDR2
@@ -126,7 +129,7 @@ salida[6] <= Ram0.DATAOUT6
 salida[7] <= Ram0.DATAOUT7
 
 
-|sumador_4_fpga|to_7seg:seg1
+|sumador_4_tb2|sumador_4_fpga:sum|to_7seg:seg1
 A[0] => Mux0.IN19
 A[0] => Mux1.IN19
 A[0] => Mux2.IN19
@@ -164,7 +167,7 @@ seg7[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 seg7[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|sumador_4_fpga|to_7seg:seg2
+|sumador_4_tb2|sumador_4_fpga:sum|to_7seg:seg2
 A[0] => Mux0.IN19
 A[0] => Mux1.IN19
 A[0] => Mux2.IN19

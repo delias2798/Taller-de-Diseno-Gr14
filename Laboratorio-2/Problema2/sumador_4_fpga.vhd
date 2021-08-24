@@ -14,7 +14,7 @@ entity sumador_4_fpga is
 	     c_out: out std_logic; hex1, hex2: out std_logic_vector(6 downto 0));
 end sumador_4_fpga;
 
-architecture archSum_4 of sumador_4_fpga is
+architecture archSum_4_fpga of sumador_4_fpga is
 	-- se tienen que crear una serie de cables internos
 	-- para realizar la conexion entre los 4 sumadores de 1 bit
 	signal c: std_logic_vector(4 downto 0);
@@ -26,6 +26,10 @@ architecture archSum_4 of sumador_4_fpga is
 	--se agregan cables para conectar el resultado del decodificador bcd
 	-- al decodificador de 7segmentos
 	signal s3: std_logic_vector(7 downto 0);
+	
+	-- se crean cables que conecten el resultado de la suma, el carreo y
+	-- un cero adicional hasta la entrada del decodificador bcd
+	signal concatenar: std_logic_vector(5 downto 0);
 begin
 	-- se hace una implementacion estructural
 	
@@ -44,12 +48,15 @@ begin
 	c_out <= c(4);
 	
 	
+	--se concatenan las salidas
+	concatenar <= "0" & c(4) & s2;
+	
 	--se implementa un decodificador de binario a bcd
-	deco : entity work.bin_6_to_bcd port map("0" & c(4) & s2, s3);
+	deco : entity work.bin_6_to_bcd port map(concatenar, s3);
 	
 	
 	--- se implementan decodificadores para la salida
-	seg1 : entity work.to_7seg port map(s3(3 downto 0), hex1);
-	seg2 : entity work.to_7seg port map(s3(7 downto 4), hex2);
+	seg1 : entity work.to_7seg port map(s3(3 downto 0), hex2);
+	seg2 : entity work.to_7seg port map(s3(7 downto 4), hex1);
 	
-end archSum_4;
+end archSum_4_fpga;
