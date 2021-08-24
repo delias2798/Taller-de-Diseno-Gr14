@@ -4,55 +4,59 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "cuenta[0]",
+					"name" : "hex1[0]",
 					"strict" : false
 				},
 				{
-					"name" : "cuenta[1]",
+					"name" : "hex1[1]",
 					"strict" : false
 				},
 				{
-					"name" : "cuenta[2]",
+					"name" : "hex1[2]",
 					"strict" : false
 				},
 				{
-					"name" : "cuenta[3]",
+					"name" : "hex1[3]",
 					"strict" : false
 				},
 				{
-					"name" : "cuenta[4]",
+					"name" : "hex1[4]",
 					"strict" : false
 				},
 				{
-					"name" : "cuenta[5]",
+					"name" : "hex1[5]",
 					"strict" : false
 				},
 				{
-					"name" : "cuenta[6]",
+					"name" : "hex1[6]",
 					"strict" : false
 				},
 				{
-					"name" : "cuenta[7]",
+					"name" : "hex2[0]",
 					"strict" : false
 				},
 				{
-					"name" : "cuenta[8]",
+					"name" : "hex2[1]",
 					"strict" : false
 				},
 				{
-					"name" : "cuenta[9]",
+					"name" : "hex2[2]",
 					"strict" : false
 				},
 				{
-					"name" : "cuenta[10]",
+					"name" : "hex2[3]",
 					"strict" : false
 				},
 				{
-					"name" : "cuenta[11]",
+					"name" : "hex2[4]",
 					"strict" : false
 				},
 				{
-					"name" : "cuenta[13]",
+					"name" : "hex2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "hex2[6]",
 					"strict" : false
 				},
 				{

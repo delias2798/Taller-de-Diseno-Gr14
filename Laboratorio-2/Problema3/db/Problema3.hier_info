@@ -11,20 +11,37 @@ rst => cuenta_reg[2].ACLR
 rst => cuenta_reg[3].ACLR
 rst => cuenta_reg[4].ACLR
 rst => cuenta_reg[5].ACLR
-cuenta[0] << to_7seg:seg1.seg7[0]
-cuenta[1] << to_7seg:seg1.seg7[1]
-cuenta[2] << to_7seg:seg1.seg7[2]
-cuenta[3] << to_7seg:seg1.seg7[3]
-cuenta[4] << to_7seg:seg1.seg7[4]
-cuenta[5] << to_7seg:seg1.seg7[5]
-cuenta[6] << to_7seg:seg1.seg7[6]
-cuenta[7] << to_7seg:seg2.seg7[0]
-cuenta[8] << to_7seg:seg2.seg7[1]
-cuenta[9] << to_7seg:seg2.seg7[2]
-cuenta[10] << to_7seg:seg2.seg7[3]
-cuenta[11] << to_7seg:seg2.seg7[4]
-cuenta[12] << to_7seg:seg2.seg7[5]
-cuenta[13] << to_7seg:seg2.seg7[6]
+hex1[0] << to_7seg:seg1.seg7[0]
+hex1[1] << to_7seg:seg1.seg7[1]
+hex1[2] << to_7seg:seg1.seg7[2]
+hex1[3] << to_7seg:seg1.seg7[3]
+hex1[4] << to_7seg:seg1.seg7[4]
+hex1[5] << to_7seg:seg1.seg7[5]
+hex1[6] << to_7seg:seg1.seg7[6]
+hex2[0] << to_7seg:seg2.seg7[0]
+hex2[1] << to_7seg:seg2.seg7[1]
+hex2[2] << to_7seg:seg2.seg7[2]
+hex2[3] << to_7seg:seg2.seg7[3]
+hex2[4] << to_7seg:seg2.seg7[4]
+hex2[5] << to_7seg:seg2.seg7[5]
+hex2[6] << to_7seg:seg2.seg7[6]
+
+
+|contador_6_fpga|bin_6_to_bcd:deco
+entrada[0] => Ram0.RADDR
+entrada[1] => Ram0.RADDR1
+entrada[2] => Ram0.RADDR2
+entrada[3] => Ram0.RADDR3
+entrada[4] => Ram0.RADDR4
+entrada[5] => Ram0.RADDR5
+salida[0] <= Ram0.DATAOUT
+salida[1] <= Ram0.DATAOUT1
+salida[2] <= Ram0.DATAOUT2
+salida[3] <= Ram0.DATAOUT3
+salida[4] <= Ram0.DATAOUT4
+salida[5] <= Ram0.DATAOUT5
+salida[6] <= Ram0.DATAOUT6
+salida[7] <= Ram0.DATAOUT7
 
 
 |contador_6_fpga|to_7seg:seg1

@@ -1,13 +1,13 @@
-Fitter Status : Successful - Mon Aug 23 15:22:34 2021
+Fitter Status : Successful - Mon Aug 23 18:03:38 2021
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : Problema2
-Top-level Entity Name : sumador_4
+Top-level Entity Name : sumador_4_fpga
 Family : Cyclone V
 Device : 5CSEMA5F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 4 / 32,070 ( < 1 % )
+Logic utilization (in ALMs) : 12 / 32,070 ( < 1 % )
 Total registers : 0
-Total pins : 14 / 457 ( 3 % )
+Total pins : 24 / 457 ( 5 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 4,065,280 ( 0 % )
 Total RAM Blocks : 0 / 397 ( 0 % )

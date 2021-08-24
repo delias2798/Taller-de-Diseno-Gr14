@@ -11,7 +11,7 @@ use ieee.std_logic_1164.all;
 
 entity sumador_4_fpga is
 	port(a, b: in std_logic_vector(3 downto 0); c_in: in std_logic;
-	     c_out: out std_logic; s: out std_logic_vector(6 downto 0));
+	     c_out: out std_logic; hex1, hex2: out std_logic_vector(6 downto 0));
 end sumador_4_fpga;
 
 architecture archSum_4 of sumador_4_fpga is
@@ -20,8 +20,12 @@ architecture archSum_4 of sumador_4_fpga is
 	signal c: std_logic_vector(4 downto 0);
 	
 	--se agregan cables para conectar el resultado de la suma a un
-	-- decodificador de 7segmentos
+	-- decodificador de binario a bcd
 	signal s2: std_logic_vector(3 downto 0);
+	
+	--se agregan cables para conectar el resultado del decodificador bcd
+	-- al decodificador de 7segmentos
+	signal s3: std_logic_vector(7 downto 0);
 begin
 	-- se hace una implementacion estructural
 	
@@ -40,7 +44,12 @@ begin
 	c_out <= c(4);
 	
 	
+	--se implementa un decodificador de binario a bcd
+	deco : entity work.bin_6_to_bcd port map("0" & c(4) & s2, s3);
+	
+	
 	--- se implementan decodificadores para la salida
-	seg1 : entity work.to_7seg port map(s2(3 downto 0), s);
+	seg1 : entity work.to_7seg port map(s3(3 downto 0), hex1);
+	seg2 : entity work.to_7seg port map(s3(7 downto 4), hex2);
 	
 end archSum_4;

@@ -8,14 +8,21 @@ b[1] => sumador_1:sum1.b
 b[2] => sumador_1:sum2.b
 b[3] => sumador_1:sum3.b
 c_in => sumador_1:sum0.c_in
-c_out <= sumador_1:sum3.c_out
-s[0] <= to_7seg:seg1.seg7[0]
-s[1] <= to_7seg:seg1.seg7[1]
-s[2] <= to_7seg:seg1.seg7[2]
-s[3] <= to_7seg:seg1.seg7[3]
-s[4] <= to_7seg:seg1.seg7[4]
-s[5] <= to_7seg:seg1.seg7[5]
-s[6] <= to_7seg:seg1.seg7[6]
+c_out << sumador_1:sum3.c_out
+hex1[0] << to_7seg:seg1.seg7[0]
+hex1[1] << to_7seg:seg1.seg7[1]
+hex1[2] << to_7seg:seg1.seg7[2]
+hex1[3] << to_7seg:seg1.seg7[3]
+hex1[4] << to_7seg:seg1.seg7[4]
+hex1[5] << to_7seg:seg1.seg7[5]
+hex1[6] << to_7seg:seg1.seg7[6]
+hex2[0] << to_7seg:seg2.seg7[0]
+hex2[1] << to_7seg:seg2.seg7[1]
+hex2[2] << to_7seg:seg2.seg7[2]
+hex2[3] << to_7seg:seg2.seg7[3]
+hex2[4] << to_7seg:seg2.seg7[4]
+hex2[5] << to_7seg:seg2.seg7[5]
+hex2[6] << to_7seg:seg2.seg7[6]
 
 
 |sumador_4_fpga|sumador_1:sum0
@@ -102,7 +109,62 @@ c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
 s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
+|sumador_4_fpga|bin_6_to_bcd:deco
+entrada[0] => Ram0.RADDR
+entrada[1] => Ram0.RADDR1
+entrada[2] => Ram0.RADDR2
+entrada[3] => Ram0.RADDR3
+entrada[4] => Ram0.RADDR4
+entrada[5] => Ram0.RADDR5
+salida[0] <= Ram0.DATAOUT
+salida[1] <= Ram0.DATAOUT1
+salida[2] <= Ram0.DATAOUT2
+salida[3] <= Ram0.DATAOUT3
+salida[4] <= Ram0.DATAOUT4
+salida[5] <= Ram0.DATAOUT5
+salida[6] <= Ram0.DATAOUT6
+salida[7] <= Ram0.DATAOUT7
+
+
 |sumador_4_fpga|to_7seg:seg1
+A[0] => Mux0.IN19
+A[0] => Mux1.IN19
+A[0] => Mux2.IN19
+A[0] => Mux3.IN19
+A[0] => Mux4.IN19
+A[0] => Mux5.IN19
+A[0] => Mux6.IN19
+A[1] => Mux0.IN18
+A[1] => Mux1.IN18
+A[1] => Mux2.IN18
+A[1] => Mux3.IN18
+A[1] => Mux4.IN18
+A[1] => Mux5.IN18
+A[1] => Mux6.IN18
+A[2] => Mux0.IN17
+A[2] => Mux1.IN17
+A[2] => Mux2.IN17
+A[2] => Mux3.IN17
+A[2] => Mux4.IN17
+A[2] => Mux5.IN17
+A[2] => Mux6.IN17
+A[3] => Mux0.IN16
+A[3] => Mux1.IN16
+A[3] => Mux2.IN16
+A[3] => Mux3.IN16
+A[3] => Mux4.IN16
+A[3] => Mux5.IN16
+A[3] => Mux6.IN16
+seg7[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+seg7[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+seg7[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+seg7[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+seg7[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+seg7[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+seg7[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sumador_4_fpga|to_7seg:seg2
 A[0] => Mux0.IN19
 A[0] => Mux1.IN19
 A[0] => Mux2.IN19
