@@ -1,0 +1,20 @@
+//Restador completo de 1 bit
+//@autor: Saymon Astua
+
+module restador_1(input a, b, c_in,
+					  output d, c_out);
+					  
+	// se hace una implementacion de comportamiento
+	
+	//para la salida
+	assign d = 	(~a & ~b & c) |
+					(~a & b & ~c) |
+					(a & ~b & ~c) |
+					(a & b & c);
+	
+	//para el carry de salida
+	assign c_out = (a & b) |
+						(a & c_in) |
+						(b & c_in);				
+				
+endmodule 

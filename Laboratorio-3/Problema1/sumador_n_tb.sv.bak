@@ -1,0 +1,29 @@
+//Testbench para el sumador de n bits
+//@autor: Saymon Astua
+
+module sumador_n_tb();
+	parameter N = 4
+	
+	input [N-1:0] a, b;
+	input c_in;
+	
+	output [N-1:0] s;
+	output c_out;
+	
+	sumador_n #(N) sumador4(a, b, c_in, s, c_out);
+	
+	initial begin
+		a = 1111;
+		b = 1111;
+		#40
+		
+		a = 0011;
+		b = 0010;
+		#40
+		
+		a = 1010;
+		b = 0001;
+	
+	end
+
+endmodule 

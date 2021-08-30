@@ -1,0 +1,43 @@
+# Reading pref.tcl
+# do Problema1_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1 {C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/shift_left.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:48:44 on Aug 30,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1" C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/shift_left.sv 
+# -- Compiling module shift_left
+# 
+# Top level modules:
+# 	shift_left
+# End time: 17:48:44 on Aug 30,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1 {C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/shigt_left_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:48:44 on Aug 30,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1" C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/shigt_left_tb.sv 
+# -- Compiling module shigt_left_tb
+# 
+# Top level modules:
+# 	shigt_left_tb
+# End time: 17:48:44 on Aug 30,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.shigt_left_tb
+# vsim work.shigt_left_tb 
+# Start time: 17:48:47 on Aug 30,2021
+# Loading sv_std.std
+# Loading work.shigt_left_tb
+# Loading work.shift_left
+add wave sim:/shigt_left_tb/*
+run
+# End time: 17:49:35 on Aug 30,2021, Elapsed time: 0:00:48
+# Errors: 0, Warnings: 0

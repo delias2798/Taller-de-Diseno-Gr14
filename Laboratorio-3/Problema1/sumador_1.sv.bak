@@ -1,0 +1,20 @@
+//Sumador completo de 1 bit
+//@autor: Saymon Astua
+
+module sumador_1(input a, b, c_in,
+					  output s, c_out);
+					  
+	// se hace una implementacion de comportamiento
+	
+	//para la salida
+	assign s = ((not a) and (not b) and c_in) or
+					((not a) and b and (not c_in)) or
+					(a and b and c_in) or
+					(a and (not b) and (not c_in));
+	
+	//para el carry de salida
+	assign c_out = (a and b) or
+						(a and c_in) or
+						(b and c_in);				
+				
+endmodule 

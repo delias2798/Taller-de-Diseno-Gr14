@@ -1,0 +1,24 @@
+//Testbench para el corrimiento a la derecha de n bits
+//@autor: Saymon Astua
+
+module shigt_right_tb();
+	parameter N = 4;
+	
+	logic [N-1:0] in, out;
+	
+	shift_right #(N) derecha(in, out);
+	
+	initial begin
+	   in = 10;
+		#40
+		
+		in = 1;
+		#40
+		
+		a <= 10;
+		b <= 1;
+		c_in = 0;
+	
+	end
+
+endmodule 
