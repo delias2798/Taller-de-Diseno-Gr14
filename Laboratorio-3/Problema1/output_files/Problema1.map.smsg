@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at ALU.sv(4): object "n" differs only in case from object "N" in the same scope File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU.sv Line: 4
+Info (10281): Verilog HDL Declaration information at ALU_tb.sv(5): object "n" differs only in case from object "N" in the same scope File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_tb.sv Line: 5

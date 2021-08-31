@@ -1,0 +1,9 @@
+//Unidad aritmético-lógica ALU
+//@autor: Saymon Astúa
+
+module ALU #(parameter n=4)
+				(input [n-1:0] a, b,
+				 output [n-1] r, output N, Z, C, V);
+				 
+				 
+endmodule 

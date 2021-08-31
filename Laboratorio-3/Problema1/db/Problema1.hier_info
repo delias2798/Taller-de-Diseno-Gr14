@@ -1,14 +1,218 @@
-|shigt_left_tb
+|ALU_tb
 
 
-|shigt_left_tb|shift_left:izquierda
-in[0] => out[1].DATAIN
-in[1] => out[2].DATAIN
-in[2] => out[3].DATAIN
-in[3] => out[0].DATAIN
-out[0] <= in[3].DB_MAX_OUTPUT_PORT_TYPE
-out[1] <= in[0].DB_MAX_OUTPUT_PORT_TYPE
-out[2] <= in[1].DB_MAX_OUTPUT_PORT_TYPE
-out[3] <= in[2].DB_MAX_OUTPUT_PORT_TYPE
+|ALU_tb|ALU:myAlu
+a[0] => a[0].IN2
+a[1] => a[1].IN2
+a[2] => a[2].IN2
+a[3] => a[3].IN2
+b[0] => b[0].IN2
+b[1] => b[1].IN2
+b[2] => b[2].IN2
+b[3] => b[3].IN2
+op[0] => Equal0.IN63
+op[0] => Equal1.IN63
+op[1] => Equal0.IN62
+op[1] => Equal1.IN62
+op[2] => Equal0.IN61
+op[2] => Equal1.IN61
+r[0] <= res[0].DB_MAX_OUTPUT_PORT_TYPE
+r[1] <= res[1].DB_MAX_OUTPUT_PORT_TYPE
+r[2] <= res[2].DB_MAX_OUTPUT_PORT_TYPE
+r[3] <= res[3].DB_MAX_OUTPUT_PORT_TYPE
+N <= restador_n:resta.port4
+Z <= <GND>
+C <= sumador_n:suma.port4
+V <= <GND>
+
+
+|ALU_tb|ALU:myAlu|sumador_n:suma
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+c_in => c[0].IN1
+s[0] <= sumador_1:a_for[0].sum.port3
+s[1] <= sumador_1:a_for[1].sum.port3
+s[2] <= sumador_1:a_for[2].sum.port3
+s[3] <= sumador_1:a_for[3].sum.port3
+c_out <= sumador_1:a_for[3].sum.port4
+
+
+|ALU_tb|ALU:myAlu|sumador_n:suma|sumador_1:a_for[0].sum
+a => s.IN0
+a => s.IN0
+a => c_out.IN0
+a => s.IN0
+a => s.IN0
+b => s.IN1
+b => s.IN1
+b => c_out.IN0
+b => s.IN1
+b => s.IN1
+c_in => s.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+c_in => s.IN1
+c_in => s.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_tb|ALU:myAlu|sumador_n:suma|sumador_1:a_for[1].sum
+a => s.IN0
+a => s.IN0
+a => c_out.IN0
+a => s.IN0
+a => s.IN0
+b => s.IN1
+b => s.IN1
+b => c_out.IN0
+b => s.IN1
+b => s.IN1
+c_in => s.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+c_in => s.IN1
+c_in => s.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_tb|ALU:myAlu|sumador_n:suma|sumador_1:a_for[2].sum
+a => s.IN0
+a => s.IN0
+a => c_out.IN0
+a => s.IN0
+a => s.IN0
+b => s.IN1
+b => s.IN1
+b => c_out.IN0
+b => s.IN1
+b => s.IN1
+c_in => s.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+c_in => s.IN1
+c_in => s.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_tb|ALU:myAlu|sumador_n:suma|sumador_1:a_for[3].sum
+a => s.IN0
+a => s.IN0
+a => c_out.IN0
+a => s.IN0
+a => s.IN0
+b => s.IN1
+b => s.IN1
+b => c_out.IN0
+b => s.IN1
+b => s.IN1
+c_in => s.IN1
+c_in => s.IN1
+c_in => c_out.IN1
+c_in => c_out.IN1
+c_in => s.IN1
+c_in => s.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_tb|ALU:myAlu|restador_n:resta
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+c_in => c[0].IN1
+s[0] <= restador_1:a_for[0].res.port3
+s[1] <= restador_1:a_for[1].res.port3
+s[2] <= restador_1:a_for[2].res.port3
+s[3] <= restador_1:a_for[3].res.port3
+c_out <= restador_1:a_for[3].res.port4
+
+
+|ALU_tb|ALU:myAlu|restador_n:resta|restador_1:a_for[0].res
+a => d.IN0
+a => d.IN0
+a => d.IN0
+a => d.IN0
+b => d.IN1
+b => d.IN1
+b => d.IN1
+b => d.IN1
+c_in => d.IN1
+c_in => d.IN1
+c_in => c_out.IN1
+c_in => d.IN1
+c_in => d.IN1
+d <= d.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_tb|ALU:myAlu|restador_n:resta|restador_1:a_for[1].res
+a => d.IN0
+a => d.IN0
+a => d.IN0
+a => d.IN0
+b => d.IN1
+b => d.IN1
+b => d.IN1
+b => d.IN1
+c_in => d.IN1
+c_in => d.IN1
+c_in => c_out.IN1
+c_in => d.IN1
+c_in => d.IN1
+d <= d.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_tb|ALU:myAlu|restador_n:resta|restador_1:a_for[2].res
+a => d.IN0
+a => d.IN0
+a => d.IN0
+a => d.IN0
+b => d.IN1
+b => d.IN1
+b => d.IN1
+b => d.IN1
+c_in => d.IN1
+c_in => d.IN1
+c_in => c_out.IN1
+c_in => d.IN1
+c_in => d.IN1
+d <= d.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_tb|ALU:myAlu|restador_n:resta|restador_1:a_for[3].res
+a => d.IN0
+a => d.IN0
+a => d.IN0
+a => d.IN0
+b => d.IN1
+b => d.IN1
+b => d.IN1
+b => d.IN1
+c_in => d.IN1
+c_in => d.IN1
+c_in => c_out.IN1
+c_in => d.IN1
+c_in => d.IN1
+d <= d.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
 
 

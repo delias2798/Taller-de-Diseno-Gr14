@@ -1,7 +1,7 @@
-Analysis & Elaboration Status : Successful - Mon Aug 30 17:48:35 2021
+Analysis & Elaboration Status : Successful - Tue Aug 31 13:59:53 2021
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : Problema1
-Top-level Entity Name : shigt_left_tb
+Top-level Entity Name : ALU_tb
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A until Partition Merge
 Total registers : N/A until Partition Merge
