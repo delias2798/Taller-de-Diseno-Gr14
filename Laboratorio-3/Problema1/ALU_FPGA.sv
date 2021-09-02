@@ -1,19 +1,27 @@
-//Unidad aritmético-lógica ALU
+//Unidad aritmético-lógica ALU para la FPGA
 //@autor: Saymon Astúa
 
-module ALU #(parameter n=4)
-				(input [n-1:0] a, b, input [2:0] op,
-				 output [n-1:0] r, output N, Z, C, V);
-	
+module ALU_FPGA (input [3:0] a, b, input [2:0] op,
+					  output [6:0] hex1, hex2, output N, Z, C, V);
+
 	//se crean registros para almacenar cada uno de los
 	//resultados de las operaciones aritmético-lógicas
-	reg [n-1:0] res, resSuma, resResta, resRight, resLeft;
+	reg [3:0] res, resSuma, resResta, resRight, resLeft;
+	
+	//se crea el registro para la conversion de binario a bcd
+	reg [11:0] bcd;
 	
 	//se crean los módulos de operaciones aritméticas
-	sumador_n #(n) suma(a, b, 0, resSuma, C);
-	restador_n #(n) resta(a, b, 0, resResta, N);
-	shift_right #(n) derecha(a, resRight);
-	shift_left #(n) izquierda(a, resLeft);
+	sumador_n #(4) suma(a, b, 0, resSuma, C);
+	restador_n #(4) resta(a, b, 0, resResta, N);
+	shift_right #(4) derecha(a, resRight);
+	shift_left #(4) izquierda(a, resLeft);
+	
+	//se crean los decodificadores de binario a bcd
+	// y de bcd al display de 7 segmentos
+	bin2bcd bcd_deco({2'b00, res}, bcd);
+	segment7_deco seg1(bcd[3:0], hex1),
+					  seg2(bcd[7:4], hex2);
 	
 	//se asigna el registro de resultado a la salida r
 	assign r = res;
@@ -27,6 +35,7 @@ module ALU #(parameter n=4)
 	always @ (op) begin
 		case(op)
 			0: res = resSuma;
+				
 			1: if(N) begin
 					res = ~resResta + 1;
 				end

@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CSEMA5F31C6
-set_global_assignment -name TOP_LEVEL_ENTITY ALU_tb
+set_global_assignment -name TOP_LEVEL_ENTITY ALU_FPGA
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:54:08  AUGUST 30, 2021"
 set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Lite Edition"
@@ -59,6 +59,42 @@ set_global_assignment -name SYSTEMVERILOG_FILE shift_left.sv
 set_global_assignment -name SYSTEMVERILOG_FILE shigt_left_tb.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ALU.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ALU_tb.sv
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name SYSTEMVERILOG_FILE segment7_deco.sv
+set_global_assignment -name SYSTEMVERILOG_FILE bin2bcd.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ALU_FPGA.sv
+set_location_assignment PIN_V16 -to C
+set_location_assignment PIN_W16 -to N
+set_location_assignment PIN_V17 -to V
+set_location_assignment PIN_V18 -to Z
+set_location_assignment PIN_AF10 -to a[3]
+set_location_assignment PIN_AF9 -to a[2]
+set_location_assignment PIN_AC12 -to a[1]
+set_location_assignment PIN_AB12 -to a[0]
+set_location_assignment PIN_AC9 -to b[3]
+set_location_assignment PIN_AE11 -to b[2]
+set_location_assignment PIN_AD12 -to b[1]
+set_location_assignment PIN_AD11 -to b[0]
+set_location_assignment PIN_AE12 -to op[1]
+set_location_assignment PIN_AD10 -to op[0]
+set_location_assignment PIN_AA14 -to op[2]
+set_location_assignment PIN_AH28 -to hex1[6]
+set_location_assignment PIN_AG28 -to hex1[5]
+set_location_assignment PIN_AF28 -to hex1[4]
+set_location_assignment PIN_AG27 -to hex1[3]
+set_location_assignment PIN_AE28 -to hex1[2]
+set_location_assignment PIN_AE27 -to hex1[1]
+set_location_assignment PIN_AE26 -to hex1[0]
+set_location_assignment PIN_AD27 -to hex2[6]
+set_location_assignment PIN_AF30 -to hex2[5]
+set_location_assignment PIN_AF29 -to hex2[4]
+set_location_assignment PIN_AG30 -to hex2[3]
+set_location_assignment PIN_AH30 -to hex2[2]
+set_location_assignment PIN_AH29 -to hex2[1]
+set_location_assignment PIN_AJ29 -to hex2[0]
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top

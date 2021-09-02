@@ -16,10 +16,17 @@ module ALU_tb();
 		op = 0;
 		#40
 		
-		a = 1;
-		b = 5;
+		a = 0;
+		b = 15;
 		op = 1;
-	
+		#40
+		
+		a = 5;
+		op = 2;
+		#40
+		
+		a = 3;
+		op = 3;
 	end
 
 endmodule 

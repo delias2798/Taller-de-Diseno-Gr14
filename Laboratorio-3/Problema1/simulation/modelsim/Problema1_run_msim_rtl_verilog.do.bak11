@@ -9,6 +9,8 @@ vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr1
 vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1 {C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/sumador_n.sv}
 vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1 {C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/restador_1.sv}
 vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1 {C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/restador_n.sv}
+vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1 {C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/shift_right.sv}
+vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1 {C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/shift_left.sv}
 vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1 {C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU.sv}
 vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1 {C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_tb.sv}
 
