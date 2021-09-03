@@ -7,7 +7,7 @@ module ALU #(parameter n=4)
 	
 	//se crean registros para almacenar cada uno de los
 	//resultados de las operaciones aritmético-lógicas
-	reg [n-1:0] res, resSuma, resResta, resRight, resLeft;
+	reg [n-1:0] res, resSuma, resResta, resRight, resLeft, resAnd, resOr, resXor;
 	
 	//se crean los módulos de operaciones aritméticas
 	sumador_n #(n) suma(a, b, 0, resSuma, C);
@@ -27,6 +27,7 @@ module ALU #(parameter n=4)
 	always @ (op) begin
 		case(op)
 			0: res = resSuma;
+				
 			1: if(N) begin
 					res = ~resResta + 1;
 				end
@@ -35,6 +36,9 @@ module ALU #(parameter n=4)
 				end
 			2: res = resRight;
 			3: res = resLeft;
+			4: res = resAnd;
+			5: res = resOr;
+			6: res = resXor;
 		endcase
 	end
 				 

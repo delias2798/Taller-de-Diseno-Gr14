@@ -6,7 +6,7 @@ module ALU_FPGA (input [3:0] a, b, input [2:0] op,
 
 	//se crean registros para almacenar cada uno de los
 	//resultados de las operaciones aritmético-lógicas
-	reg [3:0] res, resSuma, resResta, resRight, resLeft;
+	reg [3:0] res, resSuma, resResta, resRight, resLeft, resAnd, resOr, resXor;
 	
 	//se crea el registro para la conversion de binario a bcd
 	reg [11:0] bcd;
@@ -16,10 +16,13 @@ module ALU_FPGA (input [3:0] a, b, input [2:0] op,
 	restador_n #(4) resta(a, b, 0, resResta, N);
 	shift_right #(4) derecha(a, resRight);
 	shift_left #(4) izquierda(a, resLeft);
+	//and
+	//or
+	//xor
 	
 	//se crean los decodificadores de binario a bcd
 	// y de bcd al display de 7 segmentos
-	bin2bcd bcd_deco({2'b00, res}, bcd);
+	bin2bcd bcd_deco({3'b000, C, res}, bcd);
 	segment7_deco seg1(bcd[3:0], hex1),
 					  seg2(bcd[7:4], hex2);
 	
@@ -44,6 +47,9 @@ module ALU_FPGA (input [3:0] a, b, input [2:0] op,
 				end
 			2: res = resRight;
 			3: res = resLeft;
+			4: res = resAnd;
+			5: res = resOr;
+			6: res = resXor;
 		endcase
 	end
 				 
