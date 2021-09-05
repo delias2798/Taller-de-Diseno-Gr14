@@ -6,8 +6,10 @@ module shift_right #(parameter N)
 		   output [N-1:0] out);
 	
 	//aqui se hace una asignación para los cables de salida
-	//el digito menos significativo pasa a ser el mas significativo
-   assign out = {in[0], in[N-1:1]};
+	// Se concatena un cero a la izquierda y se mueve el resto de
+	// la entrada
+	// Los bit que salen del registro por un extremo se pierden.
+   assign out = {1'b0, in[N-1:1]};
 
 			
 endmodule 
