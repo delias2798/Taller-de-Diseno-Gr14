@@ -11,7 +11,7 @@ module and_n_module #(parameter N = 4)
 	generate
 		//por cada bit se crea un and de 1 bit y se unen entre si
 		for(i = 0; i < N; i = i + 1) begin: a_for
-			and_1 and_module(a[i], b[i], s[i])
+			and_1 and_module(a[i], b[i], s[i]);
 		end: a_for
 	
 	endgenerate
