@@ -36,6 +36,7 @@ module ALU_FPGA (input [3:0] a, b, input [2:0] op,
 	shift_right #(4) derecha(a, resRight);
 	shift_left #(4) izquierda(a, resLeft);
 	//and
+	and_n_module #(4) andModule(a, b, resAnd);
 	//or
 	//xor
 	
