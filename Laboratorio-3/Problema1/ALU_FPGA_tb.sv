@@ -17,7 +17,7 @@ module ALU_FPGA_tb();
 		op = 0;
 		#40
 		
-		a = 0;
+		a = 8;
 		b = 15;
 		op = 1;
 		#40

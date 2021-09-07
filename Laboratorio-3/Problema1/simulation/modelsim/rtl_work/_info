@@ -11,24 +11,24 @@ cModel Technology
 Z0 dC:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/simulation/modelsim
 vALU_FPGA
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1631036030
+Z2 !s110 1631039672
 !i10b 1
-!s100 RT@4nia1A2YOW_b2No;2<2
+!s100 1A?nY?23GghGWDdCRLJX42
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I0le^F?YQSg7P7RY_IVL@`3
+Id0b?NHWaEAT6@@3KafKoR1
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1631035503
+w1631039653
 8C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv
 FC:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv
 !i122 8
-L0 23 54
+L0 25 101
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1631036030.000000
+Z6 !s108 1631039672.000000
 !s107 C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1|C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv|
 !i113 1
@@ -38,15 +38,15 @@ Z9 tCvgOpt 0
 n@a@l@u_@f@p@g@a
 vALU_FPGA_tb
 R1
-!s110 1631036031
+R2
 !i10b 1
-!s100 Q6mdlmnfn05me5CJgBSYU3
+!s100 R?oKAO?@8gdmC@=_gOHCF3
 R3
-IDXk@FYRn]6[MIjZJ1<<Z^2
+IcHNAnNzF@Kz78lNhJeb9`1
 R4
 S1
 R0
-w1631035745
+w1631037602
 8C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA_tb.sv
 FC:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA_tb.sv
 !i122 11
@@ -143,7 +143,7 @@ R8
 R9
 vrestador_1
 R1
-Z10 !s110 1631036029
+Z10 !s110 1631039671
 !i10b 1
 !s100 TX<H8HOTgf^VgKS6?fRgS0
 R3
@@ -160,7 +160,7 @@ R5
 r1
 !s85 0
 31
-Z11 !s108 1631036029.000000
+Z11 !s108 1631039671.000000
 !s107 C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/restador_1.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1|C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/restador_1.sv|
 !i113 1
@@ -238,7 +238,7 @@ R5
 r1
 !s85 0
 31
-R6
+R11
 !s107 C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/shift_left.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1|C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/shift_left.sv|
 !i113 1
@@ -247,7 +247,7 @@ R8
 R9
 vshift_right
 R1
-R2
+R10
 !i10b 1
 !s100 S=B]6DniXVO2Oj_90]7gE2
 R3
@@ -290,7 +290,7 @@ R5
 r1
 !s85 0
 31
-!s108 1631036028.000000
+R11
 !s107 C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/sumador_1.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1|C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/sumador_1.sv|
 !i113 1

@@ -39,10 +39,10 @@ hex2[3] <= segment7_deco:seg2.port1
 hex2[4] <= segment7_deco:seg2.port1
 hex2[5] <= segment7_deco:seg2.port1
 hex2[6] <= segment7_deco:seg2.port1
-N <= restador_n:resta.port4
-Z <= <GND>
-C <= C.DB_MAX_OUTPUT_PORT_TYPE
-V <= C.DB_MAX_OUTPUT_PORT_TYPE
+N <= N_.DB_MAX_OUTPUT_PORT_TYPE
+Z <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+C <= C_.DB_MAX_OUTPUT_PORT_TYPE
+V <= C_.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ALU_FPGA_tb|ALU_FPGA:myAlu|sumador_n:suma
