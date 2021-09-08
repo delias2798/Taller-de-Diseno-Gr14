@@ -20,6 +20,16 @@
 ----------------------------------------------------------------------
 | 110  |   ALU_Out = A xor B
 ----------------------------------------------------------------------
+0000*0000=0000 = 0 (Pero no activa flag zero)
+0001*0001=0001 = 1
+0010*0010=0010 = 2
+0011*0011=0011 = 3
+0100*0100=0100 = 4
+0111*0111=0111 = 7
+1111*0111=23 (Enciende led Cout)
+1111*1111=31 (Enciende led Cout)
+1000*1000= 0000 = 24 (Enciende led Cout)
+
 */
 
 module ALU_FPGA (input [3:0] a, b, input [2:0] op,
@@ -35,14 +45,16 @@ module ALU_FPGA (input [3:0] a, b, input [2:0] op,
 	reg [11:0] bcd;
 	
 	//se crean los módulos de operaciones aritméticas
-	sumador_n #(4) suma(a, b, 0, resSuma, C_);
-	restador_n #(4) resta(a, b, 0, resResta, N_);
+	sumador_n #(4) suma(a, b, 0, resSuma, C);
+	restador_n #(4) resta(a, b, 0, resResta, N);
 	shift_right #(4) derecha(a, resRight);
 	shift_left #(4) izquierda(a, resLeft);
 	//and
 	and_n_module #(4) andModule(a, b, resAnd);
 	//or
+	or_n_module #(4) orModule(a, b, resOr);
 	//xor
+	xor_n_module #(4) xorModule(a, b, resXor);
 	
 	//se crean los decodificadores de binario a bcd
 	// y de bcd al display de 7 segmentos
@@ -56,10 +68,10 @@ module ALU_FPGA (input [3:0] a, b, input [2:0] op,
 	//se asigna la bandera de overflow a C
 	//assign V = C;
 	
-	assign C = C_;
-	assign V = C_;
-	assign N = N_;
-	assign Z = Z_;
+	assign C_ = C;
+	assign V_ = C;
+	assign N_ = N;
+	assign Z_ = Z;
 	
 	
 	//cada vez que se elija alguna operación, entonces

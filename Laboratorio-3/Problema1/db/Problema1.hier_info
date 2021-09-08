@@ -1,30 +1,27 @@
-|ALU_FPGA_tb
-
-
-|ALU_FPGA_tb|ALU_FPGA:myAlu
-a[0] => a[0].IN5
-a[1] => a[1].IN5
-a[2] => a[2].IN5
-a[3] => a[3].IN5
-b[0] => b[0].IN3
-b[1] => b[1].IN3
-b[2] => b[2].IN3
-b[3] => b[3].IN3
-op[0] => Mux4.IN6
-op[0] => Mux3.IN6
-op[0] => Mux2.IN6
+|ALU_FPGA
+a[0] => a[0].IN7
+a[1] => a[1].IN7
+a[2] => a[2].IN7
+a[3] => a[3].IN7
+b[0] => b[0].IN5
+b[1] => b[1].IN5
+b[2] => b[2].IN5
+b[3] => b[3].IN5
+op[0] => Mux4.IN4
+op[0] => Mux3.IN4
+op[0] => Mux2.IN4
 op[0] => Mux1.IN10
-op[0] => Mux0.IN6
-op[1] => Mux4.IN5
-op[1] => Mux3.IN5
-op[1] => Mux2.IN5
+op[0] => Mux0.IN4
+op[1] => Mux4.IN3
+op[1] => Mux3.IN3
+op[1] => Mux2.IN3
 op[1] => Mux1.IN9
-op[1] => Mux0.IN5
-op[2] => Mux4.IN4
-op[2] => Mux3.IN4
-op[2] => Mux2.IN4
+op[1] => Mux0.IN3
+op[2] => Mux4.IN2
+op[2] => Mux3.IN2
+op[2] => Mux2.IN2
 op[2] => Mux1.IN8
-op[2] => Mux0.IN4
+op[2] => Mux0.IN2
 hex1[0] <= segment7_deco:seg1.port1
 hex1[1] <= segment7_deco:seg1.port1
 hex1[2] <= segment7_deco:seg1.port1
@@ -39,13 +36,13 @@ hex2[3] <= segment7_deco:seg2.port1
 hex2[4] <= segment7_deco:seg2.port1
 hex2[5] <= segment7_deco:seg2.port1
 hex2[6] <= segment7_deco:seg2.port1
-N <= N_.DB_MAX_OUTPUT_PORT_TYPE
-Z <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
-C <= C_.DB_MAX_OUTPUT_PORT_TYPE
-V <= C_.DB_MAX_OUTPUT_PORT_TYPE
+N <= restador_n:resta.port4
+Z <= <GND>
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+V <= <GND>
 
 
-|ALU_FPGA_tb|ALU_FPGA:myAlu|sumador_n:suma
+|ALU_FPGA|sumador_n:suma
 a[0] => a[0].IN1
 a[1] => a[1].IN1
 a[2] => a[2].IN1
@@ -62,7 +59,7 @@ s[3] <= sumador_1:a_for[3].sum.port3
 c_out <= sumador_1:a_for[3].sum.port4
 
 
-|ALU_FPGA_tb|ALU_FPGA:myAlu|sumador_n:suma|sumador_1:a_for[0].sum
+|ALU_FPGA|sumador_n:suma|sumador_1:a_for[0].sum
 a => s.IN0
 a => s.IN0
 a => c_out.IN0
@@ -83,7 +80,7 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_FPGA_tb|ALU_FPGA:myAlu|sumador_n:suma|sumador_1:a_for[1].sum
+|ALU_FPGA|sumador_n:suma|sumador_1:a_for[1].sum
 a => s.IN0
 a => s.IN0
 a => c_out.IN0
@@ -104,7 +101,7 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_FPGA_tb|ALU_FPGA:myAlu|sumador_n:suma|sumador_1:a_for[2].sum
+|ALU_FPGA|sumador_n:suma|sumador_1:a_for[2].sum
 a => s.IN0
 a => s.IN0
 a => c_out.IN0
@@ -125,7 +122,7 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_FPGA_tb|ALU_FPGA:myAlu|sumador_n:suma|sumador_1:a_for[3].sum
+|ALU_FPGA|sumador_n:suma|sumador_1:a_for[3].sum
 a => s.IN0
 a => s.IN0
 a => c_out.IN0
@@ -146,7 +143,7 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_FPGA_tb|ALU_FPGA:myAlu|restador_n:resta
+|ALU_FPGA|restador_n:resta
 a[0] => a[0].IN1
 a[1] => a[1].IN1
 a[2] => a[2].IN1
@@ -163,7 +160,7 @@ s[3] <= restador_1:a_for[3].res.port3
 c_out <= restador_1:a_for[3].res.port4
 
 
-|ALU_FPGA_tb|ALU_FPGA:myAlu|restador_n:resta|restador_1:a_for[0].res
+|ALU_FPGA|restador_n:resta|restador_1:a_for[0].res
 a => d.IN0
 a => d.IN0
 a => d.IN0
@@ -181,7 +178,7 @@ d <= d.DB_MAX_OUTPUT_PORT_TYPE
 c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_FPGA_tb|ALU_FPGA:myAlu|restador_n:resta|restador_1:a_for[1].res
+|ALU_FPGA|restador_n:resta|restador_1:a_for[1].res
 a => d.IN0
 a => d.IN0
 a => d.IN0
@@ -199,7 +196,7 @@ d <= d.DB_MAX_OUTPUT_PORT_TYPE
 c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_FPGA_tb|ALU_FPGA:myAlu|restador_n:resta|restador_1:a_for[2].res
+|ALU_FPGA|restador_n:resta|restador_1:a_for[2].res
 a => d.IN0
 a => d.IN0
 a => d.IN0
@@ -217,7 +214,7 @@ d <= d.DB_MAX_OUTPUT_PORT_TYPE
 c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_FPGA_tb|ALU_FPGA:myAlu|restador_n:resta|restador_1:a_for[3].res
+|ALU_FPGA|restador_n:resta|restador_1:a_for[3].res
 a => d.IN0
 a => d.IN0
 a => d.IN0
@@ -235,7 +232,7 @@ d <= d.DB_MAX_OUTPUT_PORT_TYPE
 c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_FPGA_tb|ALU_FPGA:myAlu|shift_right:derecha
+|ALU_FPGA|shift_right:derecha
 in[0] => ~NO_FANOUT~
 in[1] => out[0].DATAIN
 in[2] => out[1].DATAIN
@@ -246,7 +243,7 @@ out[2] <= in[3].DB_MAX_OUTPUT_PORT_TYPE
 out[3] <= <GND>
 
 
-|ALU_FPGA_tb|ALU_FPGA:myAlu|shift_left:izquierda
+|ALU_FPGA|shift_left:izquierda
 in[0] => out[1].DATAIN
 in[1] => out[2].DATAIN
 in[2] => out[3].DATAIN
@@ -257,7 +254,7 @@ out[2] <= in[1].DB_MAX_OUTPUT_PORT_TYPE
 out[3] <= in[2].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_FPGA_tb|ALU_FPGA:myAlu|and_n_module:andModule
+|ALU_FPGA|and_n_module:andModule
 a[0] => a[0].IN1
 a[1] => a[1].IN1
 a[2] => a[2].IN1
@@ -272,31 +269,109 @@ s[2] <= and_module:a_for[2].myAnd.port2
 s[3] <= and_module:a_for[3].myAnd.port2
 
 
-|ALU_FPGA_tb|ALU_FPGA:myAlu|and_n_module:andModule|and_module:a_for[0].myAnd
+|ALU_FPGA|and_n_module:andModule|and_module:a_for[0].myAnd
 a => z.IN0
 b => z.IN1
 z <= z.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_FPGA_tb|ALU_FPGA:myAlu|and_n_module:andModule|and_module:a_for[1].myAnd
+|ALU_FPGA|and_n_module:andModule|and_module:a_for[1].myAnd
 a => z.IN0
 b => z.IN1
 z <= z.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_FPGA_tb|ALU_FPGA:myAlu|and_n_module:andModule|and_module:a_for[2].myAnd
+|ALU_FPGA|and_n_module:andModule|and_module:a_for[2].myAnd
 a => z.IN0
 b => z.IN1
 z <= z.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_FPGA_tb|ALU_FPGA:myAlu|and_n_module:andModule|and_module:a_for[3].myAnd
+|ALU_FPGA|and_n_module:andModule|and_module:a_for[3].myAnd
 a => z.IN0
 b => z.IN1
 z <= z.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_FPGA_tb|ALU_FPGA:myAlu|bin2bcd:bcd_deco
+|ALU_FPGA|or_n_module:orModule
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+s[0] <= or_module:a_for[0].myOr.port2
+s[1] <= or_module:a_for[1].myOr.port2
+s[2] <= or_module:a_for[2].myOr.port2
+s[3] <= or_module:a_for[3].myOr.port2
+
+
+|ALU_FPGA|or_n_module:orModule|or_module:a_for[0].myOr
+a => z.IN0
+b => z.IN1
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_FPGA|or_n_module:orModule|or_module:a_for[1].myOr
+a => z.IN0
+b => z.IN1
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_FPGA|or_n_module:orModule|or_module:a_for[2].myOr
+a => z.IN0
+b => z.IN1
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_FPGA|or_n_module:orModule|or_module:a_for[3].myOr
+a => z.IN0
+b => z.IN1
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_FPGA|xor_n_module:xorModule
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+s[0] <= xor_module:a_for[0].myOr.port2
+s[1] <= xor_module:a_for[1].myOr.port2
+s[2] <= xor_module:a_for[2].myOr.port2
+s[3] <= xor_module:a_for[3].myOr.port2
+
+
+|ALU_FPGA|xor_n_module:xorModule|xor_module:a_for[0].myOr
+a => z.IN0
+b => z.IN1
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_FPGA|xor_n_module:xorModule|xor_module:a_for[1].myOr
+a => z.IN0
+b => z.IN1
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_FPGA|xor_n_module:xorModule|xor_module:a_for[2].myOr
+a => z.IN0
+b => z.IN1
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_FPGA|xor_n_module:xorModule|xor_module:a_for[3].myOr
+a => z.IN0
+b => z.IN1
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_FPGA|bin2bcd:bcd_deco
 bin[0] => bcd[0].DATAIN
 bin[1] => LessThan5.IN8
 bin[1] => Add5.IN8
@@ -333,7 +408,7 @@ bcd[10] <= <GND>
 bcd[11] <= <GND>
 
 
-|ALU_FPGA_tb|ALU_FPGA:myAlu|segment7_deco:seg1
+|ALU_FPGA|segment7_deco:seg1
 bcd[0] => Decoder0.IN3
 bcd[1] => Decoder0.IN2
 bcd[2] => Decoder0.IN1
@@ -347,7 +422,7 @@ seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALU_FPGA_tb|ALU_FPGA:myAlu|segment7_deco:seg2
+|ALU_FPGA|segment7_deco:seg2
 bcd[0] => Decoder0.IN3
 bcd[1] => Decoder0.IN2
 bcd[2] => Decoder0.IN1
