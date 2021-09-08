@@ -12,9 +12,13 @@ module ALU_FPGA_tb();
 	ALU_FPGA myAlu(a, b, op, hex1, hex2, N, Z, C, V);
 	
 	initial begin
-		a = 5;
-		b = 5;
+		a = 15;
+		b = 15;
 		op = 0;
+		#40
+		
+		a = 0;
+		b = 0;
 		#40
 		
 		a = 8;

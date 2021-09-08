@@ -10,130 +10,170 @@
 # Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
+# vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1 {C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/compuerta_xor_n.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:09:46 on Sep 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1" C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/compuerta_xor_n.sv 
+# -- Compiling module xor_n_module
+# 
+# Top level modules:
+# 	xor_n_module
+# End time: 12:09:46 on Sep 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1 {C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/compuerta_or_n.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:09:46 on Sep 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1" C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/compuerta_or_n.sv 
+# -- Compiling module or_n_module
+# 
+# Top level modules:
+# 	or_n_module
+# End time: 12:09:46 on Sep 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1 {C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/sumador_1.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:34:31 on Sep 07,2021
+# Start time: 12:09:46 on Sep 08,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1" C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/sumador_1.sv 
 # -- Compiling module sumador_1
 # 
 # Top level modules:
 # 	sumador_1
-# End time: 12:34:31 on Sep 07,2021, Elapsed time: 0:00:00
+# End time: 12:09:47 on Sep 08,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1 {C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/sumador_n.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:34:31 on Sep 07,2021
+# Start time: 12:09:47 on Sep 08,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1" C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/sumador_n.sv 
 # -- Compiling module sumador_n
 # 
 # Top level modules:
 # 	sumador_n
-# End time: 12:34:31 on Sep 07,2021, Elapsed time: 0:00:00
+# End time: 12:09:47 on Sep 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1 {C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/restador_1.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:34:31 on Sep 07,2021
+# Start time: 12:09:47 on Sep 08,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1" C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/restador_1.sv 
 # -- Compiling module restador_1
 # 
 # Top level modules:
 # 	restador_1
-# End time: 12:34:31 on Sep 07,2021, Elapsed time: 0:00:00
+# End time: 12:09:47 on Sep 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1 {C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/restador_n.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:34:31 on Sep 07,2021
+# Start time: 12:09:47 on Sep 08,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1" C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/restador_n.sv 
 # -- Compiling module restador_n
 # 
 # Top level modules:
 # 	restador_n
-# End time: 12:34:31 on Sep 07,2021, Elapsed time: 0:00:00
+# End time: 12:09:47 on Sep 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1 {C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/shift_right.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:34:31 on Sep 07,2021
+# Start time: 12:09:47 on Sep 08,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1" C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/shift_right.sv 
 # -- Compiling module shift_right
 # 
 # Top level modules:
 # 	shift_right
-# End time: 12:34:31 on Sep 07,2021, Elapsed time: 0:00:00
+# End time: 12:09:47 on Sep 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1 {C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/shift_left.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:34:31 on Sep 07,2021
+# Start time: 12:09:47 on Sep 08,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1" C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/shift_left.sv 
 # -- Compiling module shift_left
 # 
 # Top level modules:
 # 	shift_left
-# End time: 12:34:32 on Sep 07,2021, Elapsed time: 0:00:01
+# End time: 12:09:47 on Sep 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1 {C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/segment7_deco.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:34:32 on Sep 07,2021
+# Start time: 12:09:47 on Sep 08,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1" C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/segment7_deco.sv 
 # -- Compiling module segment7_deco
 # 
 # Top level modules:
 # 	segment7_deco
-# End time: 12:34:32 on Sep 07,2021, Elapsed time: 0:00:00
+# End time: 12:09:47 on Sep 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1 {C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/bin2bcd.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:34:32 on Sep 07,2021
+# Start time: 12:09:47 on Sep 08,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1" C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/bin2bcd.sv 
 # -- Compiling module bin2bcd
 # 
 # Top level modules:
 # 	bin2bcd
-# End time: 12:34:32 on Sep 07,2021, Elapsed time: 0:00:00
+# End time: 12:09:48 on Sep 08,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1 {C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:34:32 on Sep 07,2021
+# Start time: 12:09:48 on Sep 08,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1" C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv 
 # -- Compiling module ALU_FPGA
 # 
 # Top level modules:
 # 	ALU_FPGA
-# End time: 12:34:32 on Sep 07,2021, Elapsed time: 0:00:00
+# End time: 12:09:48 on Sep 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1 {C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/compuerta_and_1.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:34:32 on Sep 07,2021
+# Start time: 12:09:48 on Sep 08,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1" C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/compuerta_and_1.sv 
 # -- Compiling module and_module
 # 
 # Top level modules:
 # 	and_module
-# End time: 12:34:32 on Sep 07,2021, Elapsed time: 0:00:00
+# End time: 12:09:48 on Sep 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1 {C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/compuerta_or_1.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:09:48 on Sep 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1" C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/compuerta_or_1.sv 
+# -- Compiling module or_module
+# 
+# Top level modules:
+# 	or_module
+# End time: 12:09:48 on Sep 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1 {C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/compuerta_xor_1.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:09:48 on Sep 08,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1" C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/compuerta_xor_1.sv 
+# -- Compiling module xor_module
+# 
+# Top level modules:
+# 	xor_module
+# End time: 12:09:48 on Sep 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1 {C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/compuerta_and_n.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:34:32 on Sep 07,2021
+# Start time: 12:09:48 on Sep 08,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1" C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/compuerta_and_n.sv 
 # -- Compiling module and_n_module
 # 
 # Top level modules:
 # 	and_n_module
-# End time: 12:34:32 on Sep 07,2021, Elapsed time: 0:00:00
+# End time: 12:09:48 on Sep 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1 {C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:34:32 on Sep 07,2021
+# Start time: 12:09:48 on Sep 08,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1" C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA_tb.sv 
 # -- Compiling module ALU_FPGA_tb
 # 
 # Top level modules:
 # 	ALU_FPGA_tb
-# End time: 12:34:32 on Sep 07,2021, Elapsed time: 0:00:00
+# End time: 12:09:48 on Sep 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 vsim work.ALU_FPGA_tb
 # vsim work.ALU_FPGA_tb 
-# Start time: 12:34:37 on Sep 07,2021
+# Start time: 12:09:52 on Sep 08,2021
 # Loading sv_std.std
 # Loading work.ALU_FPGA_tb
 # Loading work.ALU_FPGA
@@ -142,17 +182,21 @@ vsim work.ALU_FPGA_tb
 # Loading work.shift_right
 # Loading work.shift_left
 # Loading work.and_n_module
+# Loading work.or_n_module
+# Loading work.xor_n_module
 # Loading work.bin2bcd
 # Loading work.segment7_deco
 # Loading work.sumador_1
 # Loading work.restador_1
 # Loading work.and_module
+# Loading work.or_module
+# Loading work.xor_module
 # ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/sumador_n.sv(5).
-#    Time: 0 ps  Iteration: 0  Instance: /ALU_FPGA_tb/myAlu/suma File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 38
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_FPGA_tb/myAlu/suma File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 49
 # ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/restador_n.sv(5).
-#    Time: 0 ps  Iteration: 0  Instance: /ALU_FPGA_tb/myAlu/resta File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 39
+#    Time: 0 ps  Iteration: 0  Instance: /ALU_FPGA_tb/myAlu/resta File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 51
 add wave sim:/ALU_FPGA_tb/*
 run
 run
-# End time: 12:36:11 on Sep 07,2021, Elapsed time: 0:01:34
+# End time: 12:11:07 on Sep 08,2021, Elapsed time: 0:01:15
 # Errors: 0, Warnings: 2

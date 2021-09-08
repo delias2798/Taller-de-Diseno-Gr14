@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Problema1
-Wed Sep  8 00:40:45 2021
+Wed Sep 08 12:11:43 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -56,7 +56,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Sep  8 00:40:45 2021       ;
+; Analysis & Synthesis Status     ; Successful - Wed Sep 08 12:11:43 2021       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; Problema1                                   ;
 ; Top-level Entity Name           ; ALU_FPGA                                    ;
@@ -168,66 +168,66 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
+; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
+;     Processors 2-6         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                         ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                                                                     ; Library ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; sumador_1.sv                     ; yes             ; User SystemVerilog HDL File  ; /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/sumador_1.sv                    ;         ;
-; sumador_n.sv                     ; yes             ; User SystemVerilog HDL File  ; /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/sumador_n.sv                    ;         ;
-; restador_1.sv                    ; yes             ; User SystemVerilog HDL File  ; /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/restador_1.sv                   ;         ;
-; restador_n.sv                    ; yes             ; User SystemVerilog HDL File  ; /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/restador_n.sv                   ;         ;
-; shift_right.sv                   ; yes             ; User SystemVerilog HDL File  ; /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/shift_right.sv                  ;         ;
-; shift_left.sv                    ; yes             ; User SystemVerilog HDL File  ; /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/shift_left.sv                   ;         ;
-; segment7_deco.sv                 ; yes             ; User SystemVerilog HDL File  ; /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/segment7_deco.sv                ;         ;
-; bin2bcd.sv                       ; yes             ; User SystemVerilog HDL File  ; /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/bin2bcd.sv                      ;         ;
-; ALU_FPGA.sv                      ; yes             ; User SystemVerilog HDL File  ; /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv                     ;         ;
-; compuerta_and_1.sv               ; yes             ; User SystemVerilog HDL File  ; /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/compuerta_and_1.sv              ;         ;
-; compuerta_or_1.sv                ; yes             ; User SystemVerilog HDL File  ; /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/compuerta_or_1.sv               ;         ;
-; compuerta_xor_1.sv               ; yes             ; User SystemVerilog HDL File  ; /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/compuerta_xor_1.sv              ;         ;
-; compuerta_and_n.sv               ; yes             ; User SystemVerilog HDL File  ; /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/compuerta_and_n.sv              ;         ;
-; output_files/compuerta_or_n.sv   ; yes             ; User SystemVerilog HDL File  ; /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/output_files/compuerta_or_n.sv  ;         ;
-; output_files/compuerta_xor_n.sv  ; yes             ; User SystemVerilog HDL File  ; /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/output_files/compuerta_xor_n.sv ;         ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                         ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                     ; Library ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------+---------+
+; compuerta_xor_n.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/compuerta_xor_n.sv ;         ;
+; compuerta_or_n.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/compuerta_or_n.sv  ;         ;
+; sumador_1.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/sumador_1.sv       ;         ;
+; sumador_n.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/sumador_n.sv       ;         ;
+; restador_1.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/restador_1.sv      ;         ;
+; restador_n.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/restador_n.sv      ;         ;
+; shift_right.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/shift_right.sv     ;         ;
+; shift_left.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/shift_left.sv      ;         ;
+; segment7_deco.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/segment7_deco.sv   ;         ;
+; bin2bcd.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/bin2bcd.sv         ;         ;
+; ALU_FPGA.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv        ;         ;
+; compuerta_and_1.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/compuerta_and_1.sv ;         ;
+; compuerta_or_1.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/compuerta_or_1.sv  ;         ;
+; compuerta_xor_1.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/compuerta_xor_1.sv ;         ;
+; compuerta_and_n.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/compuerta_and_n.sv ;         ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------+---------+
 
 
-+----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary              ;
-+---------------------------------------------+------------+
-; Resource                                    ; Usage      ;
-+---------------------------------------------+------------+
-; Estimate of Logic utilization (ALMs needed) ; 30         ;
-;                                             ;            ;
-; Combinational ALUT usage for logic          ; 39         ;
-;     -- 7 input functions                    ; 1          ;
-;     -- 6 input functions                    ; 19         ;
-;     -- 5 input functions                    ; 2          ;
-;     -- 4 input functions                    ; 9          ;
-;     -- <=3 input functions                  ; 8          ;
-;                                             ;            ;
-; Dedicated logic registers                   ; 0          ;
-;                                             ;            ;
-; I/O pins                                    ; 29         ;
-;                                             ;            ;
-; Total DSP Blocks                            ; 0          ;
-;                                             ;            ;
-; Maximum fan-out node                        ; a[3]~input ;
-; Maximum fan-out                             ; 16         ;
-; Total fan-out                               ; 234        ;
-; Average fan-out                             ; 2.41       ;
-+---------------------------------------------+------------+
++------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary          ;
++---------------------------------------------+--------+
+; Resource                                    ; Usage  ;
++---------------------------------------------+--------+
+; Estimate of Logic utilization (ALMs needed) ; 29     ;
+;                                             ;        ;
+; Combinational ALUT usage for logic          ; 44     ;
+;     -- 7 input functions                    ; 1      ;
+;     -- 6 input functions                    ; 12     ;
+;     -- 5 input functions                    ; 2      ;
+;     -- 4 input functions                    ; 20     ;
+;     -- <=3 input functions                  ; 9      ;
+;                                             ;        ;
+; Dedicated logic registers                   ; 0      ;
+;                                             ;        ;
+; I/O pins                                    ; 29     ;
+;                                             ;        ;
+; Total DSP Blocks                            ; 0      ;
+;                                             ;        ;
+; Maximum fan-out node                        ; res[2] ;
+; Maximum fan-out                             ; 10     ;
+; Total fan-out                               ; 241    ;
+; Average fan-out                             ; 2.36   ;
++---------------------------------------------+--------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -235,7 +235,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------+---------------+--------------+
 ; Compilation Hierarchy Node      ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                ; Entity Name   ; Library Name ;
 +---------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------+---------------+--------------+
-; |ALU_FPGA                       ; 39 (15)             ; 0 (0)                     ; 0                 ; 0          ; 29   ; 0            ; |ALU_FPGA                                          ; ALU_FPGA      ; work         ;
+; |ALU_FPGA                       ; 44 (21)             ; 0 (0)                     ; 0                 ; 0          ; 29   ; 0            ; |ALU_FPGA                                          ; ALU_FPGA      ; work         ;
 ;    |bin2bcd:bcd_deco|           ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU_FPGA|bin2bcd:bcd_deco                         ; bin2bcd       ; work         ;
 ;    |restador_n:resta|           ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU_FPGA|restador_n:resta                         ; restador_n    ; work         ;
 ;       |restador_1:a_for[0].res| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU_FPGA|restador_n:resta|restador_1:a_for[0].res ; restador_1    ; work         ;
@@ -244,10 +244,9 @@ https://fpgasoftware.intel.com/eula.
 ;       |restador_1:a_for[3].res| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU_FPGA|restador_n:resta|restador_1:a_for[3].res ; restador_1    ; work         ;
 ;    |segment7_deco:seg1|         ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU_FPGA|segment7_deco:seg1                       ; segment7_deco ; work         ;
 ;    |segment7_deco:seg2|         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU_FPGA|segment7_deco:seg2                       ; segment7_deco ; work         ;
-;    |sumador_n:suma|             ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU_FPGA|sumador_n:suma                           ; sumador_n     ; work         ;
+;    |sumador_n:suma|             ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU_FPGA|sumador_n:suma                           ; sumador_n     ; work         ;
 ;       |sumador_1:a_for[1].sum|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU_FPGA|sumador_n:suma|sumador_1:a_for[1].sum    ; sumador_1     ; work         ;
 ;       |sumador_1:a_for[2].sum|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU_FPGA|sumador_n:suma|sumador_1:a_for[2].sum    ; sumador_1     ; work         ;
-;       |sumador_1:a_for[3].sum|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU_FPGA|sumador_n:suma|sumador_1:a_for[3].sum    ; sumador_1     ; work         ;
 +---------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------+---------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -395,21 +394,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 44                          ;
+; arriav_lcell_comb     ; 50                          ;
 ;     extend            ; 1                           ;
 ;         7 data inputs ; 1                           ;
-;     normal            ; 43                          ;
+;     normal            ; 49                          ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 4                           ;
+;         1 data inputs ; 5                           ;
 ;         2 data inputs ; 1                           ;
-;         3 data inputs ; 7                           ;
-;         4 data inputs ; 9                           ;
+;         3 data inputs ; 8                           ;
+;         4 data inputs ; 20                          ;
 ;         5 data inputs ; 2                           ;
-;         6 data inputs ; 19                          ;
+;         6 data inputs ; 12                          ;
 ; boundary_port         ; 29                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 3.73                        ;
+; Max LUT depth         ; 6.00                        ;
+; Average LUT depth     ; 4.58                        ;
 +-----------------------+-----------------------------+
 
 
@@ -418,7 +417,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -428,129 +427,120 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed Sep  8 00:40:28 2021
+    Info: Processing started: Wed Sep 08 12:11:28 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Problema1 -c Problema1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file compuerta_xor_n.sv
+    Info (12023): Found entity 1: xor_n_module File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/compuerta_xor_n.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file compuerta_or_n.sv
+    Info (12023): Found entity 1: or_n_module File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/compuerta_or_n.sv Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file sumador_1.sv
-    Info (12023): Found entity 1: sumador_1 File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/sumador_1.sv Line: 4
+    Info (12023): Found entity 1: sumador_1 File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/sumador_1.sv Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file sumador_n.sv
-    Info (12023): Found entity 1: sumador_n File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/sumador_n.sv Line: 4
+    Info (12023): Found entity 1: sumador_n File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/sumador_n.sv Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file sumador_n_tb.sv
-    Info (12023): Found entity 1: sumador_n_tb File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/sumador_n_tb.sv Line: 4
+    Info (12023): Found entity 1: sumador_n_tb File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/sumador_n_tb.sv Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file restador_1.sv
-    Info (12023): Found entity 1: restador_1 File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/restador_1.sv Line: 4
+    Info (12023): Found entity 1: restador_1 File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/restador_1.sv Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file restador_n.sv
-    Info (12023): Found entity 1: restador_n File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/restador_n.sv Line: 4
+    Info (12023): Found entity 1: restador_n File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/restador_n.sv Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file restador_n_tb.sv
-    Info (12023): Found entity 1: restador_n_tb File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/restador_n_tb.sv Line: 4
+    Info (12023): Found entity 1: restador_n_tb File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/restador_n_tb.sv Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file shift_right.sv
-    Info (12023): Found entity 1: shift_right File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/shift_right.sv Line: 4
+    Info (12023): Found entity 1: shift_right File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/shift_right.sv Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file shigt_right_tb.sv
-    Info (12023): Found entity 1: shigt_right_tb File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/shigt_right_tb.sv Line: 4
+    Info (12023): Found entity 1: shigt_right_tb File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/shigt_right_tb.sv Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file shift_left.sv
-    Info (12023): Found entity 1: shift_left File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/shift_left.sv Line: 4
+    Info (12023): Found entity 1: shift_left File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/shift_left.sv Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file shigt_left_tb.sv
-    Info (12023): Found entity 1: shigt_left_tb File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/shigt_left_tb.sv Line: 4
-Info (12021): Found 1 design units, including 1 entities, in source file ALU.sv
-    Info (12023): Found entity 1: ALU File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU.sv Line: 23
-Info (12021): Found 1 design units, including 1 entities, in source file ALU_tb.sv
-    Info (12023): Found entity 1: ALU_tb File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_tb.sv Line: 4
+    Info (12023): Found entity 1: shigt_left_tb File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/shigt_left_tb.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
+    Info (12023): Found entity 1: ALU File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU.sv Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file alu_tb.sv
+    Info (12023): Found entity 1: ALU_tb File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_tb.sv Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file segment7_deco.sv
-    Info (12023): Found entity 1: segment7_deco File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/segment7_deco.sv Line: 3
+    Info (12023): Found entity 1: segment7_deco File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/segment7_deco.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file bin2bcd.sv
-    Info (12023): Found entity 1: bin2bcd File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/bin2bcd.sv Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file ALU_FPGA.sv
-    Info (12023): Found entity 1: ALU_FPGA File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 35
+    Info (12023): Found entity 1: bin2bcd File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/bin2bcd.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file alu_fpga.sv
+    Info (12023): Found entity 1: ALU_FPGA File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 35
 Info (12021): Found 1 design units, including 1 entities, in source file compuerta_and_1.sv
-    Info (12023): Found entity 1: and_module File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/compuerta_and_1.sv Line: 4
+    Info (12023): Found entity 1: and_module File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/compuerta_and_1.sv Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file compuerta_or_1.sv
-    Info (12023): Found entity 1: or_module File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/compuerta_or_1.sv Line: 4
+    Info (12023): Found entity 1: or_module File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/compuerta_or_1.sv Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file compuerta_xor_1.sv
-    Info (12023): Found entity 1: xor_module File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/compuerta_xor_1.sv Line: 4
+    Info (12023): Found entity 1: xor_module File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/compuerta_xor_1.sv Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file compuerta_and_n.sv
-    Info (12023): Found entity 1: and_n_module File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/compuerta_and_n.sv Line: 4
-Info (12021): Found 1 design units, including 1 entities, in source file ALU_FPGA_tb.sv
-    Info (12023): Found entity 1: ALU_FPGA_tb File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA_tb.sv Line: 4
-Info (12021): Found 1 design units, including 1 entities, in source file output_files/compuerta_or_n.sv
-    Info (12023): Found entity 1: or_n_module File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/output_files/compuerta_or_n.sv Line: 4
-Info (12021): Found 1 design units, including 1 entities, in source file output_files/compuerta_xor_n.sv
-    Info (12023): Found entity 1: xor_n_module File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/output_files/compuerta_xor_n.sv Line: 4
-Warning (10236): Verilog HDL Implicit Net warning at ALU_FPGA.sv(66): created implicit net for "r" File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 66
+    Info (12023): Found entity 1: and_n_module File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/compuerta_and_n.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file alu_fpga_tb.sv
+    Info (12023): Found entity 1: ALU_FPGA_tb File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA_tb.sv Line: 4
+Warning (10236): Verilog HDL Implicit Net warning at ALU_FPGA.sv(70): created implicit net for "r" File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 70
 Info (12127): Elaborating entity "ALU_FPGA" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at ALU_FPGA.sv(66): object "r" assigned a value but never read File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 66
-Warning (10036): Verilog HDL or VHDL warning at ALU_FPGA.sv(42): object "N_" assigned a value but never read File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 42
-Warning (10036): Verilog HDL or VHDL warning at ALU_FPGA.sv(42): object "Z_" assigned a value but never read File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 42
-Warning (10036): Verilog HDL or VHDL warning at ALU_FPGA.sv(42): object "C_" assigned a value but never read File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 42
-Warning (10036): Verilog HDL or VHDL warning at ALU_FPGA.sv(42): object "V_" assigned a value but never read File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 42
-Warning (10230): Verilog HDL assignment warning at ALU_FPGA.sv(66): truncated value with size 4 to match size of target (1) File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 66
-Warning (10235): Verilog HDL Always Construct warning at ALU_FPGA.sv(81): variable "res" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 81
-Warning (10235): Verilog HDL Always Construct warning at ALU_FPGA.sv(89): variable "resSuma" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 89
-Warning (10235): Verilog HDL Always Construct warning at ALU_FPGA.sv(94): variable "N" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 94
-Warning (10235): Verilog HDL Always Construct warning at ALU_FPGA.sv(95): variable "resResta" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 95
-Warning (10230): Verilog HDL assignment warning at ALU_FPGA.sv(95): truncated value with size 32 to match size of target (4) File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 95
-Warning (10235): Verilog HDL Always Construct warning at ALU_FPGA.sv(98): variable "resResta" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 98
-Warning (10235): Verilog HDL Always Construct warning at ALU_FPGA.sv(105): variable "resRight" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 105
-Warning (10235): Verilog HDL Always Construct warning at ALU_FPGA.sv(111): variable "resLeft" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 111
-Warning (10235): Verilog HDL Always Construct warning at ALU_FPGA.sv(117): variable "resAnd" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 117
-Warning (10235): Verilog HDL Always Construct warning at ALU_FPGA.sv(123): variable "resOr" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 123
-Warning (10235): Verilog HDL Always Construct warning at ALU_FPGA.sv(129): variable "resXor" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 129
-Warning (10270): Verilog HDL Case Statement warning at ALU_FPGA.sv(87): incomplete case statement has no default case item File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 87
-Warning (10240): Verilog HDL Always Construct warning at ALU_FPGA.sv(80): inferring latch(es) for variable "res", which holds its previous value in one or more paths through the always construct File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 80
-Warning (10034): Output port "Z" at ALU_FPGA.sv(36) has no driver File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 36
-Warning (10034): Output port "V" at ALU_FPGA.sv(36) has no driver File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 36
-Info (10041): Inferred latch for "res[0]" at ALU_FPGA.sv(80) File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 80
-Info (10041): Inferred latch for "res[1]" at ALU_FPGA.sv(80) File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 80
-Info (10041): Inferred latch for "res[2]" at ALU_FPGA.sv(80) File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 80
-Info (10041): Inferred latch for "res[3]" at ALU_FPGA.sv(80) File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 80
-Info (12128): Elaborating entity "sumador_n" for hierarchy "sumador_n:suma" File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 48
-Info (12128): Elaborating entity "sumador_1" for hierarchy "sumador_n:suma|sumador_1:a_for[0].sum" File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/sumador_n.sv Line: 17
-Info (12128): Elaborating entity "restador_n" for hierarchy "restador_n:resta" File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 49
-Info (12128): Elaborating entity "restador_1" for hierarchy "restador_n:resta|restador_1:a_for[0].res" File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/restador_n.sv Line: 17
-Info (12128): Elaborating entity "shift_right" for hierarchy "shift_right:derecha" File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 50
-Info (12128): Elaborating entity "shift_left" for hierarchy "shift_left:izquierda" File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 51
-Info (12128): Elaborating entity "and_n_module" for hierarchy "and_n_module:andModule" File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 53
-Info (12128): Elaborating entity "and_module" for hierarchy "and_n_module:andModule|and_module:a_for[0].myAnd" File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/compuerta_and_n.sv Line: 14
-Info (12128): Elaborating entity "or_n_module" for hierarchy "or_n_module:orModule" File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 55
-Info (12128): Elaborating entity "or_module" for hierarchy "or_n_module:orModule|or_module:a_for[0].myOr" File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/output_files/compuerta_or_n.sv Line: 14
-Info (12128): Elaborating entity "xor_n_module" for hierarchy "xor_n_module:xorModule" File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 57
-Info (12128): Elaborating entity "xor_module" for hierarchy "xor_n_module:xorModule|xor_module:a_for[0].myOr" File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/output_files/compuerta_xor_n.sv Line: 14
-Info (12128): Elaborating entity "bin2bcd" for hierarchy "bin2bcd:bcd_deco" File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 61
-Warning (10230): Verilog HDL assignment warning at bin2bcd.sv(21): truncated value with size 32 to match size of target (4) File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/bin2bcd.sv Line: 21
-Warning (10230): Verilog HDL assignment warning at bin2bcd.sv(27): truncated value with size 32 to match size of target (4) File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/bin2bcd.sv Line: 27
-Warning (10230): Verilog HDL assignment warning at bin2bcd.sv(29): truncated value with size 32 to match size of target (4) File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/bin2bcd.sv Line: 29
-Info (12128): Elaborating entity "segment7_deco" for hierarchy "segment7_deco:seg1" File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 62
+Warning (10036): Verilog HDL or VHDL warning at ALU_FPGA.sv(70): object "r" assigned a value but never read File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 70
+Warning (10230): Verilog HDL assignment warning at ALU_FPGA.sv(70): truncated value with size 4 to match size of target (1) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 70
+Warning (10235): Verilog HDL Always Construct warning at ALU_FPGA.sv(87): variable "resSuma" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 87
+Warning (10235): Verilog HDL Always Construct warning at ALU_FPGA.sv(90): variable "N" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 90
+Warning (10235): Verilog HDL Always Construct warning at ALU_FPGA.sv(91): variable "resResta" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 91
+Warning (10230): Verilog HDL assignment warning at ALU_FPGA.sv(91): truncated value with size 32 to match size of target (4) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 91
+Warning (10235): Verilog HDL Always Construct warning at ALU_FPGA.sv(94): variable "resResta" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 94
+Warning (10235): Verilog HDL Always Construct warning at ALU_FPGA.sv(98): variable "resRight" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 98
+Warning (10235): Verilog HDL Always Construct warning at ALU_FPGA.sv(100): variable "resLeft" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 100
+Warning (10235): Verilog HDL Always Construct warning at ALU_FPGA.sv(102): variable "resAnd" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 102
+Warning (10235): Verilog HDL Always Construct warning at ALU_FPGA.sv(104): variable "resOr" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 104
+Warning (10235): Verilog HDL Always Construct warning at ALU_FPGA.sv(106): variable "resXor" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 106
+Warning (10270): Verilog HDL Case Statement warning at ALU_FPGA.sv(86): incomplete case statement has no default case item File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 86
+Warning (10240): Verilog HDL Always Construct warning at ALU_FPGA.sv(85): inferring latch(es) for variable "res", which holds its previous value in one or more paths through the always construct File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 85
+Info (10041): Inferred latch for "res[0]" at ALU_FPGA.sv(85) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 85
+Info (10041): Inferred latch for "res[1]" at ALU_FPGA.sv(85) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 85
+Info (10041): Inferred latch for "res[2]" at ALU_FPGA.sv(85) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 85
+Info (10041): Inferred latch for "res[3]" at ALU_FPGA.sv(85) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 85
+Info (12128): Elaborating entity "sumador_n" for hierarchy "sumador_n:suma" File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 49
+Info (12128): Elaborating entity "sumador_1" for hierarchy "sumador_n:suma|sumador_1:a_for[0].sum" File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/sumador_n.sv Line: 17
+Info (12128): Elaborating entity "restador_n" for hierarchy "restador_n:resta" File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 51
+Info (12128): Elaborating entity "restador_1" for hierarchy "restador_n:resta|restador_1:a_for[0].res" File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/restador_n.sv Line: 17
+Info (12128): Elaborating entity "shift_right" for hierarchy "shift_right:derecha" File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 53
+Info (12128): Elaborating entity "shift_left" for hierarchy "shift_left:izquierda" File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 55
+Info (12128): Elaborating entity "and_n_module" for hierarchy "and_n_module:andModule" File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 57
+Info (12128): Elaborating entity "and_module" for hierarchy "and_n_module:andModule|and_module:a_for[0].myAnd" File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/compuerta_and_n.sv Line: 14
+Info (12128): Elaborating entity "or_n_module" for hierarchy "or_n_module:orModule" File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 59
+Info (12128): Elaborating entity "or_module" for hierarchy "or_n_module:orModule|or_module:a_for[0].myOr" File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/compuerta_or_n.sv Line: 14
+Info (12128): Elaborating entity "xor_n_module" for hierarchy "xor_n_module:xorModule" File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 61
+Info (12128): Elaborating entity "xor_module" for hierarchy "xor_n_module:xorModule|xor_module:a_for[0].myOr" File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/compuerta_xor_n.sv Line: 14
+Info (12128): Elaborating entity "bin2bcd" for hierarchy "bin2bcd:bcd_deco" File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 65
+Warning (10230): Verilog HDL assignment warning at bin2bcd.sv(21): truncated value with size 32 to match size of target (4) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/bin2bcd.sv Line: 21
+Warning (10230): Verilog HDL assignment warning at bin2bcd.sv(27): truncated value with size 32 to match size of target (4) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/bin2bcd.sv Line: 27
+Warning (10230): Verilog HDL assignment warning at bin2bcd.sv(29): truncated value with size 32 to match size of target (4) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/bin2bcd.sv Line: 29
+Info (12128): Elaborating entity "segment7_deco" for hierarchy "segment7_deco:seg1" File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 66
 Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Warning (13012): Latch res[0] has unsafe behavior File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 80
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal op[0] File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 35
-Warning (13012): Latch res[1] has unsafe behavior File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 80
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal op[2] File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 35
-Warning (13012): Latch res[2] has unsafe behavior File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 80
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal op[2] File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 35
-Warning (13012): Latch res[3] has unsafe behavior File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 80
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal op[1] File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 35
+Warning (13012): Latch res[0] has unsafe behavior File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 85
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal op[0] File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 35
+Warning (13012): Latch res[1] has unsafe behavior File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 85
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal op[2] File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 35
+Warning (13012): Latch res[2] has unsafe behavior File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 85
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal op[2] File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 35
+Warning (13012): Latch res[3] has unsafe behavior File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 85
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal op[1] File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 35
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "hex2[5]" is stuck at GND File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 36
-    Warning (13410): Pin "Z" is stuck at GND File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 36
-    Warning (13410): Pin "V" is stuck at GND File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 36
+    Warning (13410): Pin "hex2[5]" is stuck at GND File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/ALU_FPGA.sv Line: 36
 Info (286030): Timing-Driven Synthesis is running
-Info (144001): Generated suppressed messages file /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/output_files/Problema1.map.smsg
+Info (144001): Generated suppressed messages file C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/output_files/Problema1.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 68 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 73 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 11 input pins
     Info (21059): Implemented 18 output pins
-    Info (21061): Implemented 39 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 39 warnings
-    Info: Peak virtual memory: 447 megabytes
-    Info: Processing ended: Wed Sep  8 00:40:45 2021
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:35
+    Info (21061): Implemented 44 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 30 warnings
+    Info: Peak virtual memory: 4843 megabytes
+    Info: Processing ended: Wed Sep 08 12:11:43 2021
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:21
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/output_files/Problema1.map.smsg.
+The suppressed messages can be found in C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-3/Problema1/output_files/Problema1.map.smsg.
 
 

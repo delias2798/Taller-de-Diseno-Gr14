@@ -80,6 +80,8 @@ set_location_assignment PIN_AG30 -to hex2[3]
 set_location_assignment PIN_AF29 -to hex2[2]
 set_location_assignment PIN_AF30 -to hex2[1]
 set_location_assignment PIN_AD27 -to hex2[0]
+set_global_assignment -name SYSTEMVERILOG_FILE compuerta_xor_n.sv
+set_global_assignment -name SYSTEMVERILOG_FILE compuerta_or_n.sv
 set_global_assignment -name SYSTEMVERILOG_FILE sumador_1.sv
 set_global_assignment -name SYSTEMVERILOG_FILE sumador_n.sv
 set_global_assignment -name SYSTEMVERILOG_FILE sumador_n_tb.sv
@@ -103,6 +105,4 @@ set_global_assignment -name SYSTEMVERILOG_FILE ALU_FPGA_tb.sv
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name SYSTEMVERILOG_FILE output_files/compuerta_or_n.sv
-set_global_assignment -name SYSTEMVERILOG_FILE output_files/compuerta_xor_n.sv
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

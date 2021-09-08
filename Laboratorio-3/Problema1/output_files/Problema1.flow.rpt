@@ -1,5 +1,5 @@
 Flow report for Problema1
-Wed Sep  8 00:42:19 2021
+Wed Sep 08 12:12:47 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,14 +41,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Wed Sep  8 00:42:19 2021       ;
+; Flow Status                     ; Successful - Wed Sep 08 12:12:47 2021       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; Problema1                                   ;
 ; Top-level Entity Name           ; ALU_FPGA                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSEMA5F31C6                                ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 30 / 32,070 ( < 1 % )                       ;
+; Logic utilization (in ALMs)     ; 29 / 32,070 ( < 1 % )                       ;
 ; Total registers                 ; 0                                           ;
 ; Total pins                      ; 29 / 457 ( 6 % )                            ;
 ; Total virtual pins              ; 0                                           ;
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 09/08/2021 00:40:29 ;
+; Start date & time ; 09/08/2021 12:11:28 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Problema1           ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 52848282923355.163108322903616         ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 154239763264373.163112468805712        ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                      ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)        ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --             ;
@@ -99,26 +99,26 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:16     ; 1.0                     ; 433 MB              ; 00:00:35                           ;
-; Fitter               ; 00:01:05     ; 1.0                     ; 1547 MB             ; 00:01:33                           ;
-; Assembler            ; 00:00:15     ; 1.0                     ; 504 MB              ; 00:00:12                           ;
-; Timing Analyzer      ; 00:00:08     ; 1.0                     ; 803 MB              ; 00:00:08                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 696 MB              ; 00:00:02                           ;
-; Total                ; 00:01:46     ; --                      ; --                  ; 00:02:30                           ;
+; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4843 MB             ; 00:00:21                           ;
+; Fitter               ; 00:00:39     ; 1.0                     ; 6746 MB             ; 00:01:20                           ;
+; Assembler            ; 00:00:07     ; 1.0                     ; 4835 MB             ; 00:00:07                           ;
+; Timing Analyzer      ; 00:00:07     ; 1.1                     ; 5157 MB             ; 00:00:06                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4739 MB             ; 00:00:01                           ;
+; Total                ; 00:01:03     ; --                      ; --                  ; 00:01:55                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+------------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                          ;
-+----------------------+------------------+---------------+---------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name       ; OS Version    ; Processor type ;
-+----------------------+------------------+---------------+---------------+----------------+
-; Analysis & Synthesis ; elias-manjaro    ; Manjaro Linux ; Manjaro Linux ; x86_64         ;
-; Fitter               ; elias-manjaro    ; Manjaro Linux ; Manjaro Linux ; x86_64         ;
-; Assembler            ; elias-manjaro    ; Manjaro Linux ; Manjaro Linux ; x86_64         ;
-; Timing Analyzer      ; elias-manjaro    ; Manjaro Linux ; Manjaro Linux ; x86_64         ;
-; EDA Netlist Writer   ; elias-manjaro    ; Manjaro Linux ; Manjaro Linux ; x86_64         ;
-+----------------------+------------------+---------------+---------------+----------------+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; DESKTOP-5O6VH3K  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-5O6VH3K  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-5O6VH3K  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-5O6VH3K  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-5O6VH3K  ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
 
 
 ------------
