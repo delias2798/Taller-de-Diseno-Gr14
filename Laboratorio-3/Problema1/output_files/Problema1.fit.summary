@@ -1,11 +1,11 @@
-Fitter Status : Successful - Wed Sep  8 00:41:50 2021
+Fitter Status : Successful - Wed Sep 08 12:12:24 2021
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : Problema1
 Top-level Entity Name : ALU_FPGA
 Family : Cyclone V
 Device : 5CSEMA5F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 30 / 32,070 ( < 1 % )
+Logic utilization (in ALMs) : 29 / 32,070 ( < 1 % )
 Total registers : 0
 Total pins : 29 / 457 ( 6 % )
 Total virtual pins : 0

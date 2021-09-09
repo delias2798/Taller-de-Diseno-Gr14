@@ -28,36 +28,63 @@ module ALU #(parameter n=4)
 	//resultados de las operaciones aritmético-lógicas
 	reg [n-1:0] res, resSuma, resResta, resRight, resLeft, resAnd, resOr, resXor;
 	
+	reg N_, C_;
+	
 	//se crean los módulos de operaciones aritméticas
-	sumador_n #(n) suma(a, b, 0, resSuma, C);
-	restador_n #(n) resta(a, b, 0, resResta, N);
-	shift_right #(n) derecha(a, resRight);
-	shift_left #(n) izquierda(a, resLeft);
+	//sumador
+	sumador_n #(4) suma(a, b, 0, resSuma, C_);
+	//restador
+	restador_n #(4) resta(a, b, 0, resResta, N_);
+	//corriento a la derecha
+	shift_right #(4) derecha(a, resRight);
+	//corrimiento a la izquierda
+	shift_left #(4) izquierda(a, resLeft);
+	//and
+	and_n_module #(4) andModule(a, b, resAnd);
+	//or
+	or_n_module #(4) orModule(a, b, resOr);
+	//xor
+	xor_n_module #(4) xorModule(a, b, resXor);
 	
 	//se asigna el registro de resultado a la salida r
 	assign r = res;
 	
-	//se asigna la bandera de overflow a C
-	assign V = C;
+	//se asigna las banderas de estado
 	
-	//cada vez que se elija alguna operación, entonces
+	assign C = C_ && op == 0;
+	assign V = C;
+	assign N = N_ && op == 1;
+	
+	//bitwise OR en la salida
+	assign Z = ~(|{C, res});
+	
+	//cada vez que se elija alguna operación
+	// o se cambie una entrada, entonces
 	//el registro de resultado se actualiza según
 	//sea la operación seleccionada
-	always @ (op) begin
+	always @ (op, a, b) begin
 		case(op)
 			0: res = resSuma;
 				
-			1: if(N) begin
-					res = ~resResta + 1;
+			1: begin
+					if(N) begin
+						res = ~resResta + 1;
+					end
+					else begin
+						res = resResta;
+					end
 				end
-				else begin
-					res = resResta;
-				end
+				
 			2: res = resRight;
+
 			3: res = resLeft;
+			
 			4: res = resAnd;
+
 			5: res = resOr;
+
 			6: res = resXor;
+
 		endcase
 	end
 				 
