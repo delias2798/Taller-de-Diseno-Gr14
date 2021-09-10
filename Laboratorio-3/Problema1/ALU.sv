@@ -32,19 +32,19 @@ module ALU #(parameter n=4)
 	
 	//se crean los módulos de operaciones aritméticas
 	//sumador
-	sumador_n #(4) suma(a, b, 0, resSuma, C_);
+	sumador_n #(n) suma(a, b, 0, resSuma, C_);
 	//restador
-	restador_n #(4) resta(a, b, 0, resResta, N_);
+	restador_n #(n) resta(a, b, 0, resResta, N_);
 	//corriento a la derecha
-	shift_right #(4) derecha(a, resRight);
+	shift_right #(n) derecha(a, resRight);
 	//corrimiento a la izquierda
-	shift_left #(4) izquierda(a, resLeft);
+	shift_left #(n) izquierda(a, resLeft);
 	//and
-	and_n_module #(4) andModule(a, b, resAnd);
+	and_n_module #(n) andModule(a, b, resAnd);
 	//or
-	or_n_module #(4) orModule(a, b, resOr);
+	or_n_module #(n) orModule(a, b, resOr);
 	//xor
-	xor_n_module #(4) xorModule(a, b, resXor);
+	xor_n_module #(n) xorModule(a, b, resXor);
 	
 	//se asigna el registro de resultado a la salida r
 	assign r = res;
@@ -62,7 +62,7 @@ module ALU #(parameter n=4)
 	// o se cambie una entrada, entonces
 	//el registro de resultado se actualiza según
 	//sea la operación seleccionada
-	always @ (op, a, b) begin
+	always @ (a, b) begin
 		case(op)
 			0: res = resSuma;
 				
@@ -84,6 +84,8 @@ module ALU #(parameter n=4)
 			5: res = resOr;
 
 			6: res = resXor;
+			
+			default: res = 0;
 
 		endcase
 	end

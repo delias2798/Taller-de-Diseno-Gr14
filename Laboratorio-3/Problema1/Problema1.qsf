@@ -102,7 +102,18 @@ set_global_assignment -name SYSTEMVERILOG_FILE compuerta_or_1.sv
 set_global_assignment -name SYSTEMVERILOG_FILE compuerta_xor_1.sv
 set_global_assignment -name SYSTEMVERILOG_FILE compuerta_and_n.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ALU_FPGA_tb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE registroPos.sv
+set_global_assignment -name SYSTEMVERILOG_FILE registroNeg.sv
+set_global_assignment -name SYSTEMVERILOG_FILE problema2.sv
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name VIRTUAL_PIN ON -to "ALU:myAlu"
+set_instance_assignment -name VIRTUAL_PIN ON -to salRegPos
+set_instance_assignment -name VIRTUAL_PIN ON -to clk
+set_instance_assignment -name VIRTUAL_PIN ON -to entRegNeg
+set_instance_assignment -name VIRTUAL_PIN ON -to entRegPos
+set_instance_assignment -name VIRTUAL_PIN ON -to salRegNeg
+set_instance_assignment -name VIRTUAL_PIN ON -to "registroNeg:regNeg"
+set_instance_assignment -name VIRTUAL_PIN ON -to "registroPos:regPos"
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

@@ -1,0 +1,11 @@
+/*
+	Problema 2. ALU con un registro en la entrada y otro en la salida
+	@autor: Saymon Astua
+*/
+
+module problema2();
+
+
+	ALU myAlu #(5) 
+
+endmodule 
