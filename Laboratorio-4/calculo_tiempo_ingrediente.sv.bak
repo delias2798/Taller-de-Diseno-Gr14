@@ -1,0 +1,29 @@
+
+
+module calculo_tiempo_ingrediente(input [1:0] bebida,
+											 input [3:0] estadoActual,
+											 output logic [1:0] segundos);
+	
+	always @(estadoActual)
+		case(estadoActual)
+			8: begin
+					if(bebida == 3) begin
+						segundos = 1;
+					end else begin
+						segundos = 2;
+					end
+				end
+			9: begin
+					if(bebida == 0) begin
+					end else if(bebida == 1) begin
+					end else begin
+					end
+				end
+			10:
+			11:
+			12:
+			13:
+			default: segundos = 0;
+		endcase
+	
+endmodule 

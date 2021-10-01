@@ -1,0 +1,32 @@
+|maquina_cafe
+clk => ~NO_FANOUT~
+rst => ~NO_FANOUT~
+e => ~NO_FANOUT~
+l => ~NO_FANOUT~
+x => ~NO_FANOUT~
+m => ~NO_FANOUT~
+a => ~NO_FANOUT~
+C => ~NO_FANOUT~
+Q => ~NO_FANOUT~
+bebidaLista <= <GND>
+agua <= <GND>
+cafe <= <GND>
+leche <= <GND>
+choco <= <GND>
+azucar <= <GND>
+hex1[0] <= <GND>
+hex1[1] <= <GND>
+hex1[2] <= <GND>
+hex1[3] <= <GND>
+hex1[4] <= <GND>
+hex1[5] <= <GND>
+hex1[6] <= <GND>
+hex2[0] <= <GND>
+hex2[1] <= <GND>
+hex2[2] <= <GND>
+hex2[3] <= <GND>
+hex2[4] <= <GND>
+hex2[5] <= <GND>
+hex2[6] <= <GND>
+
+
