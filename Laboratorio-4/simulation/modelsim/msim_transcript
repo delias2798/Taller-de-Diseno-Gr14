@@ -1,0 +1,43 @@
+# Reading pref.tcl
+# do laboratorio4_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4 {C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/Cloks.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:49:55 on Oct 02,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4" C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/Cloks.sv 
+# -- Compiling module Cloks
+# 
+# Top level modules:
+# 	Cloks
+# End time: 16:49:55 on Oct 02,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4 {C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/divisorFrectuencia_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:49:55 on Oct 02,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4" C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/divisorFrectuencia_tb.sv 
+# -- Compiling module divisorFrectuencia_tb
+# 
+# Top level modules:
+# 	divisorFrectuencia_tb
+# End time: 16:49:55 on Oct 02,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.divisorFrectuencia_tb
+# vsim work.divisorFrectuencia_tb 
+# Start time: 16:50:10 on Oct 02,2021
+# Loading sv_std.std
+# Loading work.divisorFrectuencia_tb
+# Loading work.Cloks
+add wave -position insertpoint sim:/divisorFrectuencia_tb/*
+run
+# End time: 16:54:05 on Oct 02,2021, Elapsed time: 0:03:55
+# Errors: 0, Warnings: 0

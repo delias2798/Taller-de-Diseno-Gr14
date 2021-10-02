@@ -4,10 +4,10 @@
 */
 
 module Cloks (input C_50Mhz,
-				  output C_1Hz);
+				  output reg C_1Hz = 1);
 
 
-C_1Hz = 1; //Señal de salida (&lt;em&gt;Se debe asignar un estado lógico&lt;/em&gt;).
+//C_1Hz = 1; //Señal de salida (&lt;em&gt;Se debe asignar un estado lógico&lt;/em&gt;).
 
 reg[24:0] contador = 0; //Variable Contador equivale a 25 millones de estados.
 

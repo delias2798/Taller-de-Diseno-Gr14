@@ -3,5 +3,62 @@
 module maquina_cafe(input clk, rst, e, l, x, m, a, C, Q,
 						  output bebidaLista, agua, cafe, leche, choco, azucar,
 						  output [6:0] hex1, hex2);
-						  
+	
+	// se definen los cables a utilizar
+	logic t0, clk_1Hz, rst_timer, en_cont100, en_cont500, productoListo;
+	
+	logic m0, m1, m2, m3, m4; //señales para comparar el monto ingresado con los precios
+	
+	logic cout_suma, cout_resta;
+	
+	logic [7:0] out_100, out_500, out_timer, out_suma, out_resta, out_mux;
+	
+	logic [7:0] valor_producto;
+	
+	logic [1:0] bebida, segundos;
+	logic [3:0] estadoActual;
+	
+	//se crea el registro para la conversion de binario a bcd
+	reg [11:0] bcd;
+	
+	//se definen los módulos a utilizar
+	Cloks divisorFrecuencia(clk, clk_1Hz); //la señal de 50Mhz se pasa a 1Hz
+	
+	Counter timer(clk_1Hz, rst | rst_timer, 1'b1, out_timer); //contador de tiempos del sistema
+	
+	Counter monedasCien(clk_1Hz, rst, en_cont100, out_100); //contar monedas de cien
+	
+	Counter_5 monedasQuinientos(clk_1Hz, rst, en_cont500, out_500); //contar monedas de quinientos
+	
+	sumador_completo sumador(0, out_100, out_500, cout_suma, out_suma); //sumar ambas monedas
+	
+	restador_completo restador(0, cout_suma, valor_producto, cout_resta, out_resta); //para el vuelto
+	
+	Mux_2_to_1 mux21(out_suma, out_resta, productoListo, out_mux); //MUX para mostrar la cantidad ingresada o el vuelto
+	
+	//se comparan los precios
+	Comparator_mayor_equal precioExpreso(out_suma, 3, m1);
+	
+	Comparator_mayor_equal precioCafeLeche(out_suma, 4, m2);
+	
+	Comparator_mayor_equal precioCapuccino(out_suma, 5, m3);
+	
+	Comparator_mayor_equal precioChocolate(out_suma, 7, m4);
+	
+	Comparator_mayor_equal precioMax(out_suma, 11, m0); //para verificar que el monto no sea mayor a 1100
+	
+	
+	//En esta parte se calcula el tiempo que debe esperar en cada ingrediente
+	calculo_tiempo_ingrediente calculoTiempo(bebida, estadoActual, segundos);
+	
+	Comparator_mayor_equal verificarTiempos(out_timer, segundos, t0); //la señal t0 se enciende para pasar a otro ingrediente
+	
+	
+	//se hace la decodificacion para 
+	// que el resultado del MUX se muestre
+	// en los display
+	bin2bcd bcd_deco(out_mux, bcd);
+	segment7_deco seg1(bcd[3:0], hex1),
+					  seg2(bcd[7:4], hex2);
+	
 endmodule 

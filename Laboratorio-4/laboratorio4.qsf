@@ -61,6 +61,30 @@ set_global_assignment -name SYSTEMVERILOG_FILE calculo_tiempo_ingrediente.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Counter_5.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Mux_2_to_1.sv
 set_global_assignment -name SYSTEMVERILOG_FILE maquina_cafe.sv
+set_location_assignment PIN_AE26 -to hex1[6]
+set_location_assignment PIN_AE27 -to hex1[5]
+set_location_assignment PIN_AE28 -to hex1[4]
+set_location_assignment PIN_AG27 -to hex1[3]
+set_location_assignment PIN_AF28 -to hex1[2]
+set_location_assignment PIN_AG28 -to hex1[1]
+set_location_assignment PIN_AH28 -to hex1[0]
+set_location_assignment PIN_AJ29 -to hex2[6]
+set_location_assignment PIN_AH29 -to hex2[5]
+set_location_assignment PIN_AH30 -to hex2[4]
+set_location_assignment PIN_AG30 -to hex2[3]
+set_location_assignment PIN_AF29 -to hex2[2]
+set_location_assignment PIN_AF30 -to hex2[1]
+set_location_assignment PIN_AD27 -to hex2[0]
+set_location_assignment PIN_V16 -to agua
+set_location_assignment PIN_W16 -to cafe
+set_location_assignment PIN_V17 -to leche
+set_location_assignment PIN_V18 -to choco
+set_location_assignment PIN_W17 -to azucar
+set_location_assignment PIN_W19 -to bebidaLista
+set_location_assignment PIN_AF14 -to clk
+set_global_assignment -name SYSTEMVERILOG_FILE divisorFrectuencia_tb.sv
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (SystemVerilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "SYSTEMVERILOG HDL" -section_id eda_simulation
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
