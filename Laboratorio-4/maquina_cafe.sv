@@ -5,7 +5,7 @@ module maquina_cafe(input clk, rst, e, l, x, m, a, C, Q,
 						  output [6:0] hex1, hex2);
 	
 	// se definen los cables a utilizar
-	logic t0, clk_1Hz, rst_timer, en_cont100, en_cont500, productoListo;
+	logic t0, clk_1Hz, rst_timer, en_cont100, en_cont500, vuelto;
 	
 	logic m0, m1, m2, m3, m4; //señales para comparar el monto ingresado con los precios
 	
@@ -34,7 +34,7 @@ module maquina_cafe(input clk, rst, e, l, x, m, a, C, Q,
 	
 	restador_completo restador(0, cout_suma, valor_producto, cout_resta, out_resta); //para el vuelto
 	
-	Mux_2_to_1 mux21(out_suma, out_resta, productoListo, out_mux); //MUX para mostrar la cantidad ingresada o el vuelto
+	Mux_2_to_1 mux21(out_suma, out_resta, vuelto, out_mux); //MUX para mostrar la cantidad ingresada o el vuelto
 	
 	//se comparan los precios
 	Comparator_mayor_equal precioExpreso(out_suma, 3, m1);
@@ -53,6 +53,13 @@ module maquina_cafe(input clk, rst, e, l, x, m, a, C, Q,
 	
 	Comparator_mayor_equal verificarTiempos(out_timer, segundos, t0); //la señal t0 se enciende para pasar a otro ingrediente
 	
+	
+	//Aqui se conecta la FSM
+	FSM control(clk, rst, m0, m1, m2, m3, m4, t0, !e, !l, !x, !m, !a, C, Q,
+					rst_timer, agua, cafe, leche, choco, azucar, en_cien, en_quin, bebidaLista, vuelto,
+					bebida,
+					estadoActual,
+					valor_producto);
 	
 	//se hace la decodificacion para 
 	// que el resultado del MUX se muestre
