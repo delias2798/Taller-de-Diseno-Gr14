@@ -11,7 +11,7 @@ module maquina_cafe(input clk, rst, e, l, x, m, a, C, Q,
 	
 	logic cout_suma, cout_resta;
 	
-	logic [7:0] out_100, out_500, out_timer, out_suma, out_resta, out_mux;
+	logic [7:0] out_100, out_500, out_timer, out_suma, out_resta, out_mux, status;
 	
 	logic [7:0] valor_producto;
 	
@@ -35,6 +35,8 @@ module maquina_cafe(input clk, rst, e, l, x, m, a, C, Q,
 	restador_completo restador(0, cout_suma, valor_producto, cout_resta, out_resta); //para el vuelto
 	
 	Mux_2_to_1 mux21(out_suma, out_resta, vuelto, out_mux); //MUX para mostrar la cantidad ingresada o el vuelto
+	
+	Register state_reg(clk_1Hz, rst, out_mux, status);
 	
 	//se comparan los precios
 	Comparator_mayor_equal precioExpreso(out_suma, 3, m1);
@@ -64,7 +66,7 @@ module maquina_cafe(input clk, rst, e, l, x, m, a, C, Q,
 	//se hace la decodificacion para 
 	// que el resultado del MUX se muestre
 	// en los display
-	bin2bcd bcd_deco(out_mux, bcd);
+	bin2bcd bcd_deco(status, bcd);
 	segment7_deco seg1(bcd[3:0], hex1),
 					  seg2(bcd[7:4], hex2);
 	

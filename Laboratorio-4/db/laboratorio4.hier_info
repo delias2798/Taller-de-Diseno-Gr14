@@ -1,6 +1,6 @@
 |maquina_cafe
 clk => clk.IN2
-rst => rst.IN3
+rst => rst.IN4
 e => _.IN1
 l => _.IN1
 x => _.IN1
@@ -8,26 +8,26 @@ m => _.IN1
 a => _.IN1
 C => C.IN1
 Q => Q.IN1
-bebidaLista << FSM:control.port23
-agua << FSM:control.port16
-cafe << FSM:control.port17
-leche << FSM:control.port18
-choco << FSM:control.port19
-azucar << FSM:control.port20
-hex1[0] << segment7_deco:seg1.port1
-hex1[1] << segment7_deco:seg1.port1
-hex1[2] << segment7_deco:seg1.port1
-hex1[3] << segment7_deco:seg1.port1
-hex1[4] << segment7_deco:seg1.port1
-hex1[5] << segment7_deco:seg1.port1
-hex1[6] << segment7_deco:seg1.port1
-hex2[0] << segment7_deco:seg2.port1
-hex2[1] << segment7_deco:seg2.port1
-hex2[2] << segment7_deco:seg2.port1
-hex2[3] << segment7_deco:seg2.port1
-hex2[4] << segment7_deco:seg2.port1
-hex2[5] << segment7_deco:seg2.port1
-hex2[6] << segment7_deco:seg2.port1
+bebidaLista <= FSM:control.port23
+agua <= FSM:control.port16
+cafe <= FSM:control.port17
+leche <= FSM:control.port18
+choco <= FSM:control.port19
+azucar <= FSM:control.port20
+hex1[0] <= segment7_deco:seg1.port1
+hex1[1] <= segment7_deco:seg1.port1
+hex1[2] <= segment7_deco:seg1.port1
+hex1[3] <= segment7_deco:seg1.port1
+hex1[4] <= segment7_deco:seg1.port1
+hex1[5] <= segment7_deco:seg1.port1
+hex1[6] <= segment7_deco:seg1.port1
+hex2[0] <= segment7_deco:seg2.port1
+hex2[1] <= segment7_deco:seg2.port1
+hex2[2] <= segment7_deco:seg2.port1
+hex2[3] <= segment7_deco:seg2.port1
+hex2[4] <= segment7_deco:seg2.port1
+hex2[5] <= segment7_deco:seg2.port1
+hex2[6] <= segment7_deco:seg2.port1
 
 
 |maquina_cafe|Cloks:divisorFrecuencia
@@ -256,6 +256,41 @@ C[4] <= C.DB_MAX_OUTPUT_PORT_TYPE
 C[5] <= C.DB_MAX_OUTPUT_PORT_TYPE
 C[6] <= C.DB_MAX_OUTPUT_PORT_TYPE
 C[7] <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|maquina_cafe|Register:state_reg
+clk => Qreg[0].CLK
+clk => Qreg[1].CLK
+clk => Qreg[2].CLK
+clk => Qreg[3].CLK
+clk => Qreg[4].CLK
+clk => Qreg[5].CLK
+clk => Qreg[6].CLK
+clk => Qreg[7].CLK
+rst => Qreg[0].ACLR
+rst => Qreg[1].ACLR
+rst => Qreg[2].ACLR
+rst => Qreg[3].ACLR
+rst => Qreg[4].ACLR
+rst => Qreg[5].ACLR
+rst => Qreg[6].ACLR
+rst => Qreg[7].ACLR
+D[0] => Qreg[0].DATAIN
+D[1] => Qreg[1].DATAIN
+D[2] => Qreg[2].DATAIN
+D[3] => Qreg[3].DATAIN
+D[4] => Qreg[4].DATAIN
+D[5] => Qreg[5].DATAIN
+D[6] => Qreg[6].DATAIN
+D[7] => Qreg[7].DATAIN
+Q[0] <= Qreg[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Qreg[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Qreg[2].DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Qreg[3].DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Qreg[4].DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Qreg[5].DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Qreg[6].DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Qreg[7].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |maquina_cafe|Comparator_mayor_equal:precioExpreso
