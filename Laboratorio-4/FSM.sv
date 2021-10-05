@@ -20,7 +20,6 @@ module FSM(input clk, rst, m0, m1, m2, m3, m4, t0, e, l, x, m, a, C, Q,
 		bebida = 0;
 		valor_producto = 0;
 		
-		// el estado 15 es un estado auxiliar pero realmente no se utiliza
 		case(state)
 			0: begin
 					if (C) begin
@@ -38,7 +37,7 @@ module FSM(input clk, rst, m0, m1, m2, m3, m4, t0, e, l, x, m, a, C, Q,
 					end else if (m) begin
 						next_state = 7;
 					end else begin
-						next_state = 15;
+						next_state = 0;
 					end
 				end
 			1: begin
@@ -47,7 +46,7 @@ module FSM(input clk, rst, m0, m1, m2, m3, m4, t0, e, l, x, m, a, C, Q,
 					end else if(!m0) begin
 						next_state = 0;
 					end else begin
-						next_state = 15;
+						next_state = 1;
 					end
 				end
 			2: begin
@@ -56,7 +55,7 @@ module FSM(input clk, rst, m0, m1, m2, m3, m4, t0, e, l, x, m, a, C, Q,
 					end else if(!m0) begin
 						next_state = 0;
 					end else begin
-						next_state = 15;
+						next_state = 2;
 					end
 				end
 			3: next_state = 0; //solamente devuelve la moneda y regresa al 0
@@ -68,7 +67,7 @@ module FSM(input clk, rst, m0, m1, m2, m3, m4, t0, e, l, x, m, a, C, Q,
 					end else if(!m1) begin
 						next_state = 0;
 					end else begin
-						next_state = 15;
+						next_state = 4;
 					end
 				end
 			5: begin
@@ -79,7 +78,7 @@ module FSM(input clk, rst, m0, m1, m2, m3, m4, t0, e, l, x, m, a, C, Q,
 					end else if(!m2) begin
 						next_state = 0;
 					end else begin
-						next_state = 15;
+						next_state = 5;
 					end
 				end
 			6: begin
@@ -90,7 +89,7 @@ module FSM(input clk, rst, m0, m1, m2, m3, m4, t0, e, l, x, m, a, C, Q,
 					end else if(!m3) begin
 						next_state = 0;
 					end else begin
-						next_state = 15;
+						next_state = 6;
 					end
 				end
 			7: begin
@@ -101,7 +100,7 @@ module FSM(input clk, rst, m0, m1, m2, m3, m4, t0, e, l, x, m, a, C, Q,
 					end else if(!m4) begin
 						next_state = 0;
 					end else begin
-						next_state = 15;
+						next_state = 7;
 					end
 				end
 			8: begin
@@ -110,14 +109,14 @@ module FSM(input clk, rst, m0, m1, m2, m3, m4, t0, e, l, x, m, a, C, Q,
 					end else if(a) begin
 						next_state = 14;
 					end else begin
-						next_state = 15;
+						next_state = 8;
 					end
 				end
-			9: if (t0) next_state = 10; else next_state = 15;
-			10: if (t0) next_state = 11; else next_state = 15;
-			11: if (t0) next_state = 12; else next_state = 15;
+			9: if (t0) next_state = 10; else next_state = 9;
+			10: if (t0) next_state = 11; else next_state = 10;
+			11: if (t0) next_state = 12; else next_state = 11;
 			12: next_state = 13;
-			13: if (rst) next_state = 0; else next_state = 15;
+			13: if (rst) next_state = 0; else next_state = 13;
 			14: next_state = 0;
 			default: begin
 							next_state = 0;
