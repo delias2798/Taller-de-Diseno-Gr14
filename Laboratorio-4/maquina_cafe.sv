@@ -57,8 +57,13 @@ module maquina_cafe(input clk, rst, e, l, x, m, a, C, Q,
 	
 	
 	//Aqui se conecta la FSM
+<<<<<<< HEAD
 	FSM control(clk_1Hz, rst, m0, m1, m2, m3, m4, t0, !e, !l, !x, !m, !a, C, Q,
 					rst_timer, agua, cafe, leche, choco, azucar, en_cont100, en_cont500, bebidaLista, vuelto, rst_cuenta,
+=======
+	FSM control(clk, rst, m0, m1, m2, m3, m4, t0, !e, !l, !x, !m, !a, C, Q,
+					rst_timer, agua, cafe, leche, choco, azucar, en_cont100, en_cont500, bebidaLista, vuelto, rst_cuenta
+>>>>>>> e5b3ec8b6e1b64a55ff8694a688e2cbb8cb43c12
 					bebida,
 					estadoActual,
 					valor_producto);
