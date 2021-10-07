@@ -1,10 +1,10 @@
 
 
 module FSM(input clk, rst, m0, m1, m2, m3, m4, t0, e, l, x, m, a, C, Q,
-			  output rst_timer, agua, cafe, leche, choco, azucar, en_cien, en_quin, producto, vuelto,
-			  output [1:0] bebida,
+			  output logic rst_timer, agua, cafe, leche, choco, azucar, en_cien, en_quin, producto, vuelto,
+			  output logic [1:0] bebida,
 			  output [3:0] estadoActual,
-			  output [7:0] valor_producto);
+			  output logic [7:0] valor_producto);
 	
 	logic [3:0] state, next_state;
 	
@@ -19,7 +19,6 @@ module FSM(input clk, rst, m0, m1, m2, m3, m4, t0, e, l, x, m, a, C, Q,
 		//valores por defecto
 		bebida = 0;
 		valor_producto = 0;
-		
 		case(state)
 			0: begin
 					if (C) begin
@@ -115,7 +114,7 @@ module FSM(input clk, rst, m0, m1, m2, m3, m4, t0, e, l, x, m, a, C, Q,
 			9: if (t0) next_state = 10; else next_state = 9;
 			10: if (t0) next_state = 11; else next_state = 10;
 			11: if (t0) next_state = 12; else next_state = 11;
-			12: next_state = 13;
+			12: if (t0) next_state = 13; else next_state = 12;
 			13: if (rst) next_state = 0; else next_state = 13;
 			14: next_state = 0;
 			default: begin
@@ -139,7 +138,7 @@ module FSM(input clk, rst, m0, m1, m2, m3, m4, t0, e, l, x, m, a, C, Q,
 	
 	assign estadoActual = state;
 	
-	assign rst_timer = ( ( (state == 8 || state == 9 || state == 10 || state == 11 || state == 12) && (t0 == 1)) || (state == 13) );
-		
+	assign rst_timer = ( ( (state == 8 || state == 9 || state == 10 || state == 11 || state == 12) && t0) || (state == 13) );
+	//assign rst_timer = 0;
 			
 endmodule 

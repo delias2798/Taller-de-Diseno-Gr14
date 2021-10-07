@@ -1,6 +1,6 @@
 
 
-module maquina_cafe(input clk, rst, e, l, x, m, a, C, Q,
+module maquina_cafe_teorica(input clk, rst, e, l, x, m, a, C, Q,
 						  output bebidaLista, agua, cafe, leche, choco, azucar,
 						  output [6:0] hex1, hex2);
 	
@@ -24,7 +24,7 @@ module maquina_cafe(input clk, rst, e, l, x, m, a, C, Q,
 	//se definen los módulos a utilizar
 	Cloks divisorFrecuencia(clk, clk_1Hz); //la señal de 50Mhz se pasa a 1Hz
 	
-	Counter timer(clk_1Hz, rst | (rst_timer && out_timer > segundos), 1'b1, out_timer); //contador de tiempos del sistema
+	Counter timer(clk_1Hz, rst | rst_timer, 1'b1, out_timer); //contador de tiempos del sistema
 	
 	Counter monedasCien(clk_1Hz, rst, en_cont100, out_100); //contar monedas de cien
 	
@@ -32,7 +32,7 @@ module maquina_cafe(input clk, rst, e, l, x, m, a, C, Q,
 	
 	sumador_completo sumador(0, out_100, out_500, cout_suma, out_suma); //sumar ambas monedas
 	
-	restador_completo restador(0, out_suma, valor_producto, cout_resta, out_resta); //para el vuelto
+	restador_completo restador(0, cout_suma, valor_producto, cout_resta, out_resta); //para el vuelto
 	
 	Mux_2_to_1 mux21(out_suma, out_resta, vuelto, out_mux); //MUX para mostrar la cantidad ingresada o el vuelto
 	
@@ -53,12 +53,12 @@ module maquina_cafe(input clk, rst, e, l, x, m, a, C, Q,
 	//En esta parte se calcula el tiempo que debe esperar en cada ingrediente
 	calculo_tiempo_ingrediente calculoTiempo(bebida, estadoActual, segundos);
 	
-	Comparator_mayor_equal verificarTiempos(out_timer, {6'b000000, segundos}, t0); //la señal t0 se enciende para pasar a otro ingrediente
+	Comparator_mayor_equal verificarTiempos(out_timer, segundos, t0); //la señal t0 se enciende para pasar a otro ingrediente
 	
 	
 	//Aqui se conecta la FSM
 	FSM control(clk, rst, m0, m1, m2, m3, m4, t0, !e, !l, !x, !m, !a, C, Q,
-					rst_timer, agua, cafe, leche, choco, azucar, en_cont100, en_cont500, bebidaLista, vuelto,
+					rst_timer, agua, cafe, leche, choco, azucar, en_cien, en_quin, bebidaLista, vuelto,
 					bebida,
 					estadoActual,
 					valor_producto);

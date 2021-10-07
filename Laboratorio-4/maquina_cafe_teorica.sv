@@ -1,11 +1,11 @@
 
 
-module maquina_cafe(input clk, rst, e, l, x, m, a, C, Q,
+module maquina_cafe_teorica(input clk, rst, e, l, x, m, a, C, Q,
 						  output bebidaLista, agua, cafe, leche, choco, azucar,
 						  output [6:0] hex1, hex2);
 	
 	// se definen los cables a utilizar
-	logic t0, clk_1Hz, rst_timer, en_cont100, en_cont500, vuelto;
+	logic t0, rst_timer, en_cont100, en_cont500, vuelto;
 	
 	logic m0, m1, m2, m3, m4; //señales para comparar el monto ingresado con los precios
 	
@@ -21,14 +21,12 @@ module maquina_cafe(input clk, rst, e, l, x, m, a, C, Q,
 	//se crea el registro para la conversion de binario a bcd
 	reg [11:0] bcd;
 	
-	//se definen los módulos a utilizar
-	Cloks divisorFrecuencia(clk, clk_1Hz); //la señal de 50Mhz se pasa a 1Hz
 	
-	Counter timer(clk_1Hz, rst | (rst_timer && out_timer > segundos), 1'b1, out_timer); //contador de tiempos del sistema
+	Counter timer(clk, rst || (rst_timer && out_timer > segundos), 1'b1, out_timer); //contador de tiempos del sistema
 	
-	Counter monedasCien(clk_1Hz, rst, en_cont100, out_100); //contar monedas de cien
+	Counter monedasCien(clk, rst, en_cont100, out_100); //contar monedas de cien
 	
-	Counter_5 monedasQuinientos(clk_1Hz, rst, en_cont500, out_500); //contar monedas de quinientos
+	Counter_5 monedasQuinientos(clk, rst, en_cont500, out_500); //contar monedas de quinientos
 	
 	sumador_completo sumador(0, out_100, out_500, cout_suma, out_suma); //sumar ambas monedas
 	
@@ -36,7 +34,7 @@ module maquina_cafe(input clk, rst, e, l, x, m, a, C, Q,
 	
 	Mux_2_to_1 mux21(out_suma, out_resta, vuelto, out_mux); //MUX para mostrar la cantidad ingresada o el vuelto
 	
-	Register state_reg(clk_1Hz, rst, out_mux, status);
+	Register state_reg(clk, rst, out_mux, status);
 	
 	//se comparan los precios
 	Comparator_mayor_equal precioExpreso(out_suma, 3, m1);
@@ -57,7 +55,7 @@ module maquina_cafe(input clk, rst, e, l, x, m, a, C, Q,
 	
 	
 	//Aqui se conecta la FSM
-	FSM control(clk, rst, m0, m1, m2, m3, m4, t0, !e, !l, !x, !m, !a, C, Q,
+	FSM control(clk, rst, m0, m1, m2, m3, m4, t0, e, l, x, m, a, C, Q,
 					rst_timer, agua, cafe, leche, choco, azucar, en_cont100, en_cont500, bebidaLista, vuelto,
 					bebida,
 					estadoActual,

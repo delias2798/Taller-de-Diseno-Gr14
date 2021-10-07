@@ -1,0 +1,19 @@
+
+
+module maquina_tb_prueba();
+
+	logic clk_50Mhz, clk_1Hz;
+
+	Cloks divisor(clk_50Mhz, clk_1Hz);
+
+	always begin
+		clk_50Mhz <=0; #10;
+		clk_50Mhz <=1; #10;
+	end
+
+	initial begin
+		clk_50Mhz = 0;
+	
+	end
+
+endmodule 
