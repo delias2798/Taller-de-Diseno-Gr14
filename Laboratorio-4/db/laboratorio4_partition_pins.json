@@ -1,0 +1,145 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "rst_timer",
+					"strict" : false
+				},
+				{
+					"name" : "agua",
+					"strict" : false
+				},
+				{
+					"name" : "cafe",
+					"strict" : false
+				},
+				{
+					"name" : "leche",
+					"strict" : false
+				},
+				{
+					"name" : "choco",
+					"strict" : false
+				},
+				{
+					"name" : "azucar",
+					"strict" : false
+				},
+				{
+					"name" : "en_cien",
+					"strict" : false
+				},
+				{
+					"name" : "en_quin",
+					"strict" : false
+				},
+				{
+					"name" : "producto",
+					"strict" : false
+				},
+				{
+					"name" : "vuelto",
+					"strict" : false
+				},
+				{
+					"name" : "bebida[0]",
+					"strict" : false
+				},
+				{
+					"name" : "bebida[1]",
+					"strict" : false
+				},
+				{
+					"name" : "estadoActual[0]",
+					"strict" : false
+				},
+				{
+					"name" : "estadoActual[1]",
+					"strict" : false
+				},
+				{
+					"name" : "estadoActual[2]",
+					"strict" : false
+				},
+				{
+					"name" : "estadoActual[3]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_producto[0]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_producto[1]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_producto[2]",
+					"strict" : false
+				},
+				{
+					"name" : "t0",
+					"strict" : false
+				},
+				{
+					"name" : "m4",
+					"strict" : false
+				},
+				{
+					"name" : "m2",
+					"strict" : false
+				},
+				{
+					"name" : "m3",
+					"strict" : false
+				},
+				{
+					"name" : "m1",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "a",
+					"strict" : false
+				},
+				{
+					"name" : "C",
+					"strict" : false
+				},
+				{
+					"name" : "Q",
+					"strict" : false
+				},
+				{
+					"name" : "m0",
+					"strict" : false
+				},
+				{
+					"name" : "m",
+					"strict" : false
+				},
+				{
+					"name" : "x",
+					"strict" : false
+				},
+				{
+					"name" : "l",
+					"strict" : false
+				},
+				{
+					"name" : "e",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
