@@ -41,7 +41,7 @@ module maquina_tb_prueba();
 		#50
 		
 		C = 0;
-		e = 1;
+		l = 1;
 		#25
 		
 		e = 1;

@@ -1,7 +1,7 @@
 
 
 module FSM(input clk, rst, m0, m1, m2, m3, m4, t0, e, l, x, m, a, C, Q,
-			  output logic rst_timer, agua, cafe, leche, choco, azucar, en_cien, en_quin, producto, vuelto,
+			  output logic rst_timer, agua, cafe, leche, choco, azucar, en_cien, en_quin, producto, vuelto, rst_cuenta,
 			  output logic [1:0] bebida,
 			  output [3:0] estadoActual,
 			  output logic [7:0] valor_producto);
@@ -14,11 +14,12 @@ module FSM(input clk, rst, m0, m1, m2, m3, m4, t0, e, l, x, m, a, C, Q,
 		else
 			state = next_state;
 	
+
 	//next state
 	always_comb begin
 		//valores por defecto
-		bebida = 0;
-		valor_producto = 0;
+		//bebida = 0;
+		//valor_producto = 0;
 		case(state)
 			0: begin
 					if (C) begin
@@ -60,8 +61,8 @@ module FSM(input clk, rst, m0, m1, m2, m3, m4, t0, e, l, x, m, a, C, Q,
 			3: next_state = 0; //solamente devuelve la moneda y regresa al 0
 			4: begin
 					if (m1) begin
-						bebida = 0;
-						valor_producto = 3;
+						//bebida = 0;
+						//valor_producto = 3;
 						next_state = 8;
 					end else if(!m1) begin
 						next_state = 0;
@@ -71,8 +72,8 @@ module FSM(input clk, rst, m0, m1, m2, m3, m4, t0, e, l, x, m, a, C, Q,
 				end
 			5: begin
 					if (m2) begin
-						bebida = 1;
-						valor_producto = 4;
+						//bebida = 1;
+						//valor_producto = 4;
 						next_state = 8;
 					end else if(!m2) begin
 						next_state = 0;
@@ -82,8 +83,8 @@ module FSM(input clk, rst, m0, m1, m2, m3, m4, t0, e, l, x, m, a, C, Q,
 				end
 			6: begin
 					if (m3) begin
-						bebida = 2;
-						valor_producto = 5;
+						//bebida = 2;
+						//valor_producto = 5;
 						next_state = 8;
 					end else if(!m3) begin
 						next_state = 0;
@@ -93,8 +94,8 @@ module FSM(input clk, rst, m0, m1, m2, m3, m4, t0, e, l, x, m, a, C, Q,
 				end
 			7: begin
 					if (m4) begin
-						bebida = 3;
-						valor_producto = 7;
+						//bebida = 3;
+						//valor_producto = 7;
 						next_state = 8;
 					end else if(!m4) begin
 						next_state = 0;
@@ -119,8 +120,8 @@ module FSM(input clk, rst, m0, m1, m2, m3, m4, t0, e, l, x, m, a, C, Q,
 			14: next_state = 0;
 			default: begin
 							next_state = 0;
-							bebida = 0;
-							valor_producto = 0;
+							//bebida = bebida;
+							//valor_producto = valor_producto;
 						end
 		endcase
 	end
@@ -138,7 +139,23 @@ module FSM(input clk, rst, m0, m1, m2, m3, m4, t0, e, l, x, m, a, C, Q,
 	
 	assign estadoActual = state;
 	
+	assign valor_producto = (state == 4 && m1) ?   3: 
+									(state == 5 && m2) ?   4:
+									(state == 6 && m3) ?   5:
+									(state == 7 && m4) ?   7:
+									(state == 0)       ?   0:
+									valor_producto;
+	
+	assign bebida = 			(state == 4 && m1) ?   0: 
+									(state == 5 && m2) ?   1:
+									(state == 6 && m3) ?   2:
+									(state == 7 && m4) ?   3:
+									(state == 0)       ?   0:
+									bebida;
+	
 	assign rst_timer = ( ( (state == 8 || state == 9 || state == 10 || state == 11 || state == 12) && t0) || (state == 13) );
 	//assign rst_timer = 0;
+	
+	assign rst_cuenta = (state == 14);
 			
 endmodule 

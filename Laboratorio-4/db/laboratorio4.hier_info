@@ -1,11 +1,14 @@
-|maquina_cafe
-clk => clk.IN2
+|maquina_tb_prueba
+
+
+|maquina_tb_prueba|maquina_cafe_teorica:maquina
+clk => clk.IN5
 rst => rst.IN4
-e => _.IN1
-l => _.IN1
-x => _.IN1
-m => _.IN1
-a => _.IN1
+e => e.IN1
+l => l.IN1
+x => x.IN1
+m => m.IN1
+a => a.IN1
 C => C.IN1
 Q => Q.IN1
 bebidaLista <= FSM:control.port23
@@ -30,37 +33,7 @@ hex2[5] <= segment7_deco:seg2.port1
 hex2[6] <= segment7_deco:seg2.port1
 
 
-|maquina_cafe|Cloks:divisorFrecuencia
-C_50Mhz => C_1Hz~reg0.CLK
-C_50Mhz => contador[0].CLK
-C_50Mhz => contador[1].CLK
-C_50Mhz => contador[2].CLK
-C_50Mhz => contador[3].CLK
-C_50Mhz => contador[4].CLK
-C_50Mhz => contador[5].CLK
-C_50Mhz => contador[6].CLK
-C_50Mhz => contador[7].CLK
-C_50Mhz => contador[8].CLK
-C_50Mhz => contador[9].CLK
-C_50Mhz => contador[10].CLK
-C_50Mhz => contador[11].CLK
-C_50Mhz => contador[12].CLK
-C_50Mhz => contador[13].CLK
-C_50Mhz => contador[14].CLK
-C_50Mhz => contador[15].CLK
-C_50Mhz => contador[16].CLK
-C_50Mhz => contador[17].CLK
-C_50Mhz => contador[18].CLK
-C_50Mhz => contador[19].CLK
-C_50Mhz => contador[20].CLK
-C_50Mhz => contador[21].CLK
-C_50Mhz => contador[22].CLK
-C_50Mhz => contador[23].CLK
-C_50Mhz => contador[24].CLK
-C_1Hz <= C_1Hz~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|maquina_cafe|Counter:timer
+|maquina_tb_prueba|maquina_cafe_teorica:maquina|Counter:timer
 clk => Qreg[0].CLK
 clk => Qreg[1].CLK
 clk => Qreg[2].CLK
@@ -95,7 +68,7 @@ Q[6] <= Qreg[6].DB_MAX_OUTPUT_PORT_TYPE
 Q[7] <= Qreg[7].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|maquina_cafe|Counter:monedasCien
+|maquina_tb_prueba|maquina_cafe_teorica:maquina|Counter:monedasCien
 clk => Qreg[0].CLK
 clk => Qreg[1].CLK
 clk => Qreg[2].CLK
@@ -130,7 +103,7 @@ Q[6] <= Qreg[6].DB_MAX_OUTPUT_PORT_TYPE
 Q[7] <= Qreg[7].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|maquina_cafe|Counter_5:monedasQuinientos
+|maquina_tb_prueba|maquina_cafe_teorica:maquina|Counter_5:monedasQuinientos
 clk => Qreg[0].CLK
 clk => Qreg[1].CLK
 clk => Qreg[2].CLK
@@ -165,7 +138,7 @@ Q[6] <= Qreg[6].DB_MAX_OUTPUT_PORT_TYPE
 Q[7] <= Qreg[7].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|maquina_cafe|sumador_completo:sumador
+|maquina_tb_prueba|maquina_cafe_teorica:maquina|sumador_completo:sumador
 cin => _.DATAB
 a[0] => _.DATAD
 a[1] => _.DATAD
@@ -194,7 +167,7 @@ sum[6] <= _.SUM_OUT
 sum[7] <= _.SUM_OUT
 
 
-|maquina_cafe|restador_completo:restador
+|maquina_tb_prueba|maquina_cafe_teorica:maquina|restador_completo:restador
 cin => Add1.IN18
 a[0] => Add0.IN16
 a[1] => Add0.IN15
@@ -223,7 +196,7 @@ resta[6] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
 resta[7] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|maquina_cafe|Mux_2_to_1:mux21
+|maquina_tb_prueba|maquina_cafe_teorica:maquina|Mux_2_to_1:mux21
 A[0] => C.DATAA
 A[1] => C.DATAA
 A[2] => C.DATAA
@@ -258,7 +231,7 @@ C[6] <= C.DB_MAX_OUTPUT_PORT_TYPE
 C[7] <= C.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|maquina_cafe|Register:state_reg
+|maquina_tb_prueba|maquina_cafe_teorica:maquina|Register:state_reg
 clk => Qreg[0].CLK
 clk => Qreg[1].CLK
 clk => Qreg[2].CLK
@@ -293,7 +266,7 @@ Q[6] <= Qreg[6].DB_MAX_OUTPUT_PORT_TYPE
 Q[7] <= Qreg[7].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|maquina_cafe|Comparator_mayor_equal:precioExpreso
+|maquina_tb_prueba|maquina_cafe_teorica:maquina|Comparator_mayor_equal:precioExpreso
 A[0] => LessThan0.IN8
 A[1] => LessThan0.IN7
 A[2] => LessThan0.IN6
@@ -313,7 +286,7 @@ B[7] => LessThan0.IN9
 mayor_equal <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|maquina_cafe|Comparator_mayor_equal:precioCafeLeche
+|maquina_tb_prueba|maquina_cafe_teorica:maquina|Comparator_mayor_equal:precioCafeLeche
 A[0] => LessThan0.IN8
 A[1] => LessThan0.IN7
 A[2] => LessThan0.IN6
@@ -333,7 +306,7 @@ B[7] => LessThan0.IN9
 mayor_equal <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|maquina_cafe|Comparator_mayor_equal:precioCapuccino
+|maquina_tb_prueba|maquina_cafe_teorica:maquina|Comparator_mayor_equal:precioCapuccino
 A[0] => LessThan0.IN8
 A[1] => LessThan0.IN7
 A[2] => LessThan0.IN6
@@ -353,7 +326,7 @@ B[7] => LessThan0.IN9
 mayor_equal <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|maquina_cafe|Comparator_mayor_equal:precioChocolate
+|maquina_tb_prueba|maquina_cafe_teorica:maquina|Comparator_mayor_equal:precioChocolate
 A[0] => LessThan0.IN8
 A[1] => LessThan0.IN7
 A[2] => LessThan0.IN6
@@ -373,7 +346,7 @@ B[7] => LessThan0.IN9
 mayor_equal <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|maquina_cafe|Comparator_mayor_equal:precioMax
+|maquina_tb_prueba|maquina_cafe_teorica:maquina|Comparator_mayor_equal:precioMax
 A[0] => LessThan0.IN8
 A[1] => LessThan0.IN7
 A[2] => LessThan0.IN6
@@ -393,7 +366,7 @@ B[7] => LessThan0.IN9
 mayor_equal <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|maquina_cafe|calculo_tiempo_ingrediente:calculoTiempo
+|maquina_tb_prueba|maquina_cafe_teorica:maquina|calculo_tiempo_ingrediente:calculoTiempo
 bebida[0] => Equal0.IN0
 bebida[0] => Equal1.IN31
 bebida[0] => Equal2.IN31
@@ -414,7 +387,7 @@ segundos[0] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 segundos[1] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|maquina_cafe|Comparator_mayor_equal:verificarTiempos
+|maquina_tb_prueba|maquina_cafe_teorica:maquina|Comparator_mayor_equal:verificarTiempos
 A[0] => LessThan0.IN8
 A[1] => LessThan0.IN7
 A[2] => LessThan0.IN6
@@ -434,7 +407,7 @@ B[7] => LessThan0.IN9
 mayor_equal <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|maquina_cafe|FSM:control
+|maquina_tb_prueba|maquina_cafe_teorica:maquina|FSM:control
 clk => state~1.DATAIN
 rst => Selector0.IN11
 rst => state~3.DATAIN
@@ -442,24 +415,16 @@ rst => Selector13.IN1
 m0 => Selector3.IN1
 m0 => Selector0.IN3
 m0 => Selector0.IN4
-m1 => Selector18.IN2
-m1 => Selector19.IN2
+m1 => bebida.IN0
 m1 => Selector8.IN3
 m1 => Selector0.IN5
-m2 => Selector16.IN2
-m2 => Selector17.IN2
+m2 => bebida.IN0
 m2 => Selector8.IN4
 m2 => Selector0.IN6
-m3 => Selector15.IN2
-m3 => Selector17.IN3
-m3 => Selector19.IN3
+m3 => bebida.IN0
 m3 => Selector8.IN5
 m3 => Selector0.IN7
-m4 => Selector15.IN3
-m4 => Selector16.IN3
-m4 => Selector17.IN4
-m4 => Selector18.IN3
-m4 => Selector19.IN4
+m4 => bebida.IN0
 m4 => Selector8.IN6
 m4 => Selector0.IN8
 t0 => next_state.OUTPUTSELECT
@@ -521,15 +486,15 @@ en_cien <= en_cien.DB_MAX_OUTPUT_PORT_TYPE
 en_quin <= en_quin.DB_MAX_OUTPUT_PORT_TYPE
 producto <= producto.DB_MAX_OUTPUT_PORT_TYPE
 vuelto <= vuelto.DB_MAX_OUTPUT_PORT_TYPE
-bebida[0] <= Selector16.DB_MAX_OUTPUT_PORT_TYPE
-bebida[1] <= Selector15.DB_MAX_OUTPUT_PORT_TYPE
-estadoActual[0] <= WideOr23.DB_MAX_OUTPUT_PORT_TYPE
-estadoActual[1] <= WideOr22.DB_MAX_OUTPUT_PORT_TYPE
-estadoActual[2] <= WideOr21.DB_MAX_OUTPUT_PORT_TYPE
-estadoActual[3] <= WideOr20.DB_MAX_OUTPUT_PORT_TYPE
-valor_producto[0] <= Selector19.DB_MAX_OUTPUT_PORT_TYPE
-valor_producto[1] <= Selector18.DB_MAX_OUTPUT_PORT_TYPE
-valor_producto[2] <= Selector17.DB_MAX_OUTPUT_PORT_TYPE
+bebida[0] <= bebida[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+bebida[1] <= bebida[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+estadoActual[0] <= WideOr18.DB_MAX_OUTPUT_PORT_TYPE
+estadoActual[1] <= WideOr17.DB_MAX_OUTPUT_PORT_TYPE
+estadoActual[2] <= WideOr16.DB_MAX_OUTPUT_PORT_TYPE
+estadoActual[3] <= WideOr15.DB_MAX_OUTPUT_PORT_TYPE
+valor_producto[0] <= valor_producto[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+valor_producto[1] <= valor_producto[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+valor_producto[2] <= valor_producto[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
 valor_producto[3] <= <GND>
 valor_producto[4] <= <GND>
 valor_producto[5] <= <GND>
@@ -537,7 +502,7 @@ valor_producto[6] <= <GND>
 valor_producto[7] <= <GND>
 
 
-|maquina_cafe|bin2bcd:bcd_deco
+|maquina_tb_prueba|maquina_cafe_teorica:maquina|bin2bcd:bcd_deco
 bin[0] => bcd[0].DATAIN
 bin[1] => LessThan5.IN8
 bin[1] => Add5.IN8
@@ -574,7 +539,7 @@ bcd[10] <= <GND>
 bcd[11] <= <GND>
 
 
-|maquina_cafe|segment7_deco:seg1
+|maquina_tb_prueba|maquina_cafe_teorica:maquina|segment7_deco:seg1
 bcd[0] => Decoder0.IN3
 bcd[1] => Decoder0.IN2
 bcd[2] => Decoder0.IN1
@@ -588,7 +553,7 @@ seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|maquina_cafe|segment7_deco:seg2
+|maquina_tb_prueba|maquina_cafe_teorica:maquina|segment7_deco:seg2
 bcd[0] => Decoder0.IN3
 bcd[1] => Decoder0.IN2
 bcd[2] => Decoder0.IN1

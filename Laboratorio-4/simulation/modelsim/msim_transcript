@@ -12,138 +12,138 @@
 # 
 # vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4 {C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/segment7_deco.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:14:46 on Oct 07,2021
+# Start time: 12:16:57 on Oct 07,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4" C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/segment7_deco.sv 
 # -- Compiling module segment7_deco
 # 
 # Top level modules:
 # 	segment7_deco
-# End time: 00:14:46 on Oct 07,2021, Elapsed time: 0:00:00
+# End time: 12:16:57 on Oct 07,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4 {C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/bin2bcd.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:14:47 on Oct 07,2021
+# Start time: 12:16:57 on Oct 07,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4" C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/bin2bcd.sv 
 # -- Compiling module bin2bcd
 # 
 # Top level modules:
 # 	bin2bcd
-# End time: 00:14:47 on Oct 07,2021, Elapsed time: 0:00:00
+# End time: 12:16:58 on Oct 07,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4 {C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/Register.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:14:47 on Oct 07,2021
+# Start time: 12:16:58 on Oct 07,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4" C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/Register.sv 
 # -- Compiling module Register
 # 
 # Top level modules:
 # 	Register
-# End time: 00:14:47 on Oct 07,2021, Elapsed time: 0:00:00
+# End time: 12:16:58 on Oct 07,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4 {C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/Counter.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:14:47 on Oct 07,2021
+# Start time: 12:16:58 on Oct 07,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4" C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/Counter.sv 
 # -- Compiling module Counter
 # 
 # Top level modules:
 # 	Counter
-# End time: 00:14:47 on Oct 07,2021, Elapsed time: 0:00:00
+# End time: 12:16:58 on Oct 07,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4 {C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/Comparator_mayor_equal.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:14:47 on Oct 07,2021
+# Start time: 12:16:58 on Oct 07,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4" C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/Comparator_mayor_equal.sv 
 # -- Compiling module Comparator_mayor_equal
 # 
 # Top level modules:
 # 	Comparator_mayor_equal
-# End time: 00:14:47 on Oct 07,2021, Elapsed time: 0:00:00
+# End time: 12:16:58 on Oct 07,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4 {C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/sumador_completo.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:14:47 on Oct 07,2021
+# Start time: 12:16:58 on Oct 07,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4" C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/sumador_completo.sv 
 # -- Compiling module sumador_completo
 # 
 # Top level modules:
 # 	sumador_completo
-# End time: 00:14:47 on Oct 07,2021, Elapsed time: 0:00:00
+# End time: 12:16:58 on Oct 07,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4 {C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/restador_completo.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:14:47 on Oct 07,2021
+# Start time: 12:16:58 on Oct 07,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4" C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/restador_completo.sv 
 # -- Compiling module restador_completo
 # 
 # Top level modules:
 # 	restador_completo
-# End time: 00:14:47 on Oct 07,2021, Elapsed time: 0:00:00
+# End time: 12:16:58 on Oct 07,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4 {C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/calculo_tiempo_ingrediente.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:14:47 on Oct 07,2021
+# Start time: 12:16:59 on Oct 07,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4" C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/calculo_tiempo_ingrediente.sv 
 # -- Compiling module calculo_tiempo_ingrediente
 # 
 # Top level modules:
 # 	calculo_tiempo_ingrediente
-# End time: 00:14:47 on Oct 07,2021, Elapsed time: 0:00:00
+# End time: 12:16:59 on Oct 07,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4 {C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/Counter_5.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:14:48 on Oct 07,2021
+# Start time: 12:16:59 on Oct 07,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4" C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/Counter_5.sv 
 # -- Compiling module Counter_5
 # 
 # Top level modules:
 # 	Counter_5
-# End time: 00:14:48 on Oct 07,2021, Elapsed time: 0:00:00
+# End time: 12:16:59 on Oct 07,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4 {C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/Mux_2_to_1.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:14:48 on Oct 07,2021
+# Start time: 12:16:59 on Oct 07,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4" C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/Mux_2_to_1.sv 
 # -- Compiling module Mux_2_to_1
 # 
 # Top level modules:
 # 	Mux_2_to_1
-# End time: 00:14:48 on Oct 07,2021, Elapsed time: 0:00:00
+# End time: 12:16:59 on Oct 07,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4 {C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:14:48 on Oct 07,2021
+# Start time: 12:16:59 on Oct 07,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4" C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv 
 # -- Compiling module FSM
 # 
 # Top level modules:
 # 	FSM
-# End time: 00:14:48 on Oct 07,2021, Elapsed time: 0:00:00
+# End time: 12:16:59 on Oct 07,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4 {C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_cafe_teorica.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:14:48 on Oct 07,2021
+# Start time: 12:16:59 on Oct 07,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4" C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_cafe_teorica.sv 
 # -- Compiling module maquina_cafe_teorica
 # 
 # Top level modules:
 # 	maquina_cafe_teorica
-# End time: 00:14:48 on Oct 07,2021, Elapsed time: 0:00:00
+# End time: 12:17:00 on Oct 07,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4 {C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_tb_prueba.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:14:48 on Oct 07,2021
+# Start time: 12:17:00 on Oct 07,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4" C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_tb_prueba.sv 
 # -- Compiling module maquina_tb_prueba
 # 
 # Top level modules:
 # 	maquina_tb_prueba
-# End time: 00:14:48 on Oct 07,2021, Elapsed time: 0:00:00
+# End time: 12:17:00 on Oct 07,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 vsim work.maquina_tb_prueba
 # vsim work.maquina_tb_prueba 
-# Start time: 00:14:52 on Oct 07,2021
+# Start time: 12:17:10 on Oct 07,2021
 # Loading sv_std.std
 # Loading work.maquina_tb_prueba
 # Loading work.maquina_cafe_teorica
@@ -173,12 +173,11 @@ vsim work.maquina_tb_prueba
 # ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (32) for port 'B'. The port definition is at: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/Comparator_mayor_equal.sv(7).
 #    Time: 0 ns  Iteration: 0  Instance: /maquina_tb_prueba/maquina/precioMax File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_cafe_teorica.sv Line: 48
 add wave sim:/maquina_tb_prueba/*
-add wave -position insertpoint  \
-sim:/maquina_tb_prueba/maquina/out_timer
 run
 run
 run
 run
 run
-# End time: 00:15:33 on Oct 07,2021, Elapsed time: 0:00:41
+run
+# End time: 12:48:13 on Oct 07,2021, Elapsed time: 0:31:03
 # Errors: 0, Warnings: 7

@@ -1,5 +1,5 @@
 Analysis & Elaboration report for laboratorio4
-Thu Oct 07 00:16:19 2021
+Thu Oct 07 12:14:33 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -9,31 +9,32 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   1. Legal Notice
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
-  4. Parameter Settings for User Entity Instance: Counter:timer
-  5. Parameter Settings for User Entity Instance: Counter:monedasCien
-  6. Parameter Settings for User Entity Instance: Counter_5:monedasQuinientos
-  7. Parameter Settings for User Entity Instance: sumador_completo:sumador
-  8. Parameter Settings for User Entity Instance: restador_completo:restador
-  9. Parameter Settings for User Entity Instance: Mux_2_to_1:mux21
- 10. Parameter Settings for User Entity Instance: Register:state_reg
- 11. Parameter Settings for User Entity Instance: Comparator_mayor_equal:precioExpreso
- 12. Parameter Settings for User Entity Instance: Comparator_mayor_equal:precioCafeLeche
- 13. Parameter Settings for User Entity Instance: Comparator_mayor_equal:precioCapuccino
- 14. Parameter Settings for User Entity Instance: Comparator_mayor_equal:precioChocolate
- 15. Parameter Settings for User Entity Instance: Comparator_mayor_equal:precioMax
- 16. Parameter Settings for User Entity Instance: Comparator_mayor_equal:verificarTiempos
+  4. Parameter Settings for User Entity Instance: maquina_cafe_teorica:maquina|Counter:timer
+  5. Parameter Settings for User Entity Instance: maquina_cafe_teorica:maquina|Counter:monedasCien
+  6. Parameter Settings for User Entity Instance: maquina_cafe_teorica:maquina|Counter_5:monedasQuinientos
+  7. Parameter Settings for User Entity Instance: maquina_cafe_teorica:maquina|sumador_completo:sumador
+  8. Parameter Settings for User Entity Instance: maquina_cafe_teorica:maquina|restador_completo:restador
+  9. Parameter Settings for User Entity Instance: maquina_cafe_teorica:maquina|Mux_2_to_1:mux21
+ 10. Parameter Settings for User Entity Instance: maquina_cafe_teorica:maquina|Register:state_reg
+ 11. Parameter Settings for User Entity Instance: maquina_cafe_teorica:maquina|Comparator_mayor_equal:precioExpreso
+ 12. Parameter Settings for User Entity Instance: maquina_cafe_teorica:maquina|Comparator_mayor_equal:precioCafeLeche
+ 13. Parameter Settings for User Entity Instance: maquina_cafe_teorica:maquina|Comparator_mayor_equal:precioCapuccino
+ 14. Parameter Settings for User Entity Instance: maquina_cafe_teorica:maquina|Comparator_mayor_equal:precioChocolate
+ 15. Parameter Settings for User Entity Instance: maquina_cafe_teorica:maquina|Comparator_mayor_equal:precioMax
+ 16. Parameter Settings for User Entity Instance: maquina_cafe_teorica:maquina|Comparator_mayor_equal:verificarTiempos
  17. Analysis & Elaboration Settings
- 18. Port Connectivity Checks: "bin2bcd:bcd_deco"
- 19. Port Connectivity Checks: "Comparator_mayor_equal:verificarTiempos"
- 20. Port Connectivity Checks: "Comparator_mayor_equal:precioMax"
- 21. Port Connectivity Checks: "Comparator_mayor_equal:precioChocolate"
- 22. Port Connectivity Checks: "Comparator_mayor_equal:precioCapuccino"
- 23. Port Connectivity Checks: "Comparator_mayor_equal:precioCafeLeche"
- 24. Port Connectivity Checks: "Comparator_mayor_equal:precioExpreso"
- 25. Port Connectivity Checks: "restador_completo:restador"
- 26. Port Connectivity Checks: "sumador_completo:sumador"
- 27. Port Connectivity Checks: "Counter:timer"
- 28. Analysis & Elaboration Messages
+ 18. Port Connectivity Checks: "maquina_cafe_teorica:maquina|bin2bcd:bcd_deco"
+ 19. Port Connectivity Checks: "maquina_cafe_teorica:maquina|Comparator_mayor_equal:verificarTiempos"
+ 20. Port Connectivity Checks: "maquina_cafe_teorica:maquina|Comparator_mayor_equal:precioMax"
+ 21. Port Connectivity Checks: "maquina_cafe_teorica:maquina|Comparator_mayor_equal:precioChocolate"
+ 22. Port Connectivity Checks: "maquina_cafe_teorica:maquina|Comparator_mayor_equal:precioCapuccino"
+ 23. Port Connectivity Checks: "maquina_cafe_teorica:maquina|Comparator_mayor_equal:precioCafeLeche"
+ 24. Port Connectivity Checks: "maquina_cafe_teorica:maquina|Comparator_mayor_equal:precioExpreso"
+ 25. Port Connectivity Checks: "maquina_cafe_teorica:maquina|restador_completo:restador"
+ 26. Port Connectivity Checks: "maquina_cafe_teorica:maquina|sumador_completo:sumador"
+ 27. Port Connectivity Checks: "maquina_cafe_teorica:maquina|Counter:timer"
+ 28. Port Connectivity Checks: "maquina_cafe_teorica:maquina"
+ 29. Analysis & Elaboration Messages
 
 
 
@@ -60,10 +61,10 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Thu Oct 07 00:16:19 2021       ;
+; Analysis & Elaboration Status ; Successful - Thu Oct 07 12:14:33 2021       ;
 ; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                 ; laboratorio4                                ;
-; Top-level Entity Name         ; maquina_cafe                                ;
+; Top-level Entity Name         ; maquina_tb_prueba                           ;
 ; Family                        ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
 ; Total registers               ; N/A until Partition Merge                   ;
@@ -91,133 +92,133 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Counter:timer ;
-+----------------+-------+-----------------------------------+
-; Parameter Name ; Value ; Type                              ;
-+----------------+-------+-----------------------------------+
-; N              ; 8     ; Signed Integer                    ;
-+----------------+-------+-----------------------------------+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: maquina_cafe_teorica:maquina|Counter:timer ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; N              ; 8     ; Signed Integer                                                 ;
++----------------+-------+----------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Counter:monedasCien ;
-+----------------+-------+-----------------------------------------+
-; Parameter Name ; Value ; Type                                    ;
-+----------------+-------+-----------------------------------------+
-; N              ; 8     ; Signed Integer                          ;
-+----------------+-------+-----------------------------------------+
++-----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: maquina_cafe_teorica:maquina|Counter:monedasCien ;
++----------------+-------+----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                 ;
++----------------+-------+----------------------------------------------------------------------+
+; N              ; 8     ; Signed Integer                                                       ;
++----------------+-------+----------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Counter_5:monedasQuinientos ;
-+----------------+-------+-------------------------------------------------+
-; Parameter Name ; Value ; Type                                            ;
-+----------------+-------+-------------------------------------------------+
-; N              ; 8     ; Signed Integer                                  ;
-+----------------+-------+-------------------------------------------------+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: maquina_cafe_teorica:maquina|Counter_5:monedasQuinientos ;
++----------------+-------+------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                         ;
++----------------+-------+------------------------------------------------------------------------------+
+; N              ; 8     ; Signed Integer                                                               ;
++----------------+-------+------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: sumador_completo:sumador ;
-+----------------+-------+----------------------------------------------+
-; Parameter Name ; Value ; Type                                         ;
-+----------------+-------+----------------------------------------------+
-; N              ; 8     ; Signed Integer                               ;
-+----------------+-------+----------------------------------------------+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: maquina_cafe_teorica:maquina|sumador_completo:sumador ;
++----------------+-------+---------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                      ;
++----------------+-------+---------------------------------------------------------------------------+
+; N              ; 8     ; Signed Integer                                                            ;
++----------------+-------+---------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: restador_completo:restador ;
-+----------------+-------+------------------------------------------------+
-; Parameter Name ; Value ; Type                                           ;
-+----------------+-------+------------------------------------------------+
-; N              ; 8     ; Signed Integer                                 ;
-+----------------+-------+------------------------------------------------+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: maquina_cafe_teorica:maquina|restador_completo:restador ;
++----------------+-------+-----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------+
+; N              ; 8     ; Signed Integer                                                              ;
++----------------+-------+-----------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Mux_2_to_1:mux21 ;
-+----------------+-------+--------------------------------------+
-; Parameter Name ; Value ; Type                                 ;
-+----------------+-------+--------------------------------------+
-; N              ; 8     ; Signed Integer                       ;
-+----------------+-------+--------------------------------------+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: maquina_cafe_teorica:maquina|Mux_2_to_1:mux21 ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; N              ; 8     ; Signed Integer                                                    ;
++----------------+-------+-------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Register:state_reg ;
-+----------------+-------+----------------------------------------+
-; Parameter Name ; Value ; Type                                   ;
-+----------------+-------+----------------------------------------+
-; N              ; 8     ; Signed Integer                         ;
-+----------------+-------+----------------------------------------+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: maquina_cafe_teorica:maquina|Register:state_reg ;
++----------------+-------+---------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                ;
++----------------+-------+---------------------------------------------------------------------+
+; N              ; 8     ; Signed Integer                                                      ;
++----------------+-------+---------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Comparator_mayor_equal:precioExpreso ;
-+----------------+-------+----------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                     ;
-+----------------+-------+----------------------------------------------------------+
-; N              ; 8     ; Signed Integer                                           ;
-+----------------+-------+----------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: maquina_cafe_teorica:maquina|Comparator_mayor_equal:precioExpreso ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; N              ; 8     ; Signed Integer                                                                        ;
++----------------+-------+---------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Comparator_mayor_equal:precioCafeLeche ;
-+----------------+-------+------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                       ;
-+----------------+-------+------------------------------------------------------------+
-; N              ; 8     ; Signed Integer                                             ;
-+----------------+-------+------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: maquina_cafe_teorica:maquina|Comparator_mayor_equal:precioCafeLeche ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; N              ; 8     ; Signed Integer                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Comparator_mayor_equal:precioCapuccino ;
-+----------------+-------+------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                       ;
-+----------------+-------+------------------------------------------------------------+
-; N              ; 8     ; Signed Integer                                             ;
-+----------------+-------+------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: maquina_cafe_teorica:maquina|Comparator_mayor_equal:precioCapuccino ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; N              ; 8     ; Signed Integer                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Comparator_mayor_equal:precioChocolate ;
-+----------------+-------+------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                       ;
-+----------------+-------+------------------------------------------------------------+
-; N              ; 8     ; Signed Integer                                             ;
-+----------------+-------+------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: maquina_cafe_teorica:maquina|Comparator_mayor_equal:precioChocolate ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; N              ; 8     ; Signed Integer                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Comparator_mayor_equal:precioMax ;
-+----------------+-------+------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                 ;
-+----------------+-------+------------------------------------------------------+
-; N              ; 8     ; Signed Integer                                       ;
-+----------------+-------+------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: maquina_cafe_teorica:maquina|Comparator_mayor_equal:precioMax ;
++----------------+-------+-----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                              ;
++----------------+-------+-----------------------------------------------------------------------------------+
+; N              ; 8     ; Signed Integer                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Comparator_mayor_equal:verificarTiempos ;
-+----------------+-------+-------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                        ;
-+----------------+-------+-------------------------------------------------------------+
-; N              ; 8     ; Signed Integer                                              ;
-+----------------+-------+-------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: maquina_cafe_teorica:maquina|Comparator_mayor_equal:verificarTiempos ;
++----------------+-------+------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------------+
+; N              ; 8     ; Signed Integer                                                                           ;
++----------------+-------+------------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -227,7 +228,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; maquina_cafe       ; laboratorio4       ;
+; Top-level entity name                                                           ; maquina_tb_prueba  ; laboratorio4       ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -309,7 +310,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "bin2bcd:bcd_deco"                                                                         ;
+; Port Connectivity Checks: "maquina_cafe_teorica:maquina|bin2bcd:bcd_deco"                                            ;
 +------------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port       ; Type   ; Severity ; Details                                                                             ;
 +------------+--------+----------+-------------------------------------------------------------------------------------+
@@ -317,17 +318,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------+
-; Port Connectivity Checks: "Comparator_mayor_equal:verificarTiempos" ;
-+---------+-------+----------+----------------------------------------+
-; Port    ; Type  ; Severity ; Details                                ;
-+---------+-------+----------+----------------------------------------+
-; B[7..2] ; Input ; Info     ; Stuck at GND                           ;
-+---------+-------+----------+----------------------------------------+
++--------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "maquina_cafe_teorica:maquina|Comparator_mayor_equal:verificarTiempos" ;
++---------+-------+----------+---------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                             ;
++---------+-------+----------+---------------------------------------------------------------------+
+; B[7..2] ; Input ; Info     ; Stuck at GND                                                        ;
++---------+-------+----------+---------------------------------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Comparator_mayor_equal:precioMax"                                                                                                                                                    ;
+; Port Connectivity Checks: "maquina_cafe_teorica:maquina|Comparator_mayor_equal:precioMax"                                                                                                                       ;
 +---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -340,7 +341,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Comparator_mayor_equal:precioChocolate"                                                                                                                                              ;
+; Port Connectivity Checks: "maquina_cafe_teorica:maquina|Comparator_mayor_equal:precioChocolate"                                                                                                                 ;
 +---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -351,7 +352,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Comparator_mayor_equal:precioCapuccino"                                                                                                                                              ;
+; Port Connectivity Checks: "maquina_cafe_teorica:maquina|Comparator_mayor_equal:precioCapuccino"                                                                                                                 ;
 +---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -364,7 +365,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Comparator_mayor_equal:precioCafeLeche"                                                                                                                                              ;
+; Port Connectivity Checks: "maquina_cafe_teorica:maquina|Comparator_mayor_equal:precioCafeLeche"                                                                                                                 ;
 +---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -376,7 +377,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Comparator_mayor_equal:precioExpreso"                                                                                                                                                ;
+; Port Connectivity Checks: "maquina_cafe_teorica:maquina|Comparator_mayor_equal:precioExpreso"                                                                                                                   ;
 +---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -387,7 +388,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "restador_completo:restador"                                                                                                                                                           ;
+; Port Connectivity Checks: "maquina_cafe_teorica:maquina|restador_completo:restador"                                                                                                                              ;
 +---------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port    ; Type   ; Severity ; Details                                                                                                                                                                            ;
 +---------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -398,7 +399,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "sumador_completo:sumador"                                                                                                                                                             ;
+; Port Connectivity Checks: "maquina_cafe_teorica:maquina|sumador_completo:sumador"                                                                                                                                ;
 +---------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port    ; Type   ; Severity ; Details                                                                                                                                                                            ;
 +---------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -408,13 +409,30 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------+
-; Port Connectivity Checks: "Counter:timer" ;
-+------+-------+----------+-----------------+
-; Port ; Type  ; Severity ; Details         ;
-+------+-------+----------+-----------------+
-; en   ; Input ; Info     ; Stuck at VCC    ;
-+------+-------+----------+-----------------+
++------------------------------------------------------------------------+
+; Port Connectivity Checks: "maquina_cafe_teorica:maquina|Counter:timer" ;
++------+-------+----------+----------------------------------------------+
+; Port ; Type  ; Severity ; Details                                      ;
++------+-------+----------+----------------------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                                 ;
++------+-------+----------+----------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "maquina_cafe_teorica:maquina"                                                              ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; clk         ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; bebidaLista ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; agua        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; cafe        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; leche       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; choco       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; azucar      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; hex1        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; hex2        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +---------------------------------+
@@ -423,7 +441,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Thu Oct 07 00:16:12 2021
+    Info: Processing started: Thu Oct 07 12:14:18 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off laboratorio4 -c laboratorio4 --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -459,36 +477,47 @@ Info (12021): Found 1 design units, including 1 entities, in source file maquina
     Info (12023): Found entity 1: maquina_cafe_teorica File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_cafe_teorica.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file maquina_tb_prueba.sv
     Info (12023): Found entity 1: maquina_tb_prueba File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_tb_prueba.sv Line: 3
-Info (12127): Elaborating entity "maquina_cafe" for the top level hierarchy
-Info (12128): Elaborating entity "Cloks" for hierarchy "Cloks:divisorFrecuencia" File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_cafe.sv Line: 25
-Warning (10230): Verilog HDL assignment warning at Cloks.sv(16): truncated value with size 32 to match size of target (25) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/Cloks.sv Line: 16
-Info (12128): Elaborating entity "Counter" for hierarchy "Counter:timer" File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_cafe.sv Line: 27
+Info (12127): Elaborating entity "maquina_tb_prueba" for the top level hierarchy
+Info (12128): Elaborating entity "maquina_cafe_teorica" for hierarchy "maquina_cafe_teorica:maquina" File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_tb_prueba.sv Line: 11
+Info (12128): Elaborating entity "Counter" for hierarchy "maquina_cafe_teorica:maquina|Counter:timer" File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_cafe_teorica.sv Line: 25
 Warning (10230): Verilog HDL assignment warning at Counter.sv(14): truncated value with size 32 to match size of target (8) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/Counter.sv Line: 14
-Info (12128): Elaborating entity "Counter_5" for hierarchy "Counter_5:monedasQuinientos" File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_cafe.sv Line: 31
+Info (12128): Elaborating entity "Counter_5" for hierarchy "maquina_cafe_teorica:maquina|Counter_5:monedasQuinientos" File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_cafe_teorica.sv Line: 29
 Warning (10230): Verilog HDL assignment warning at Counter_5.sv(15): truncated value with size 32 to match size of target (8) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/Counter_5.sv Line: 15
-Info (12128): Elaborating entity "sumador_completo" for hierarchy "sumador_completo:sumador" File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_cafe.sv Line: 33
-Info (12128): Elaborating entity "restador_completo" for hierarchy "restador_completo:restador" File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_cafe.sv Line: 35
-Info (12128): Elaborating entity "Mux_2_to_1" for hierarchy "Mux_2_to_1:mux21" File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_cafe.sv Line: 37
-Info (12128): Elaborating entity "Register" for hierarchy "Register:state_reg" File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_cafe.sv Line: 39
-Info (12128): Elaborating entity "Comparator_mayor_equal" for hierarchy "Comparator_mayor_equal:precioExpreso" File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_cafe.sv Line: 42
-Info (12128): Elaborating entity "calculo_tiempo_ingrediente" for hierarchy "calculo_tiempo_ingrediente:calculoTiempo" File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_cafe.sv Line: 54
+Info (12128): Elaborating entity "sumador_completo" for hierarchy "maquina_cafe_teorica:maquina|sumador_completo:sumador" File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_cafe_teorica.sv Line: 31
+Info (12128): Elaborating entity "restador_completo" for hierarchy "maquina_cafe_teorica:maquina|restador_completo:restador" File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_cafe_teorica.sv Line: 33
+Info (12128): Elaborating entity "Mux_2_to_1" for hierarchy "maquina_cafe_teorica:maquina|Mux_2_to_1:mux21" File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_cafe_teorica.sv Line: 35
+Info (12128): Elaborating entity "Register" for hierarchy "maquina_cafe_teorica:maquina|Register:state_reg" File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_cafe_teorica.sv Line: 37
+Info (12128): Elaborating entity "Comparator_mayor_equal" for hierarchy "maquina_cafe_teorica:maquina|Comparator_mayor_equal:precioExpreso" File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_cafe_teorica.sv Line: 40
+Info (12128): Elaborating entity "calculo_tiempo_ingrediente" for hierarchy "maquina_cafe_teorica:maquina|calculo_tiempo_ingrediente:calculoTiempo" File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_cafe_teorica.sv Line: 52
 Warning (10235): Verilog HDL Always Construct warning at calculo_tiempo_ingrediente.sv(11): variable "bebida" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/calculo_tiempo_ingrediente.sv Line: 11
 Warning (10235): Verilog HDL Always Construct warning at calculo_tiempo_ingrediente.sv(19): variable "bebida" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/calculo_tiempo_ingrediente.sv Line: 19
 Warning (10235): Verilog HDL Always Construct warning at calculo_tiempo_ingrediente.sv(21): variable "bebida" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/calculo_tiempo_ingrediente.sv Line: 21
 Warning (10235): Verilog HDL Always Construct warning at calculo_tiempo_ingrediente.sv(29): variable "bebida" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/calculo_tiempo_ingrediente.sv Line: 29
 Warning (10235): Verilog HDL Always Construct warning at calculo_tiempo_ingrediente.sv(31): variable "bebida" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/calculo_tiempo_ingrediente.sv Line: 31
 Warning (10235): Verilog HDL Always Construct warning at calculo_tiempo_ingrediente.sv(38): variable "bebida" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/calculo_tiempo_ingrediente.sv Line: 38
-Info (12128): Elaborating entity "FSM" for hierarchy "FSM:control" File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_cafe.sv Line: 64
-Info (12128): Elaborating entity "bin2bcd" for hierarchy "bin2bcd:bcd_deco" File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_cafe.sv Line: 69
+Info (12128): Elaborating entity "FSM" for hierarchy "maquina_cafe_teorica:maquina|FSM:control" File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_cafe_teorica.sv Line: 62
+Warning (10230): Verilog HDL assignment warning at FSM.sv(142): truncated value with size 32 to match size of target (8) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv Line: 142
+Warning (10230): Verilog HDL assignment warning at FSM.sv(149): truncated value with size 32 to match size of target (2) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv Line: 149
+Info (10041): Inferred latch for "bebida[0]" at FSM.sv(149) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv Line: 149
+Info (10041): Inferred latch for "bebida[1]" at FSM.sv(149) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv Line: 149
+Info (10041): Inferred latch for "valor_producto[0]" at FSM.sv(142) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv Line: 142
+Info (10041): Inferred latch for "valor_producto[1]" at FSM.sv(142) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv Line: 142
+Info (10041): Inferred latch for "valor_producto[2]" at FSM.sv(142) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv Line: 142
+Info (10041): Inferred latch for "valor_producto[3]" at FSM.sv(142) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv Line: 142
+Info (10041): Inferred latch for "valor_producto[4]" at FSM.sv(142) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv Line: 142
+Info (10041): Inferred latch for "valor_producto[5]" at FSM.sv(142) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv Line: 142
+Info (10041): Inferred latch for "valor_producto[6]" at FSM.sv(142) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv Line: 142
+Info (10041): Inferred latch for "valor_producto[7]" at FSM.sv(142) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv Line: 142
+Info (12128): Elaborating entity "bin2bcd" for hierarchy "maquina_cafe_teorica:maquina|bin2bcd:bcd_deco" File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_cafe_teorica.sv Line: 67
 Warning (10230): Verilog HDL assignment warning at bin2bcd.sv(21): truncated value with size 32 to match size of target (4) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/bin2bcd.sv Line: 21
 Warning (10230): Verilog HDL assignment warning at bin2bcd.sv(27): truncated value with size 32 to match size of target (4) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/bin2bcd.sv Line: 27
 Warning (10230): Verilog HDL assignment warning at bin2bcd.sv(29): truncated value with size 32 to match size of target (4) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/bin2bcd.sv Line: 29
-Info (12128): Elaborating entity "segment7_deco" for hierarchy "segment7_deco:seg1" File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_cafe.sv Line: 70
+Info (12128): Elaborating entity "segment7_deco" for hierarchy "maquina_cafe_teorica:maquina|segment7_deco:seg1" File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_cafe_teorica.sv Line: 68
 Warning (12241): 7 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 14 warnings
-    Info: Peak virtual memory: 4758 megabytes
-    Info: Processing ended: Thu Oct 07 00:16:19 2021
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:16
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 15 warnings
+    Info: Peak virtual memory: 4766 megabytes
+    Info: Processing ended: Thu Oct 07 12:14:33 2021
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:37
 
 

@@ -1,7 +1,7 @@
-Analysis & Elaboration Status : Successful - Thu Oct 07 00:16:19 2021
+Analysis & Elaboration Status : Successful - Thu Oct 07 12:14:33 2021
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : laboratorio4
-Top-level Entity Name : maquina_cafe
+Top-level Entity Name : maquina_tb_prueba
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A until Partition Merge
 Total registers : N/A until Partition Merge

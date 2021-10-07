@@ -11,7 +11,7 @@ cModel Technology
 Z0 dC:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/simulation/modelsim
 vbin2bcd
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1633587287
+Z2 !s110 1633630617
 !i10b 1
 !s100 kzIb8eS0TnZ^YCFQSL[Kh1
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -28,7 +28,7 @@ Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1633587287.000000
+Z6 !s108 1633630617.000000
 !s107 C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/bin2bcd.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4|C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/bin2bcd.sv|
 !i113 1
@@ -37,7 +37,7 @@ Z8 !s92 -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-
 Z9 tCvgOpt 0
 vcalculo_tiempo_ingrediente
 R1
-R2
+Z10 !s110 1633630619
 !i10b 1
 !s100 :X]NjH6IbeC300[TJ?BVD0
 R3
@@ -54,7 +54,7 @@ R5
 r1
 !s85 0
 31
-R6
+Z11 !s108 1633630619.000000
 !s107 C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/calculo_tiempo_ingrediente.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4|C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/calculo_tiempo_ingrediente.sv|
 !i113 1
@@ -63,7 +63,7 @@ R8
 R9
 vComparator_mayor_equal
 R1
-R2
+Z12 !s110 1633630618
 !i10b 1
 !s100 O842kbgY5I=kh^A3CNP4k2
 R3
@@ -80,7 +80,7 @@ R5
 r1
 !s85 0
 31
-R6
+Z13 !s108 1633630618.000000
 !s107 C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/Comparator_mayor_equal.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4|C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/Comparator_mayor_equal.sv|
 !i113 1
@@ -90,7 +90,7 @@ R9
 n@comparator_mayor_equal
 vCounter
 R1
-R2
+R12
 !i10b 1
 !s100 2neS^]RadDZBcdX`nfI090
 R3
@@ -107,7 +107,7 @@ R5
 r1
 !s85 0
 31
-R6
+R13
 !s107 C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/Counter.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4|C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/Counter.sv|
 !i113 1
@@ -117,7 +117,7 @@ R9
 n@counter
 vCounter_5
 R1
-Z10 !s110 1633587288
+R10
 !i10b 1
 !s100 1A2NFaXMb<4kCF2C@=lfC3
 R3
@@ -134,7 +134,7 @@ R5
 r1
 !s85 0
 31
-Z11 !s108 1633587288.000000
+R11
 !s107 C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/Counter_5.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4|C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/Counter_5.sv|
 !i113 1
@@ -146,17 +146,17 @@ vFSM
 R1
 R10
 !i10b 1
-!s100 8Wc[^j>L[j>Kk6dKk>]=Y0
+!s100 6FVg;OdL7SQ8j;6gaJ8T01
 R3
-ID;Q6>]2k^TE``2`32nUYM1
+IRT?obE[mdSbWJ75;W28oF3
 R4
 S1
 R0
-w1633587265
+w1633630439
 8C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv
 FC:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv
 !i122 10
-L0 3 142
+L0 3 157
 R5
 r1
 !s85 0
@@ -171,7 +171,7 @@ R9
 n@f@s@m
 vmaquina_cafe_teorica
 R1
-R10
+Z14 !s110 1633630620
 !i10b 1
 !s100 SfgfbZ:h07KjB4>KH`en42
 R3
@@ -197,15 +197,15 @@ R8
 R9
 vmaquina_tb_prueba
 R1
-R10
+R14
 !i10b 1
-!s100 B=dYG=OLXXDFRz<XA5[TE0
+!s100 iHTAJSZc=Y5:e>Y=^YG5o2
 R3
-IMXdk[mBWV=a_oKXV3Nkoz2
+IZ0Y32]F>7BU;J=41<gNXi2
 R4
 S1
 R0
-w1633578478
+w1633630591
 8C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_tb_prueba.sv
 FC:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_tb_prueba.sv
 !i122 12
@@ -214,7 +214,7 @@ R5
 r1
 !s85 0
 31
-R11
+!s108 1633630620.000000
 !s107 C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_tb_prueba.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4|C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_tb_prueba.sv|
 !i113 1
@@ -250,7 +250,7 @@ R9
 n@mux_2_to_1
 vRegister
 R1
-R2
+R12
 !i10b 1
 !s100 miSfn2:1mG>N3im5kVN1K2
 R3
@@ -267,7 +267,7 @@ R5
 r1
 !s85 0
 31
-R6
+R13
 !s107 C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/Register.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4|C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/Register.sv|
 !i113 1
@@ -277,7 +277,7 @@ R9
 n@register
 vrestador_completo
 R1
-R2
+R12
 !i10b 1
 !s100 I8lg3]F<WA=UooDbfLGCm2
 R3
@@ -289,12 +289,12 @@ w1633104531
 8C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/restador_completo.sv
 FC:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/restador_completo.sv
 !i122 6
-Z12 L0 6 7
+Z15 L0 6 7
 R5
 r1
 !s85 0
 31
-R6
+R13
 !s107 C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/restador_completo.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4|C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/restador_completo.sv|
 !i113 1
@@ -303,7 +303,7 @@ R8
 R9
 vsegment7_deco
 R1
-!s110 1633587286
+R2
 !i10b 1
 !s100 [=I03KM>ZHc3G`_;nH27Z1
 R3
@@ -320,7 +320,7 @@ R5
 r1
 !s85 0
 31
-!s108 1633587286.000000
+R6
 !s107 C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/segment7_deco.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4|C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/segment7_deco.sv|
 !i113 1
@@ -329,7 +329,7 @@ R8
 R9
 vsumador_completo
 R1
-R2
+R12
 !i10b 1
 !s100 5^9n230>En>8[?3Z5KHRX1
 R3
@@ -341,12 +341,12 @@ w1633104537
 8C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/sumador_completo.sv
 FC:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/sumador_completo.sv
 !i122 5
-R12
+R15
 R5
 r1
 !s85 0
 31
-R6
+R13
 !s107 C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/sumador_completo.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4|C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/sumador_completo.sv|
 !i113 1
