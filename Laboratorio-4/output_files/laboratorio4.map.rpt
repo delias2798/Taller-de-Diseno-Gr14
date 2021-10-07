@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-Analysis & Synthesis report for laboratorio4
-Thu Oct  7 12:37:32 2021
-=======
 Analysis & Elaboration report for laboratorio4
-Thu Oct 07 12:14:33 2021
->>>>>>> e5b3ec8b6e1b64a55ff8694a688e2cbb8cb43c12
+Thu Oct 07 15:37:24 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -12,45 +7,6 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-<<<<<<< HEAD
-  2. Analysis & Synthesis Summary
-  3. Analysis & Synthesis Settings
-  4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. State Machine - |maquina_cafe|FSM:control|state
-  9. User-Specified and Inferred Latches
- 10. Registers Removed During Synthesis
- 11. General Register Statistics
- 12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Parameter Settings for User Entity Instance: Counter:timer
- 14. Parameter Settings for User Entity Instance: Counter:monedasCien
- 15. Parameter Settings for User Entity Instance: Counter_5:monedasQuinientos
- 16. Parameter Settings for User Entity Instance: sumador_completo:sumador
- 17. Parameter Settings for User Entity Instance: restador_completo:restador
- 18. Parameter Settings for User Entity Instance: Mux_2_to_1:mux21
- 19. Parameter Settings for User Entity Instance: Register:state_reg
- 20. Parameter Settings for User Entity Instance: Comparator_mayor_equal:precioExpreso
- 21. Parameter Settings for User Entity Instance: Comparator_mayor_equal:precioCafeLeche
- 22. Parameter Settings for User Entity Instance: Comparator_mayor_equal:precioCapuccino
- 23. Parameter Settings for User Entity Instance: Comparator_mayor_equal:precioChocolate
- 24. Parameter Settings for User Entity Instance: Comparator_mayor_equal:precioMax
- 25. Parameter Settings for User Entity Instance: Comparator_mayor_equal:verificarTiempos
- 26. Port Connectivity Checks: "bin2bcd:bcd_deco"
- 27. Port Connectivity Checks: "Comparator_mayor_equal:verificarTiempos"
- 28. Port Connectivity Checks: "Comparator_mayor_equal:precioMax"
- 29. Port Connectivity Checks: "Comparator_mayor_equal:precioChocolate"
- 30. Port Connectivity Checks: "Comparator_mayor_equal:precioCapuccino"
- 31. Port Connectivity Checks: "Comparator_mayor_equal:precioCafeLeche"
- 32. Port Connectivity Checks: "Comparator_mayor_equal:precioExpreso"
- 33. Port Connectivity Checks: "restador_completo:restador"
- 34. Port Connectivity Checks: "sumador_completo:sumador"
- 35. Port Connectivity Checks: "Counter:timer"
- 36. Post-Synthesis Netlist Statistics for Top Partition
- 37. Elapsed Time Per Partition
- 38. Analysis & Synthesis Messages
-=======
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
   4. Parameter Settings for User Entity Instance: maquina_cafe_teorica:maquina|Counter:timer
@@ -79,7 +35,6 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
  27. Port Connectivity Checks: "maquina_cafe_teorica:maquina|Counter:timer"
  28. Port Connectivity Checks: "maquina_cafe_teorica:maquina"
  29. Analysis & Elaboration Messages
->>>>>>> e5b3ec8b6e1b64a55ff8694a688e2cbb8cb43c12
 
 
 
@@ -103,123 +58,13 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-<<<<<<< HEAD
-+-------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                  ;
-+---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Oct  7 12:37:32 2021       ;
-; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
-; Revision Name                   ; laboratorio4                                ;
-; Top-level Entity Name           ; maquina_cafe                                ;
-; Family                          ; Cyclone V                                   ;
-; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 73                                          ;
-; Total pins                      ; 29                                          ;
-; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0                                           ;
-; Total DSP Blocks                ; 0                                           ;
-; Total HSSI RX PCSs              ; 0                                           ;
-; Total HSSI PMA RX Deserializers ; 0                                           ;
-; Total HSSI TX PCSs              ; 0                                           ;
-; Total HSSI PMA TX Serializers   ; 0                                           ;
-; Total PLLs                      ; 0                                           ;
-; Total DLLs                      ; 0                                           ;
-+---------------------------------+---------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                             ;
-+---------------------------------------------------------------------------------+--------------------+--------------------+
-; Option                                                                          ; Setting            ; Default Value      ;
-+---------------------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; maquina_cafe       ; laboratorio4       ;
-; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
-; Use smart compilation                                                           ; Off                ; Off                ;
-; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
-; Enable compact report table                                                     ; Off                ; Off                ;
-; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
-; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
-; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
-; Preserve fewer node names                                                       ; On                 ; On                 ;
-; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
-; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
-; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
-; State Machine Processing                                                        ; Auto               ; Auto               ;
-; Safe State Machine                                                              ; Off                ; Off                ;
-; Extract Verilog State Machines                                                  ; On                 ; On                 ;
-; Extract VHDL State Machines                                                     ; On                 ; On                 ;
-; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
-; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
-; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
-; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
-; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
-; Parallel Synthesis                                                              ; On                 ; On                 ;
-; DSP Block Balancing                                                             ; Auto               ; Auto               ;
-; NOT Gate Push-Back                                                              ; On                 ; On                 ;
-; Power-Up Don't Care                                                             ; On                 ; On                 ;
-; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
-; Remove Duplicate Registers                                                      ; On                 ; On                 ;
-; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
-; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
-; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
-; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
-; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
-; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
-; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
-; Optimization Technique                                                          ; Balanced           ; Balanced           ;
-; Carry Chain Length                                                              ; 70                 ; 70                 ;
-; Auto Carry Chains                                                               ; On                 ; On                 ;
-; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
-; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
-; Auto ROM Replacement                                                            ; On                 ; On                 ;
-; Auto RAM Replacement                                                            ; On                 ; On                 ;
-; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
-; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
-; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
-; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
-; Strict RAM Replacement                                                          ; Off                ; Off                ;
-; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
-; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
-; Auto Resource Sharing                                                           ; Off                ; Off                ;
-; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
-; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
-; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
-; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
-; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
-; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
-; Report Parameter Settings                                                       ; On                 ; On                 ;
-; Report Source Assignments                                                       ; On                 ; On                 ;
-; Report Connectivity Checks                                                      ; On                 ; On                 ;
-; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
-; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
-; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
-; HDL message level                                                               ; Level2             ; Level2             ;
-; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
-; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
-; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
-; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
-; Clock MUX Protection                                                            ; On                 ; On                 ;
-; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
-; Block Design Naming                                                             ; Auto               ; Auto               ;
-; SDC constraint protection                                                       ; Off                ; Off                ;
-; Synthesis Effort                                                                ; Auto               ; Auto               ;
-; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
-; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
-; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
-; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
-; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
-; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
-; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
-+---------------------------------------------------------------------------------+--------------------+--------------------+
-=======
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Thu Oct 07 12:14:33 2021       ;
+; Analysis & Elaboration Status ; Successful - Thu Oct 07 15:37:24 2021       ;
 ; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                 ; laboratorio4                                ;
-; Top-level Entity Name         ; maquina_tb_prueba                           ;
+; Top-level Entity Name         ; mocaccino_tb                                ;
 ; Family                        ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
 ; Total registers               ; N/A until Partition Merge                   ;
@@ -229,7 +74,6 @@ https://fpgasoftware.intel.com/eula.
 ; Total PLLs                    ; N/A until Partition Merge                   ;
 ; Total DLLs                    ; N/A until Partition Merge                   ;
 +-------------------------------+---------------------------------------------+
->>>>>>> e5b3ec8b6e1b64a55ff8694a688e2cbb8cb43c12
 
 
 +------------------------------------------+
@@ -237,177 +81,17 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
 +----------------------------+-------------+
 
 
-<<<<<<< HEAD
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                             ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                                                         ; Library ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; segment7_deco.sv                 ; yes             ; User SystemVerilog HDL File  ; /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/segment7_deco.sv              ;         ;
-; bin2bcd.sv                       ; yes             ; User SystemVerilog HDL File  ; /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/bin2bcd.sv                    ;         ;
-; Register.sv                      ; yes             ; User SystemVerilog HDL File  ; /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/Register.sv                   ;         ;
-; Counter.sv                       ; yes             ; User SystemVerilog HDL File  ; /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/Counter.sv                    ;         ;
-; Comparator_mayor_equal.sv        ; yes             ; User SystemVerilog HDL File  ; /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/Comparator_mayor_equal.sv     ;         ;
-; sumador_completo.sv              ; yes             ; User SystemVerilog HDL File  ; /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/sumador_completo.sv           ;         ;
-; restador_completo.sv             ; yes             ; User SystemVerilog HDL File  ; /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/restador_completo.sv          ;         ;
-; Cloks.sv                         ; yes             ; User SystemVerilog HDL File  ; /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/Cloks.sv                      ;         ;
-; calculo_tiempo_ingrediente.sv    ; yes             ; User SystemVerilog HDL File  ; /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/calculo_tiempo_ingrediente.sv ;         ;
-; Counter_5.sv                     ; yes             ; User SystemVerilog HDL File  ; /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/Counter_5.sv                  ;         ;
-; Mux_2_to_1.sv                    ; yes             ; User SystemVerilog HDL File  ; /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/Mux_2_to_1.sv                 ;         ;
-; maquina_cafe.sv                  ; yes             ; User SystemVerilog HDL File  ; /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_cafe.sv               ;         ;
-; FSM.sv                           ; yes             ; User SystemVerilog HDL File  ; /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv                        ;         ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-
-
-+-----------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                 ;
-+---------------------------------------------+-------------------------------+
-; Resource                                    ; Usage                         ;
-+---------------------------------------------+-------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 94                            ;
-;                                             ;                               ;
-; Combinational ALUT usage for logic          ; 158                           ;
-;     -- 7 input functions                    ; 0                             ;
-;     -- 6 input functions                    ; 29                            ;
-;     -- 5 input functions                    ; 23                            ;
-;     -- 4 input functions                    ; 17                            ;
-;     -- <=3 input functions                  ; 89                            ;
-;                                             ;                               ;
-; Dedicated logic registers                   ; 73                            ;
-;                                             ;                               ;
-; I/O pins                                    ; 29                            ;
-;                                             ;                               ;
-; Total DSP Blocks                            ; 0                             ;
-;                                             ;                               ;
-; Maximum fan-out node                        ; Cloks:divisorFrecuencia|C_1Hz ;
-; Maximum fan-out                             ; 48                            ;
-; Total fan-out                               ; 858                           ;
-; Average fan-out                             ; 2.97                          ;
-+---------------------------------------------+-------------------------------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                         ;
-+-----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------+----------------------------+--------------+
-; Compilation Hierarchy Node                    ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                    ; Entity Name                ; Library Name ;
-+-----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------+----------------------------+--------------+
-; |maquina_cafe                                 ; 158 (3)             ; 73 (0)                    ; 0                 ; 0          ; 29   ; 0            ; |maquina_cafe                                          ; maquina_cafe               ; work         ;
-;    |Cloks:divisorFrecuencia|                  ; 34 (34)             ; 26 (26)                   ; 0                 ; 0          ; 0    ; 0            ; |maquina_cafe|Cloks:divisorFrecuencia                  ; Cloks                      ; work         ;
-;    |Comparator_mayor_equal:precioCapuccino|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |maquina_cafe|Comparator_mayor_equal:precioCapuccino   ; Comparator_mayor_equal     ; work         ;
-;    |Comparator_mayor_equal:precioChocolate|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |maquina_cafe|Comparator_mayor_equal:precioChocolate   ; Comparator_mayor_equal     ; work         ;
-;    |Comparator_mayor_equal:precioMax|         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |maquina_cafe|Comparator_mayor_equal:precioMax         ; Comparator_mayor_equal     ; work         ;
-;    |Comparator_mayor_equal:verificarTiempos|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |maquina_cafe|Comparator_mayor_equal:verificarTiempos  ; Comparator_mayor_equal     ; work         ;
-;    |Counter:monedasCien|                      ; 8 (8)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |maquina_cafe|Counter:monedasCien                      ; Counter                    ; work         ;
-;    |Counter:timer|                            ; 8 (8)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |maquina_cafe|Counter:timer                            ; Counter                    ; work         ;
-;    |Counter_5:monedasQuinientos|              ; 8 (8)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |maquina_cafe|Counter_5:monedasQuinientos              ; Counter_5                  ; work         ;
-;    |FSM:control|                              ; 48 (48)             ; 15 (15)                   ; 0                 ; 0          ; 0    ; 0            ; |maquina_cafe|FSM:control                              ; FSM                        ; work         ;
-;    |Register:state_reg|                       ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |maquina_cafe|Register:state_reg                       ; Register                   ; work         ;
-;    |bin2bcd:bcd_deco|                         ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |maquina_cafe|bin2bcd:bcd_deco                         ; bin2bcd                    ; work         ;
-;    |calculo_tiempo_ingrediente:calculoTiempo| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |maquina_cafe|calculo_tiempo_ingrediente:calculoTiempo ; calculo_tiempo_ingrediente ; work         ;
-;    |restador_completo:restador|               ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |maquina_cafe|restador_completo:restador               ; restador_completo          ; work         ;
-;    |segment7_deco:seg1|                       ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |maquina_cafe|segment7_deco:seg1                       ; segment7_deco              ; work         ;
-;    |segment7_deco:seg2|                       ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |maquina_cafe|segment7_deco:seg2                       ; segment7_deco              ; work         ;
-;    |sumador_completo:sumador|                 ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |maquina_cafe|sumador_completo:sumador                 ; sumador_completo           ; work         ;
-+-----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------+----------------------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-Encoding Type:  One-Hot
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |maquina_cafe|FSM:control|state                                                                                                                                                               ;
-+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+
-; Name       ; state.1110 ; state.1101 ; state.1100 ; state.1011 ; state.1010 ; state.1001 ; state.1000 ; state.0111 ; state.0110 ; state.0101 ; state.0100 ; state.0011 ; state.0010 ; state.0001 ; state.0000 ;
-+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+
-; state.0000 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ;
-; state.0001 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 1          ;
-; state.0010 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 1          ;
-; state.0011 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 1          ;
-; state.0100 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 1          ;
-; state.0101 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 1          ;
-; state.0110 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ;
-; state.0111 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ;
-; state.1000 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ;
-; state.1001 ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ;
-; state.1010 ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ;
-; state.1011 ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ;
-; state.1100 ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ;
-; state.1101 ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ;
-; state.1110 ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ;
-+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+
-
-
-+---------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                               ;
-+----------------------------------------------------+---------------------+------------------------+
-; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
-+----------------------------------------------------+---------------------+------------------------+
-; FSM:control|bebida[0]                              ; GND                 ; yes                    ;
-; FSM:control|bebida[1]                              ; GND                 ; yes                    ;
-; FSM:control|valor_producto[0]                      ; GND                 ; yes                    ;
-; FSM:control|valor_producto[1]                      ; GND                 ; yes                    ;
-; FSM:control|valor_producto[2]                      ; GND                 ; yes                    ;
-; Number of user-specified and inferred latches = 5  ;                     ;                        ;
-+----------------------------------------------------+---------------------+------------------------+
-Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
-
-
-+------------------------------------------------------------+
-; Registers Removed During Synthesis                         ;
-+---------------------------------------+--------------------+
-; Register name                         ; Reason for Removal ;
-+---------------------------------------+--------------------+
-; FSM:control|state~4                   ; Lost fanout        ;
-; FSM:control|state~5                   ; Lost fanout        ;
-; FSM:control|state~6                   ; Lost fanout        ;
-; FSM:control|state~7                   ; Lost fanout        ;
-; Total Number of Removed Registers = 4 ;                    ;
-+---------------------------------------+--------------------+
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 73    ;
-; Number of registers using Synchronous Clear  ; 25    ;
-; Number of registers using Synchronous Load   ; 8     ;
-; Number of registers using Asynchronous Clear ; 47    ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 20    ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                            ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                  ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |maquina_cafe|FSM:control|valor_producto[2] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
-
-
-+------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Counter:timer ;
-+----------------+-------+-----------------------------------+
-; Parameter Name ; Value ; Type                              ;
-+----------------+-------+-----------------------------------+
-; N              ; 8     ; Signed Integer                    ;
-+----------------+-------+-----------------------------------+
-=======
 +-----------------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: maquina_cafe_teorica:maquina|Counter:timer ;
 +----------------+-------+----------------------------------------------------------------+
@@ -415,7 +99,6 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------+-------+----------------------------------------------------------------+
 ; N              ; 8     ; Signed Integer                                                 ;
 +----------------+-------+----------------------------------------------------------------+
->>>>>>> e5b3ec8b6e1b64a55ff8694a688e2cbb8cb43c12
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -539,15 +222,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-<<<<<<< HEAD
-=======
 +---------------------------------------------------------------------------------------------------------------------------+
 ; Analysis & Elaboration Settings                                                                                           ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; maquina_tb_prueba  ; laboratorio4       ;
+; Top-level entity name                                                           ; mocaccino_tb       ; laboratorio4       ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -628,7 +309,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
->>>>>>> e5b3ec8b6e1b64a55ff8694a688e2cbb8cb43c12
 +----------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "maquina_cafe_teorica:maquina|bin2bcd:bcd_deco"                                            ;
 +------------+--------+----------+-------------------------------------------------------------------------------------+
@@ -755,150 +435,58 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; arriav_ff             ; 73                          ;
-;     CLR               ; 19                          ;
-;     CLR SLD           ; 8                           ;
-;     ENA CLR           ; 20                          ;
-;     SCLR              ; 25                          ;
-;     plain             ; 1                           ;
-; arriav_lcell_comb     ; 160                         ;
-;     arith             ; 46                          ;
-;         1 data inputs ; 43                          ;
-;         2 data inputs ; 3                           ;
-;     normal            ; 98                          ;
-;         1 data inputs ; 5                           ;
-;         2 data inputs ; 9                           ;
-;         3 data inputs ; 15                          ;
-;         4 data inputs ; 17                          ;
-;         5 data inputs ; 23                          ;
-;         6 data inputs ; 29                          ;
-;     shared            ; 16                          ;
-;         1 data inputs ; 5                           ;
-;         2 data inputs ; 11                          ;
-; boundary_port         ; 29                          ;
-;                       ;                             ;
-; Max LUT depth         ; 5.50                        ;
-; Average LUT depth     ; 3.72                        ;
-+-----------------------+-----------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:01     ;
-+----------------+--------------+
-
-
-+-------------------------------+
-; Analysis & Synthesis Messages ;
-+-------------------------------+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Synthesis
+Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-<<<<<<< HEAD
-    Info: Processing started: Thu Oct  7 12:37:14 2021
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off laboratorio4 -c laboratorio4
-=======
-    Info: Processing started: Thu Oct 07 12:14:18 2021
+    Info: Processing started: Thu Oct 07 15:37:16 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off laboratorio4 -c laboratorio4 --analysis_and_elaboration
->>>>>>> e5b3ec8b6e1b64a55ff8694a688e2cbb8cb43c12
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file segment7_deco.sv
-    Info (12023): Found entity 1: segment7_deco File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/segment7_deco.sv Line: 3
+    Info (12023): Found entity 1: segment7_deco File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/segment7_deco.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file bin2bcd.sv
-    Info (12023): Found entity 1: bin2bcd File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/bin2bcd.sv Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file Register.sv
-    Info (12023): Found entity 1: Register File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/Register.sv Line: 5
-Info (12021): Found 1 design units, including 1 entities, in source file Counter.sv
-    Info (12023): Found entity 1: Counter File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/Counter.sv Line: 5
-Info (12021): Found 1 design units, including 1 entities, in source file Comparator_mayor_equal.sv
-    Info (12023): Found entity 1: Comparator_mayor_equal File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/Comparator_mayor_equal.sv Line: 7
+    Info (12023): Found entity 1: bin2bcd File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/bin2bcd.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file register.sv
+    Info (12023): Found entity 1: Register File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/Register.sv Line: 5
+Info (12021): Found 1 design units, including 1 entities, in source file counter.sv
+    Info (12023): Found entity 1: Counter File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/Counter.sv Line: 5
+Info (12021): Found 1 design units, including 1 entities, in source file comparator_mayor_equal.sv
+    Info (12023): Found entity 1: Comparator_mayor_equal File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/Comparator_mayor_equal.sv Line: 7
 Info (12021): Found 1 design units, including 1 entities, in source file sumador_completo.sv
-    Info (12023): Found entity 1: sumador_completo File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/sumador_completo.sv Line: 6
+    Info (12023): Found entity 1: sumador_completo File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/sumador_completo.sv Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file restador_completo.sv
-    Info (12023): Found entity 1: restador_completo File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/restador_completo.sv Line: 6
-Info (12021): Found 1 design units, including 1 entities, in source file Cloks.sv
-    Info (12023): Found entity 1: Cloks File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/Cloks.sv Line: 6
+    Info (12023): Found entity 1: restador_completo File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/restador_completo.sv Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file cloks.sv
+    Info (12023): Found entity 1: Cloks File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/Cloks.sv Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file calculo_tiempo_ingrediente.sv
-    Info (12023): Found entity 1: calculo_tiempo_ingrediente File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/calculo_tiempo_ingrediente.sv Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file Counter_5.sv
-    Info (12023): Found entity 1: Counter_5 File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/Counter_5.sv Line: 6
-Info (12021): Found 1 design units, including 1 entities, in source file Mux_2_to_1.sv
-    Info (12023): Found entity 1: Mux_2_to_1 File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/Mux_2_to_1.sv Line: 5
+    Info (12023): Found entity 1: calculo_tiempo_ingrediente File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/calculo_tiempo_ingrediente.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file counter_5.sv
+    Info (12023): Found entity 1: Counter_5 File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/Counter_5.sv Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file mux_2_to_1.sv
+    Info (12023): Found entity 1: Mux_2_to_1 File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/Mux_2_to_1.sv Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file maquina_cafe.sv
-    Info (12023): Found entity 1: maquina_cafe File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_cafe.sv Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file divisorFrectuencia_tb.sv
-    Info (12023): Found entity 1: divisorFrectuencia_tb File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/divisorFrectuencia_tb.sv Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file FSM.sv
-    Info (12023): Found entity 1: FSM File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv Line: 1
+    Info (12023): Found entity 1: maquina_cafe File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_cafe.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file divisorfrectuencia_tb.sv
+    Info (12023): Found entity 1: divisorFrectuencia_tb File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/divisorFrectuencia_tb.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file fsm.sv
+    Info (12023): Found entity 1: FSM File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file maquina_cafe_teorica.sv
-    Info (12023): Found entity 1: maquina_cafe_teorica File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_cafe_teorica.sv Line: 3
+    Info (12023): Found entity 1: maquina_cafe_teorica File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_cafe_teorica.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file maquina_tb_prueba.sv
-<<<<<<< HEAD
-    Info (12023): Found entity 1: maquina_tb_prueba File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_tb_prueba.sv Line: 3
-Info (12127): Elaborating entity "maquina_cafe" for the top level hierarchy
-Info (12128): Elaborating entity "Cloks" for hierarchy "Cloks:divisorFrecuencia" File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_cafe.sv Line: 25
-Warning (10230): Verilog HDL assignment warning at Cloks.sv(16): truncated value with size 32 to match size of target (25) File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/Cloks.sv Line: 16
-Info (12128): Elaborating entity "Counter" for hierarchy "Counter:timer" File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_cafe.sv Line: 27
-Warning (10230): Verilog HDL assignment warning at Counter.sv(14): truncated value with size 32 to match size of target (8) File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/Counter.sv Line: 14
-Info (12128): Elaborating entity "Counter_5" for hierarchy "Counter_5:monedasQuinientos" File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_cafe.sv Line: 31
-Warning (10230): Verilog HDL assignment warning at Counter_5.sv(15): truncated value with size 32 to match size of target (8) File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/Counter_5.sv Line: 15
-Info (12128): Elaborating entity "sumador_completo" for hierarchy "sumador_completo:sumador" File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_cafe.sv Line: 33
-Info (12128): Elaborating entity "restador_completo" for hierarchy "restador_completo:restador" File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_cafe.sv Line: 35
-Info (12128): Elaborating entity "Mux_2_to_1" for hierarchy "Mux_2_to_1:mux21" File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_cafe.sv Line: 37
-Info (12128): Elaborating entity "Register" for hierarchy "Register:state_reg" File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_cafe.sv Line: 39
-Info (12128): Elaborating entity "Comparator_mayor_equal" for hierarchy "Comparator_mayor_equal:precioExpreso" File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_cafe.sv Line: 42
-Info (12128): Elaborating entity "calculo_tiempo_ingrediente" for hierarchy "calculo_tiempo_ingrediente:calculoTiempo" File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_cafe.sv Line: 54
-Warning (10235): Verilog HDL Always Construct warning at calculo_tiempo_ingrediente.sv(11): variable "bebida" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/calculo_tiempo_ingrediente.sv Line: 11
-Warning (10235): Verilog HDL Always Construct warning at calculo_tiempo_ingrediente.sv(19): variable "bebida" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/calculo_tiempo_ingrediente.sv Line: 19
-Warning (10235): Verilog HDL Always Construct warning at calculo_tiempo_ingrediente.sv(21): variable "bebida" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/calculo_tiempo_ingrediente.sv Line: 21
-Warning (10235): Verilog HDL Always Construct warning at calculo_tiempo_ingrediente.sv(29): variable "bebida" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/calculo_tiempo_ingrediente.sv Line: 29
-Warning (10235): Verilog HDL Always Construct warning at calculo_tiempo_ingrediente.sv(31): variable "bebida" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/calculo_tiempo_ingrediente.sv Line: 31
-Warning (10235): Verilog HDL Always Construct warning at calculo_tiempo_ingrediente.sv(38): variable "bebida" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/calculo_tiempo_ingrediente.sv Line: 38
-Info (12128): Elaborating entity "FSM" for hierarchy "FSM:control" File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_cafe.sv Line: 64
-Warning (10230): Verilog HDL assignment warning at FSM.sv(140): truncated value with size 32 to match size of target (8) File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv Line: 140
-Warning (10230): Verilog HDL assignment warning at FSM.sv(147): truncated value with size 32 to match size of target (2) File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv Line: 147
-Info (10041): Inferred latch for "bebida[0]" at FSM.sv(147) File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv Line: 147
-Info (10041): Inferred latch for "bebida[1]" at FSM.sv(147) File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv Line: 147
-Info (10041): Inferred latch for "valor_producto[0]" at FSM.sv(140) File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv Line: 140
-Info (10041): Inferred latch for "valor_producto[1]" at FSM.sv(140) File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv Line: 140
-Info (10041): Inferred latch for "valor_producto[2]" at FSM.sv(140) File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv Line: 140
-Info (10041): Inferred latch for "valor_producto[3]" at FSM.sv(140) File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv Line: 140
-Info (10041): Inferred latch for "valor_producto[4]" at FSM.sv(140) File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv Line: 140
-Info (10041): Inferred latch for "valor_producto[5]" at FSM.sv(140) File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv Line: 140
-Info (10041): Inferred latch for "valor_producto[6]" at FSM.sv(140) File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv Line: 140
-Info (10041): Inferred latch for "valor_producto[7]" at FSM.sv(140) File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv Line: 140
-Info (12128): Elaborating entity "bin2bcd" for hierarchy "bin2bcd:bcd_deco" File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_cafe.sv Line: 69
-Warning (10230): Verilog HDL assignment warning at bin2bcd.sv(21): truncated value with size 32 to match size of target (4) File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/bin2bcd.sv Line: 21
-Warning (10230): Verilog HDL assignment warning at bin2bcd.sv(27): truncated value with size 32 to match size of target (4) File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/bin2bcd.sv Line: 27
-Warning (10230): Verilog HDL assignment warning at bin2bcd.sv(29): truncated value with size 32 to match size of target (4) File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/bin2bcd.sv Line: 29
-Info (12128): Elaborating entity "segment7_deco" for hierarchy "segment7_deco:seg1" File: /home/elias/Documentos/TEC/semestre_2_2021/taller_de_diseno_digital/proyectos_fpga/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_cafe.sv Line: 70
-Warning (12241): 7 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info (286030): Timing-Driven Synthesis is running
-Info (17049): 4 registers lost all their fanouts during netlist optimizations.
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 216 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 9 input pins
-    Info (21059): Implemented 20 output pins
-    Info (21061): Implemented 187 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 16 warnings
-    Info: Peak virtual memory: 442 megabytes
-    Info: Processing ended: Thu Oct  7 12:37:32 2021
-    Info: Elapsed time: 00:00:18
-    Info: Total CPU time (on all processors): 00:00:36
-=======
     Info (12023): Found entity 1: maquina_tb_prueba File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_tb_prueba.sv Line: 3
-Info (12127): Elaborating entity "maquina_tb_prueba" for the top level hierarchy
-Info (12128): Elaborating entity "maquina_cafe_teorica" for hierarchy "maquina_cafe_teorica:maquina" File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_tb_prueba.sv Line: 11
+Info (12021): Found 1 design units, including 1 entities, in source file expreso_tb.sv
+    Info (12023): Found entity 1: expreso_tb File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/expreso_tb.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file cafe_con_leche_tb.sv
+    Info (12023): Found entity 1: cafe_con_leche_tb File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/cafe_con_leche_tb.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file capuccino_tb.sv
+    Info (12023): Found entity 1: capuccino_tb File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/capuccino_tb.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file mocaccino_tb.sv
+    Info (12023): Found entity 1: mocaccino_tb File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/mocaccino_tb.sv Line: 4
+Info (12127): Elaborating entity "mocaccino_tb" for the top level hierarchy
+Info (12128): Elaborating entity "maquina_cafe_teorica" for hierarchy "maquina_cafe_teorica:maquina" File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/mocaccino_tb.sv Line: 11
 Info (12128): Elaborating entity "Counter" for hierarchy "maquina_cafe_teorica:maquina|Counter:timer" File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_cafe_teorica.sv Line: 25
 Warning (10230): Verilog HDL assignment warning at Counter.sv(14): truncated value with size 32 to match size of target (8) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/Counter.sv Line: 14
 Info (12128): Elaborating entity "Counter_5" for hierarchy "maquina_cafe_teorica:maquina|Counter_5:monedasQuinientos" File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_cafe_teorica.sv Line: 29
@@ -916,18 +504,18 @@ Warning (10235): Verilog HDL Always Construct warning at calculo_tiempo_ingredie
 Warning (10235): Verilog HDL Always Construct warning at calculo_tiempo_ingrediente.sv(31): variable "bebida" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/calculo_tiempo_ingrediente.sv Line: 31
 Warning (10235): Verilog HDL Always Construct warning at calculo_tiempo_ingrediente.sv(38): variable "bebida" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/calculo_tiempo_ingrediente.sv Line: 38
 Info (12128): Elaborating entity "FSM" for hierarchy "maquina_cafe_teorica:maquina|FSM:control" File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_cafe_teorica.sv Line: 62
-Warning (10230): Verilog HDL assignment warning at FSM.sv(142): truncated value with size 32 to match size of target (8) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv Line: 142
-Warning (10230): Verilog HDL assignment warning at FSM.sv(149): truncated value with size 32 to match size of target (2) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv Line: 149
-Info (10041): Inferred latch for "bebida[0]" at FSM.sv(149) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv Line: 149
-Info (10041): Inferred latch for "bebida[1]" at FSM.sv(149) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv Line: 149
-Info (10041): Inferred latch for "valor_producto[0]" at FSM.sv(142) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv Line: 142
-Info (10041): Inferred latch for "valor_producto[1]" at FSM.sv(142) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv Line: 142
-Info (10041): Inferred latch for "valor_producto[2]" at FSM.sv(142) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv Line: 142
-Info (10041): Inferred latch for "valor_producto[3]" at FSM.sv(142) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv Line: 142
-Info (10041): Inferred latch for "valor_producto[4]" at FSM.sv(142) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv Line: 142
-Info (10041): Inferred latch for "valor_producto[5]" at FSM.sv(142) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv Line: 142
-Info (10041): Inferred latch for "valor_producto[6]" at FSM.sv(142) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv Line: 142
-Info (10041): Inferred latch for "valor_producto[7]" at FSM.sv(142) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv Line: 142
+Warning (10230): Verilog HDL assignment warning at FSM.sv(125): truncated value with size 32 to match size of target (8) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv Line: 125
+Warning (10230): Verilog HDL assignment warning at FSM.sv(132): truncated value with size 32 to match size of target (2) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv Line: 132
+Info (10041): Inferred latch for "bebida[0]" at FSM.sv(132) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv Line: 132
+Info (10041): Inferred latch for "bebida[1]" at FSM.sv(132) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv Line: 132
+Info (10041): Inferred latch for "valor_producto[0]" at FSM.sv(125) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv Line: 125
+Info (10041): Inferred latch for "valor_producto[1]" at FSM.sv(125) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv Line: 125
+Info (10041): Inferred latch for "valor_producto[2]" at FSM.sv(125) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv Line: 125
+Info (10041): Inferred latch for "valor_producto[3]" at FSM.sv(125) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv Line: 125
+Info (10041): Inferred latch for "valor_producto[4]" at FSM.sv(125) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv Line: 125
+Info (10041): Inferred latch for "valor_producto[5]" at FSM.sv(125) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv Line: 125
+Info (10041): Inferred latch for "valor_producto[6]" at FSM.sv(125) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv Line: 125
+Info (10041): Inferred latch for "valor_producto[7]" at FSM.sv(125) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv Line: 125
 Info (12128): Elaborating entity "bin2bcd" for hierarchy "maquina_cafe_teorica:maquina|bin2bcd:bcd_deco" File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_cafe_teorica.sv Line: 67
 Warning (10230): Verilog HDL assignment warning at bin2bcd.sv(21): truncated value with size 32 to match size of target (4) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/bin2bcd.sv Line: 21
 Warning (10230): Verilog HDL assignment warning at bin2bcd.sv(27): truncated value with size 32 to match size of target (4) File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/bin2bcd.sv Line: 27
@@ -935,10 +523,9 @@ Warning (10230): Verilog HDL assignment warning at bin2bcd.sv(29): truncated val
 Info (12128): Elaborating entity "segment7_deco" for hierarchy "maquina_cafe_teorica:maquina|segment7_deco:seg1" File: C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_cafe_teorica.sv Line: 68
 Warning (12241): 7 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 15 warnings
-    Info: Peak virtual memory: 4766 megabytes
-    Info: Processing ended: Thu Oct 07 12:14:33 2021
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:37
->>>>>>> e5b3ec8b6e1b64a55ff8694a688e2cbb8cb43c12
+    Info: Peak virtual memory: 4761 megabytes
+    Info: Processing ended: Thu Oct 07 15:37:24 2021
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:15
 
 

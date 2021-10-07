@@ -17,5 +17,5 @@ vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr1
 vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4 {C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/Mux_2_to_1.sv}
 vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4 {C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/FSM.sv}
 vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4 {C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_cafe_teorica.sv}
-vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4 {C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/maquina_tb_prueba.sv}
+vlog -sv -work work +incdir+C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4 {C:/Users/samas/Documents/GitHub/Taller-de-Diseno-Gr14/Laboratorio-4/capuccino_tb.sv}
 
