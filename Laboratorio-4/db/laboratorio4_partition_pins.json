@@ -4,7 +4,7 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "rst_timer",
+					"name" : "bebidaLista",
 					"strict" : false
 				},
 				{
@@ -28,79 +28,59 @@
 					"strict" : false
 				},
 				{
-					"name" : "en_cien",
+					"name" : "hex1[0]",
 					"strict" : false
 				},
 				{
-					"name" : "en_quin",
+					"name" : "hex1[1]",
 					"strict" : false
 				},
 				{
-					"name" : "producto",
+					"name" : "hex1[2]",
 					"strict" : false
 				},
 				{
-					"name" : "vuelto",
+					"name" : "hex1[3]",
 					"strict" : false
 				},
 				{
-					"name" : "bebida[0]",
+					"name" : "hex1[4]",
 					"strict" : false
 				},
 				{
-					"name" : "bebida[1]",
+					"name" : "hex1[5]",
 					"strict" : false
 				},
 				{
-					"name" : "estadoActual[0]",
+					"name" : "hex1[6]",
 					"strict" : false
 				},
 				{
-					"name" : "estadoActual[1]",
+					"name" : "hex2[0]",
 					"strict" : false
 				},
 				{
-					"name" : "estadoActual[2]",
+					"name" : "hex2[1]",
 					"strict" : false
 				},
 				{
-					"name" : "estadoActual[3]",
+					"name" : "hex2[2]",
 					"strict" : false
 				},
 				{
-					"name" : "valor_producto[0]",
+					"name" : "hex2[3]",
 					"strict" : false
 				},
 				{
-					"name" : "valor_producto[1]",
+					"name" : "hex2[4]",
 					"strict" : false
 				},
 				{
-					"name" : "valor_producto[2]",
+					"name" : "hex2[5]",
 					"strict" : false
 				},
 				{
-					"name" : "t0",
-					"strict" : false
-				},
-				{
-					"name" : "m4",
-					"strict" : false
-				},
-				{
-					"name" : "m2",
-					"strict" : false
-				},
-				{
-					"name" : "m3",
-					"strict" : false
-				},
-				{
-					"name" : "m1",
-					"strict" : false
-				},
-				{
-					"name" : "clk",
+					"name" : "hex2[6]",
 					"strict" : false
 				},
 				{
@@ -112,7 +92,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "C",
+					"name" : "clk",
 					"strict" : false
 				},
 				{
@@ -120,15 +100,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "m0",
+					"name" : "C",
 					"strict" : false
 				},
 				{
-					"name" : "m",
-					"strict" : false
-				},
-				{
-					"name" : "x",
+					"name" : "e",
 					"strict" : false
 				},
 				{
@@ -136,7 +112,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "e",
+					"name" : "x",
+					"strict" : false
+				},
+				{
+					"name" : "m",
 					"strict" : false
 				}
 			]
